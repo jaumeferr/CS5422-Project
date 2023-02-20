@@ -2,3 +2,4 @@ Mastodon.py
 spacy
 selectolax
 spacy-html-tokenizer
+openai
