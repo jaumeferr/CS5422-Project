@@ -3,3 +3,4 @@ spacy
 selectolax
 spacy-html-tokenizer
 openai
+tiktoken
