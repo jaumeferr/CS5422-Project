@@ -4,3 +4,6 @@ selectolax
 spacy-html-tokenizer
 openai
 tiktoken
+openai-whisper
+pytube
+nltk
