@@ -85,7 +85,8 @@ class EmbeddingEngine():
     
 class ChatEngine():
     def __init__(self, openai_key):
-        openai.api_key  = openai_key
+        self.openai_key = openai_key
+        openai.api_key  = self.openai_key
     
     def construct_context(self, question: str, context_embeddings: dict, df: pd.DataFrame, label:str, 
                           MAX_SECTION_LEN = 1000, SEPARATOR = "\n* ", ENCODING = "gpt2", debug=False):
@@ -96,8 +97,9 @@ class ChatEngine():
             num_tokens = len(encoding.encode(string))
             
             return num_tokens
-                      
-        most_relevant_document_sections = order_document_sections_by_query_similarity(question, context_embeddings)
+        
+        embed_engine = EmbeddingEngine(openai_key = self.openai_key)
+        most_relevant_document_sections = embed_engine.order_document_sections_by_query_similarity(question, context_embeddings)
     
         chosen_sections = []
         chosen_sections_len = 0
