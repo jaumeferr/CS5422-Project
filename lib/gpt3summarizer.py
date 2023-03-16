@@ -109,8 +109,7 @@ class GPT3Summarizer:
         with open(f"downloads/gpt3/{file_id}_{self.model_engine}_full.txt", "w") as f:
             f.write(full_summary)
             print(f'↪ Full summary saved to {file_id}_{self.model_engine}_full.txt')
-            
-            
+               
         # Split the summary into sentences
         prompt = f"Instructions:\nSummarize the following podcast text into a list of {max_sentences} sentences\nContextualize the topics to the podcast\nDon't mention the podcast itself in the summary.\n\nText: {full_summary}\n\nSummary:"
         summary, token_count = self.process_gpt3(prompt)
