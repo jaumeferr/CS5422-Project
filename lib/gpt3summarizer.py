@@ -92,7 +92,7 @@ class GPT3Summarizer:
         
         return chunks
 
-    def summarize(self, file_id, transcript, max_sentences):
+    def summarize(self, transcript, max_sentences):
         
         print(f'🤖 Initializing GPT-3 summarizer...')
         print(f'↪ Using model: {self.model_engine}')
@@ -104,11 +104,6 @@ class GPT3Summarizer:
         summaries, tokens_used = self.process_chunks(chunks)
         
         full_summary = "\n\n".join(summaries)
-        
-        # save the full summary to a file
-        with open(f"downloads/gpt3/{file_id}_{self.model_engine}_full.txt", "w") as f:
-            f.write(full_summary)
-            print(f'↪ Full summary saved to {file_id}_{self.model_engine}_full.txt')
                
         # Split the summary into sentences
         prompt = f"Instructions:\nSummarize the following podcast text into a list of {max_sentences} sentences\nContextualize the topics to the podcast\nDon't mention the podcast itself in the summary.\n\nText: {full_summary}\n\nSummary:"
@@ -118,8 +113,5 @@ class GPT3Summarizer:
         api_cost = float(tokens_used / 1000) * float(self.openai_price)
         print(f'↪ 💵 GPT3 cost: ${api_cost:.2f} ({tokens_used} tokens)')
         
-        # save the full summary to a file
-        with open(f"downloads/gpt3/{file_id}_{self.model_engine}_summary.txt", "w") as f:
-            f.write(summary)
-            print(f'↪ {max_sentences} sentence summary saved to {file_id}_{self.model_engine}_summary.txt')
+        return summary, full_summary
         
