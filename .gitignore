@@ -1,0 +1,6 @@
+lib/.ipynb_checkpoints
+lib/__pycache__
+research/mastodon/.ipynb_checkpoints
+research/podcast_embeddings/.ipynb_checkpoints
+research/podcast_embeddings/__pycache__
+research/podcast_gpt-3-5/.ipynb_checkpoints
