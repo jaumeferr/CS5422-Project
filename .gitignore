@@ -1,7 +1,0 @@
-
-.DS_Store
-notebooks/.ipynb_checkpoints/clientcred-checkpoint.secret
-notebooks/.ipynb_checkpoints/gpt3_test_mastodon-checkpoint.ipynb
-.ipynb_checkpoints/requirements-checkpoint.txt
-.ipynb_checkpoints/readme-checkpoint.txt
-lib/.ipynb_checkpoints/openai_utils-checkpoint.py
