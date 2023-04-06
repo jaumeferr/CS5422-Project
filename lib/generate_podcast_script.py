@@ -7,4 +7,4 @@ podcast_url_list = ["https://www.youtube.com/watch?v=ykY69lSpDdo"]
 
 for url in podcast_url_list:
     podcast_dataset.add_podcast_from_url(url, podcast_name="Lex Fridman Podcast",
-                                         openai_key="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")
+                                         openai_key="")
