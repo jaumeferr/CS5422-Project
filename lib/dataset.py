@@ -9,61 +9,291 @@ import whisper
 import numpy as np
 import pandas as pd
 import nltk
-nltk.download('punkt')  # download the NLTK tokenizer
+nltk.download('punkt', quiet=True)  # download the NLTK tokenizer
 
 import tiktoken
 
 import pickle
 import time
 import uuid
+from typing import List, Tuple, Set, Dict
+import mysql
+import mysql.connector
 
 from pytube import YouTube
 
-from engine import EmbeddingEngine
+from engine import EmbeddingEngine, ChatEngine
 from gpt3summarizer import GPT3Summarizer
 
-class PodcastDataset():
-    def __init__(self, dataset_path=None, base_dir="podcast_files/"):
-        self.dataset_path = dataset_path
+class PodcastDB():
+    def __init__(self, 
+                 db_name:str, 
+                 credentials:Tuple[str,str]=None,
+                 host:str="localhost",
+                 create:bool=False):
         
+        # Default Username
+        username = "aldo" if not credentials else credentials[0]
+        pw = "testsql123" if not credentials else credentials[1]
+        
+        # Setup Database
+        self.db = mysql.connector.connect(
+                  host=host,
+                  user=username,
+                  password=pw
+        )
+        print("Established MySQL connection with host.")
+        
+        ## Create Database
+        if create:
+            mycursor = self.db.cursor()
+            mycursor.execute("SHOW DATABASES")
+            for each_db in mycursor:
+                if db_name == each_db[0]:
+                    print(f"You are creating a database {db_name} that already exists! Please set create = False (default).")
+                    return 
+            database_sql = f"CREATE DATABASE {db_name}"
+            mycursor.execute(database_sql)
+        
+        ## Access Existing Database
+        else:
+            mycursor = self.db.cursor()
+            mycursor.execute("SHOW DATABASES;")
+            exists = False
+            for each_db in mycursor:
+                if db_name == each_db[0]:
+                    exists = True
+                    break
+
+            if not exists:
+                print(f"You are trying to access a database with name: {db_name} that does not exist. Please set create = True.")
+                return
+        
+        ## Connect to Database
+        self.db = mysql.connector.connect(
+              host="localhost",
+              user=username,
+              password=pw,
+              database = db_name
+            )
+
+        print(f"Established MySQL connection with database {db_name}.")
+        
+        # Create Database Table
+        self.table_name = "podcast_details"
+        
+        t_cnt = 0
+        mycursor = self.db.cursor()
+        mycursor.execute("SHOW TABLES;")
+        
+        ## Check if Table already exists
+        for each_name in mycursor:
+            if self.table_names == each_name[0]:
+                t_cnt += 1
+
+        if not t_cnt:
+            table_sql = f"""CREATE TABLE {self.table_name} 
+                (pid INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+                url VARCHAR(255), 
+                podcast_title VARCHAR(255), 
+                podcast_name VARCHAR(255), 
+                transcript_filepath VARCHAR(255), 
+                embeddings_filepath VARCHAR(255), 
+                list_summary VARCHAR(4096),
+                text_summary VARCHAR(4096))"""
+            mycursor.execute(table_sql)
+            
+        print(f"Table {self.table_name} successfully created or are present in database {db_name}.")
+        
+    def show_db(self, columns : List[str]):
+        column_names = ", ".join(columns)
+        
+        mycursor = self.db.cursor()
+        mycursor.execute(f"select {column_names} from {self.table_name}")
+        myresult = mycursor.fetchall()
+        
+        all_entries = []
+        for each_entry in myresult:
+            all_entries.append(each_entry)
+            print(each_entry)
+            
+        return all_entries
+        
+    def query_db(self, query : str):
+        """
+        returns: list of tuples with each tuple representing a row in SQL datatable
+        """
+        
+        mycursor = self.db.cursor()
+        mycursor.execute(query)
+        myresult = mycursor.fetchall()
+
+        all_entries = []
+        for each_entry in myresult:
+            all_entries.append(each_entry)
+            print(each_entry)
+            
+        return all_entries
+    
+    def update_db(self, pid : int, update_dict : Dict[str, str]):
+        """
+        update_dict : {col_name : new_value} for given pid
+        """
+        
+        all_updates = []
+        for key, val in update_dict.items():
+            each_update = key + " = " + "'" + val + "'"
+            all_updates.append(each_update)
+        
+        update_str = ", ".join(all_updates)
+        where_cond = f"pid = {pid}"
+        
+        update_query = f"""UPDATE {self.table_name} SET {update_str} WHERE {where_cond}"""
+        
+        print(update_query)
+        mycursor = self.db.cursor()
+        mycursor.execute(update_query)
+        self.db.commit()
+        
+        print(f"Record with pid = {pid} has been successfully updated.") 
+        
+        return
+    
+    def insert_podcast(self, podcast_params : List[Tuple[str]]):
+        """
+        insert List of tuples, where each tuple contains podcast_parameters
+                (url VARCHAR(255), 
+                podcast_title VARCHAR(255), 
+                podcast_name VARCHAR(255), 
+                transcript_filepath VARCHAR(255), 
+                embeddings_filepath VARCHAR(255), 
+                list_summary VARCHAR(4096),
+                text_summary VARCHAR(4096))
+        
+        """
+        mycursor = self.db.cursor()
+        
+        sql = f"""INSERT INTO {self.table_name} (url, podcast_title, podcast_name, transcript_filepath, embeddings_filepath,
+                        list_summary, text_summary) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
+
+        mycursor.executemany(sql, podcast_params)
+
+        self.db.commit()
+        print(f"{mycursor.rowcount} records successfully inserted.")
+
+        
+class PodcastDataset():
+    def __init__(self, 
+                 base_dir="podcast_files/", 
+                 dataset_type="db",
+                 database:PodcastDB=None, 
+                 df_path=None
+                ):
+        
+        # Setup Directories
         self.base_dir = base_dir
         self.audio_dir = self.base_dir + "audio/"
         self.transcript_dir = self.base_dir + "transcript/"
         self.embeddings_dir = self.base_dir + "embeddings/"
-        self.summary_dir = self.base_dir + "summary/"
-        self.sub_dirs = [self.audio_dir, self.transcript_dir, self.embeddings_dir, self.summary_dir]
+        self.sub_dirs = [self.audio_dir, self.transcript_dir, self.embeddings_dir]
         
         self.init_dir()
         
-        if self.dataset_path is None:
-            self.init_dataset()
-        else: 
-            self.load_dataset()
+        # Setup Dataset
+        self.dataset_type = dataset_type
+        if dataset_type == "df":
+            self.df_path = df_path
+            if self.df_path is None:
+                self.init_dataset_df()
+            else: 
+                self.load_dataset_df()
+        elif dataset_type == "db":
+            if database is None:
+                raise ValueError("Expected database of type PodcastDatabase, got None instead.")
+            self.db_handler = database
     
     def init_dir(self):
         os.makedirs(self.base_dir, exist_ok=True)
         for sub_dir in self.sub_dirs:
             os.makedirs(sub_dir, exist_ok=True)
     
-    def init_dataset(self, dataset_path="default.csv"):
+    def init_dataset_df(self, df_name="default.csv"):
         # Define the columns for the DataFrame
-        self.dataset_columns = ["id", "url", "title", "podcast_name", 
-                                "transcript_filepath", "embeddings_filepath", "summary_filepath", "summary"]
+        self.dataset_columns = ["pid", "url", "podcast_title", "podcast_name", 
+                                "transcript_filepath", "embeddings_filepath", "list_summary", "text_summary"]
 
         # Create an empty DataFrame with the specified columns
         df = pd.DataFrame(columns=self.dataset_columns)
 
         # Save the DataFrame to a CSV file
-        df.to_csv(dataset_path, index=False)
+        df.to_csv(df_path, index=False)
         
         self.dataset_df = df
-        self.dataset_path = dataset_path
+        self.df_path = df_path + df_name
     
-    def load_dataset(self):
-        self.dataset_df = pd.read_csv(self.dataset_path)
+    def load_dataset_df(self):
+        self.dataset_df = pd.read_csv(self.df_path)
         self.dataset_columns = self.dataset_df.columns.tolist()
     
-    def add_podcast(self, url, podcast_name="", openai_key="", delete_audio=True):
+    def get_podcasts(self, pid=None, podcast_name=None, select_all = False):
+        if select_all:
+            query = f"SELECT * from {self.db_handler.table_name}"
+        else:
+            if pid is not None:
+                if podcast_name is not None:
+                    query = f'''SELECT * from {self.db_handler.table_name} 
+                        WHERE pid={pid} AND podcast_name="{podcast_name}"'''
+                else:
+                    query = f'''SELECT * from {self.db_handler.table_name} 
+                        WHERE pid={pid}'''
+            else:
+                if podcast_name is not None:
+                    query = f'''SELECT * from {self.db_handler.table_name} 
+                        WHERE podcast_name="{podcast_name}"'''
+                else:
+                    print("Expected either pid or podcast_name to have a value, instead got None for both")
+                    return -1
+        
+        podcasts = self.db_handler.query_db(query)
+        
+        podcasts_dict = {}
+        for podcast in podcasts:
+            podcast_dict = {}
+            podcast_dict['pid'] = podcast[0]
+            podcast_dict['url'] = podcast[1]
+            podcast_dict['podcast_title'] = podcast[2]
+            podcast_dict['podcast_name'] = podcast[3]
+            podcast_dict['transcript_filepath'] = podcast[4]
+            podcast_dict['embeddings_filepath'] = podcast[5]
+            podcast_dict['list_summary'] = podcast[6]
+            podcast_dict['text_summary'] = podcast[7]
+            
+            podcasts_dict[podcast[0]] = podcast_dict
+            
+        return podcasts_dict
+    
+    def add_podcast_from_list(self, podcast_params : List[Tuple[str]]):
+        if self.dataset_type == "db":
+            print("\nSaving Dataset to DB...")
+            self.db_handler.insert_podcast(podcast_params)
+        
+        elif self.dataset_type == "df":
+            new_rows = [{"pid": podcast_params[0], 
+                         "url": podcast_params[1], 
+                         "podcast_title": podcast_params[2], 
+                         "podcast_name": podcast_params[3], 
+                         "transcript_filepath": podcast_params[4], 
+                         "embeddings_filepath": podcast_params[5], 
+                         "list_summary": podcast_params[6],
+                         "text_summary": podcast_params[7]}]
+
+            new_df = pd.DataFrame(new_rows)
+            self.dataset_df = pd.concat([self.dataset_df, new_df], ignore_index=True)
+
+            print("\nSaving Dataset to DF...")
+            self.dataset_df.to_csv(self.df_path, index=False)
+
+    def add_podcast_from_url(self, url, podcast_name="", openai_key="", delete_audio=True):
         podcast_id = str(uuid.uuid4())
         
         print(f"Podcast ID: {podcast_id}")
@@ -78,26 +308,16 @@ class PodcastDataset():
         embeddings_filepath = self.gen_embeddings(transcript_df, podcast_id, openai_key=openai_key)
         
         print("\nGenerating Summary...")
-        summary, full_summary_filepath= self.gen_summary(raw_transcript, podcast_id, openai_key=openai_key)
+        list_summary, text_summary = self.gen_summary(raw_transcript, podcast_id, openai_key=openai_key)
         
         if delete_audio:
             os.remove(audio_filepath)
-            
-        # Save new podcast into dataframe
-        new_rows = [{"id": podcast_id, 
-                     "url": url, 
-                     "title": podcast_title, 
-                     "podcast_name": podcast_name, 
-                     "transcript_filepath": transcript_filepath, 
-                     "embeddings_filepath": embeddings_filepath, 
-                     "summary_filepath": full_summary_filepath,
-                     "summary": summary}]
-
-        new_df = pd.DataFrame(new_rows)
-        self.dataset_df = pd.concat([self.dataset_df, new_df], ignore_index=True)
         
-        print("\nSaving Dataset to CSV...")
-        self.dataset_df.to_csv(self.dataset_path, index=False)
+        podcast_params = (podcast_id, url, podcast_name, podcast_title, 
+                          transcript_filepath, embeddings_filepath, 
+                          list_summary, text_summary)
+            
+        self.add_podcast_from_list(podcast_params)
     
     def download_audio_from_youtube(self, url, podcast_id):
         youtube_video = YouTube(url)
@@ -148,18 +368,24 @@ class PodcastDataset():
         
         return embeddings_filename
     
-    def gen_summary(self, raw_transcript, podcast_id, openai_key="", max_sentences=20):
+    def gen_summary(self, raw_transcript, podcast_id, openai_key="", max_sentences=10):
+        # Generate List Summary and Full Summary
         summarizer = GPT3Summarizer(openai_key, model_engine="gpt-3.5-turbo")
-        summary, full_summary = summarizer.summarize(raw_transcript, max_sentences)
+        list_summary, full_summary = summarizer.summarize(raw_transcript, max_sentences)
         
-        full_summary_filename = self.summary_dir + str(podcast_id) + "_full-summary.txt"
-        with open(full_summary_filename, "w") as f:
-            f.write(full_summary)
-        
-        return summary, full_summary_filename
-        
+        # Generate Text Summary
+        text_summary_prompt = f"Instructions:\nSummarize the below text about a podcast summary."
+        text_summary_prompt += f"Limit your answer to a paragraph of {max_sentences} sentences. "
+        text_summary_prompt += f"\n\nContext: {full_summary}"
+        text_summary_prompt += f"\n\nSummary: "
+        chat_engine = ChatEngine(openai_key=openai_key)
+        chat_engine.prompt = text_summary_prompt
+        text_summary = chat_engine.call()
+
+        return list_summary, text_summary
+
     
-class PodcastData():
+class PodcastDataDF():
     def __init__(self, dataset:PodcastDataset, podcast_id):
         self.dataset = dataset.dataset_df
         self.id = podcast_id
