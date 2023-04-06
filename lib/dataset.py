@@ -36,6 +36,9 @@ class PodcastDB():
         username = "aldo" if not credentials else credentials[0]
         pw = "testsql123" if not credentials else credentials[1]
         
+        # Default table name
+        self.table_name = "podcast_details"
+        
         # Setup Database
         self.db = mysql.connector.connect(
                   host=host,
@@ -54,6 +57,7 @@ class PodcastDB():
                     return 
             database_sql = f"CREATE DATABASE {db_name}"
             mycursor.execute(database_sql)
+            print(f"Created MySQL database {db_name}.")
         
         ## Access Existing Database
         else:
@@ -80,7 +84,6 @@ class PodcastDB():
         print(f"Established MySQL connection with database {db_name}.")
         
         # Create Database Table
-        self.table_name = "podcast_details"
         
         t_cnt = 0
         mycursor = self.db.cursor()
@@ -88,7 +91,7 @@ class PodcastDB():
         
         ## Check if Table already exists
         for each_name in mycursor:
-            if self.table_names == each_name[0]:
+            if self.table_name == each_name[0]:
                 t_cnt += 1
 
         if not t_cnt:
@@ -294,28 +297,26 @@ class PodcastDataset():
             self.dataset_df.to_csv(self.df_path, index=False)
 
     def add_podcast_from_url(self, url, podcast_name="", openai_key="", delete_audio=True):
-        podcast_id = str(uuid.uuid4())
-        
-        print(f"Podcast ID: {podcast_id}")
-        
+        podcast_uuid = str(uuid.uuid4())
+
         print("\nDownloading Audio...")
-        audio_filepath, podcast_title = self.download_audio_from_youtube(url, podcast_id)
+        audio_filepath, podcast_title = self.download_audio_from_youtube(url, podcast_uuid)
         
-        print("\nProcessing Transcript...")
-        raw_transcript, transcript_df, transcript_filepath = self.transcribe_audio(audio_filepath, podcast_id)
+        print("Processing Transcript...")
+        raw_transcript, transcript_df, transcript_filepath = self.transcribe_audio(audio_filepath, podcast_uuid)
         
-        print("\nGenerating Embeddings...")
-        embeddings_filepath = self.gen_embeddings(transcript_df, podcast_id, openai_key=openai_key)
+        print("Generating Embeddings...")
+        embeddings_filepath = self.gen_embeddings(transcript_df, podcast_uuid, openai_key=openai_key)
         
-        print("\nGenerating Summary...")
-        list_summary, text_summary = self.gen_summary(raw_transcript, podcast_id, openai_key=openai_key)
+        print("Generating Summary...")
+        list_summary, text_summary = self.gen_summary(raw_transcript, podcast_uuid, openai_key=openai_key)
         
         if delete_audio:
             os.remove(audio_filepath)
         
-        podcast_params = (podcast_id, url, podcast_name, podcast_title, 
+        podcast_params = [(url, podcast_name, podcast_title, 
                           transcript_filepath, embeddings_filepath, 
-                          list_summary, text_summary)
+                          list_summary, text_summary)]
             
         self.add_podcast_from_list(podcast_params)
     
@@ -374,7 +375,7 @@ class PodcastDataset():
         list_summary, full_summary = summarizer.summarize(raw_transcript, max_sentences)
         
         # Generate Text Summary
-        text_summary_prompt = f"Instructions:\nSummarize the below text about a podcast summary."
+        text_summary_prompt = f"Instructions:\nSummarize the given Context."
         text_summary_prompt += f"Limit your answer to a paragraph of {max_sentences} sentences. "
         text_summary_prompt += f"\n\nContext: {full_summary}"
         text_summary_prompt += f"\n\nSummary: "
