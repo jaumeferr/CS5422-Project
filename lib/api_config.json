@@ -1,0 +1,10 @@
+{
+    "base_api_url": "http://0.0.0.0:14045",
+    "base_dir": "../podcast_files/",
+    "db_name": "podcasts",
+    "db_host": "localhost",
+    "db_user": "aldo",
+    "db_password": "testsql123",
+    "create_db": true,
+    "openai_key": ""
+}
