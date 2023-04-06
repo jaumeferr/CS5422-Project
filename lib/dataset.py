@@ -134,7 +134,6 @@ class PodcastDB():
         all_entries = []
         for each_entry in myresult:
             all_entries.append(each_entry)
-            print(each_entry)
             
         return all_entries
     
@@ -314,7 +313,7 @@ class PodcastDataset():
         if delete_audio:
             os.remove(audio_filepath)
         
-        podcast_params = [(url, podcast_name, podcast_title, 
+        podcast_params = [(url, podcast_title, podcast_name,
                           transcript_filepath, embeddings_filepath, 
                           list_summary, text_summary)]
             

@@ -62,7 +62,7 @@ chat_engine = ChatEngine(openai_key=OPENAI_KEY)
 
 # API Endpoints
 
-@app.get("/podcasts")
+@app.post("/podcasts")
 async def function(args:GetPodcastsModel):
     return podcast_dataset.get_podcasts(pid=args.pid, podcast_name=args.podcast_name, select_all=args.select_all)
 
@@ -81,7 +81,7 @@ async def function(args:AdminAddPodcastModel):
 async def function(args:QAModel):
     
     pid = args.pid
-    podcast = podcast_dataset.get_podcasts(pid=pid)['pid']
+    podcast = podcast_dataset.get_podcasts(pid=pid)[int(pid)]
     
     # Get Embeddings and Transcript
     transcript = pd.read_csv(podcast['transcript_filepath'])
