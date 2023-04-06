@@ -1,4 +1,6 @@
-Mastodon.py
+numpy
+pandas
+tqdm
 spacy
 selectolax
 spacy-html-tokenizer
@@ -7,3 +9,7 @@ tiktoken
 openai-whisper
 pytube
 nltk
+mysql-connector-python
+jupyterlab
+fastapi
+uvicorn
