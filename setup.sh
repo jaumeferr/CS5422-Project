@@ -1,4 +1,6 @@
 #!/bin/bash
 
 apt-get install ffmpeg -y
-pip install -r requirements.txt
+wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+. ./Anaconda3-2021.05-Linux-x86_64.sh
+rm Anaconda3-2021.05-Linux-x86_64.sh
