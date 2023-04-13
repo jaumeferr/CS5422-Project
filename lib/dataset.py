@@ -75,7 +75,7 @@ class PodcastDB():
         
         ## Connect to Database
         self.db = mysql.connector.connect(
-              host="localhost",
+              host=host,
               user=username,
               password=pw,
               database = db_name

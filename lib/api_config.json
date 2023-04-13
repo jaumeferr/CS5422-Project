@@ -1,10 +1,10 @@
 {
-    "base_api_url": "http://0.0.0.0:21212",
+    "base_api_url": "http://0.0.0.0:8000",
     "base_dir": "podcast_details/",
-    "db_name": "test_database",
-    "db_host": "localhost",
-    "db_user": "aldo",
-    "db_password": "testsql123",
+    "db_name": "podfluence",
+    "db_host": "52.204.46.253",
+    "db_user": "podfluence",
+    "db_password": "1a2b3c4D5%",
     "create_db": false,
     "openai_key": ""
 }
