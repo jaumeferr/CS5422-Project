@@ -1,0 +1,23 @@
+<div class="container" style = "margin-top: 20px;">
+  <div class="row">
+    <div class="col-10">
+      <label for="input"><strong>Available podcasts</strong></label>
+      <select style="width: 100%" type="text" id="podcast_selector">
+      Choose a podcast</select>
+      <button (click)="onSendButtonClick()" class="btn" style="background-color: rgba(121, 56, 195, 0.829); margin-top: 5px; color: white;">Summarize</button>
+    </div>
+    <div class="col-6" style="margin-top: 20px;" >
+      <label for="input"><strong>Summary</strong></label>
+      <textarea style="height: 400px; width: 100%;" id="podcast_summary_output" readonly></textarea>
+      <button class="btn" (click)="onChangeView()" style="background-color: rgba(121, 56, 195, 0.829); margin-top: 5px; color: white;">List view</button>
+    </div>
+    <div class="col-6" style="margin-top: 20px;">
+      <label for="input"><strong>Chat</strong></label>
+      <textarea style="height: 400px; width: 100%;" id="podcast_q&a_output" readonly></textarea>
+    </div>
+    <div class = "row" style="margin-top: 20px;">
+      <label for="input"><strong>Make a question:</strong></label>
+      <input style="width: 100%" type="text" id="user_prompt" />
+      <button (click)="onAskButtonClick()" class="btn" style="background-color: rgba(121, 56, 195, 0.829); margin-top: 5px; color: white;">Ask</button>
+    </div>
+</div>
