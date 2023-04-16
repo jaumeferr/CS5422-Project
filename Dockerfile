@@ -14,5 +14,5 @@ COPY . .
 
 WORKDIR /app/lib
 
-CMD ["python3", "-m" , "uvicorn", "run", "api:app", "--host=0.0.0.0", "--reload", "--port=8000"]
+CMD ["python3", "-m" , "uvicorn", "api:app", "--host", "0.0.0.0", "--reload", "--port", "8000"]
 #ENTRYPOINT ["bash"]

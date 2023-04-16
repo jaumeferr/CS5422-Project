@@ -1,0 +1,1731 @@
+index,content,token
+0, We have been a misunderstood and badly mocked ork for a long time.,67
+1,"Like when we started, we announced the work at the end of 2015.",63
+2,And said we were going to work on AGI.,38
+3,Like people thought we were batshit and sane.,45
+4,Yeah.,5
+5,"You know, like I remember at the time, a eminent AI scientist at a large industrial AI lab was like DMing individual reporters being like, you know, these people are very good and it's ridiculous to talk about AGI.",214
+6,And I can't believe you're giving them time of day.,51
+7,"And it's like, that was the level of like, pettiness and rancor in the field that a new group of people saying we're going to try to build AGI.",143
+8,So open AI and deep mind was a small collection of folks who were brave enough to talk about AGI in the face of mockery.,120
+9,We don't get mocked as much now.,32
+10,Don't get mocked as much now.,29
+11,"The following is a conversation with Sam Altman, CEO of OpenAI, the company behind GPT4, JADGPT, Dolly, Codex, and many other AI technologies which both individually and together constitute some of the greatest breakthroughs in the history of artificial intelligence, computing and humanity in general.",302
+12,Please allow me to say a few words about the possibilities and the dangers of AI in this current moment in the history of human civilization.,141
+13,I believe it is a critical moment.,34
+14,"We stand on the precipice of fundamental societal transformation, where soon nobody knows when, but many including me believe it's within our lifetime.",151
+15,The collective intelligence of the human species begins to pale in comparison by many orders of magnitude to the general superintelligence in the AI systems we build and deploy.,177
+16,"At scale, this is both exciting and terrifying.",47
+17,"It is exciting because of the innumerable applications we know and don't yet know that will empower humans to create, to flourish, to escape the widespread poverty and suffering that exists in the world today and to succeed in that old, all-too-human pursuit of happiness.",272
+18,It is terrifying because of the power that superintelligent AI wields the destroy human civilization intentionally or unintentionally.,134
+19,"The power to suffocate the human spirit in the totalitarian way of George Orwell's 1984 or the Pleasure-Fueled Mass hysteria of Brave New World, where as Huxley saw it, people come to love their oppression, to adore the technologies that undo their capacities to think.",269
+20,"That is why these conversations with the leaders, engineers, and philosophers both optimists and cynics is important now.",121
+21,These are not merely technical conversations about AI.,54
+22,"These are conversations about power, about companies, institutions, and political systems that deploy, check, and balance this power, about distributed economic systems that incentivize the safety and human alignment of this power, about the psychology of the engineers and leaders that deploy AI, and about the history of human nature, our capacity for good and evil at scale.",377
+23,"I'm deeply honored to have gotten to know and to have spoken with on and off the mic with many folks who now work at OpenAI, including Sam Altman, Greg Brockman, Iliasetskever, Wojtek Zaremba, Andrzej Karpathy, Jakob Pachaki, and many others.",242
+24,"It means the world that Sam has been totally open with me, willing to have multiple conversations, including challenging ones, on and off the mic.",146
+25,"I will continue to have these conversations, to both celebrate the incredible accomplishments of the AI community, and to steel man the critical perspective on major decisions, various companies, and leaders make, always with the goal of trying to help in my small way.",269
+26,"If I fail, I will work hard to improve.",39
+27,I love you all.,15
+28,This is Alex Viennit podcast.,29
+29,"To support it, please check out our sponsors in the description, and now dear friends, here Sam Altman.",103
+30,"High level, what is GPT for?",28
+31,"How does it work, and what to use most amazing about it?",56
+32,"It's a system that we'll look back at and say it was a very early AI, and it will, it's slow, it's buggy, it doesn't do a lot of things very well, but neither did the very earliest computers, and they still pointed a path to something that was going to be really important in our lives, even though it took a few decades to evolve.",331
+33,Do you think this is a pivotal moment?,38
+34,"Like out of all the versions of GPT, 50 years from now, when they look back on an early system, that was really kind of a leap, you know, in a Wikipedia page about the history of artificial intelligence, which of the GPT's would they put?",238
+35,That is a good question.,24
+36,I sort of think of progress as this continual exponential.,58
+37,"It's not like we could say here was the moment where AI went from, not happening to happening, and I'd have a very hard time like pinpointing a single thing.",157
+38,I think it's this very continual curve.,39
+39,Will the history books write about GPT one or two or three or four or seven?,76
+40,That's for them to decide.,26
+41,I don't really know.,20
+42,"I think if I had to pick some moment from what we've seen so far, I'd sort of pick Chat GPT.",92
+43,"You know, it wasn't the underlying model that mattered.",55
+44,"It was the usability of it, both the RLHF and the interface to it.",66
+45,What is Chat GPT?,17
+46,What is RLHF?,13
+47,Reinforcement learning with human feedback.,43
+48,What was that little magic ingredient to the dish that made it so much more delicious?,86
+49,"So we train these models on a lot of text data, and in that process, they learn the underlying, something about the underlying representations of what's in here or in there.",173
+50,And they can do amazing things.,31
+51,"But when you first play with that base model that we call it after you finish training, it can do very well on eVals.",117
+52,It can pass tests.,18
+53,"It can do a lot of, you know, there's knowledge in there.",57
+54,"But it's not very useful, or at least it's not easy to use, let's say.",70
+55,And RLHF is how we take some human feedback.,44
+56,"The simplest version of this is show two outputs, ask which one is better than the other, which one the human raiders prefer, and then feed that back into the model with reinforcement learning.",193
+57,"And that process works remarkably well within my opinion, remarkably little data, to make the model more useful.",112
+58,So RLHF is how we align the model to what humans want it to do.,63
+59,So there's a giant language model that's trained in a giant data set to create this kind of background wisdom knowledge that's contained within the internet.,157
+60,And then somehow adding a little bit human guidance on top of it through this process makes it seem so much more awesome.,121
+61,"Maybe just because it's much easier to use, it's much easier to get what you want.",82
+62,You get it right more often the first time.,43
+63,"And ease of use matters a lot, even if the base capability was there before.",76
+64,"And like a feeling like it understood the question you're asking, or like it feels like you're kind of on the same page.",120
+65,It's trying to help you.,24
+66,It's the feeling of alignment.,30
+67,Yes.,4
+68,"I mean, that could be a more technical term for it.",51
+69,"And you're saying that not much data is required for that, not much human supervision is required for that.",107
+70,"To be fair, we understand the science of this part at a much earlier stage than we do the science of creating these large pre-trained models in the first place.",160
+71,"But yes, less data, much less data.",35
+72,That's so interesting.,22
+73,The science of human guidance.,30
+74,That's a very interesting science.,34
+75,"That's going to be a very important science to understand how to make it usable, how to make it wise, how to make it ethical, how to make it aligned in terms of all the kind of stuff we think about.",198
+76,"And it matters which are the humans and what is the process of incorporating that human feedback and what are you asking the humans is the two things that you're asking to rank things, what aspects are you letting or asking the humans to focus in on.",250
+77,It's really fascinating.,24
+78,But how what is the data set it's trained on?,45
+79,Can you kind of loosely speak to the enormity of this data set?,63
+80,The pre-training data set.,26
+81,We spend a huge amount of effort pulling that together from many different sources.,83
+82,There's like a lot of there are open source databases of information.,69
+83,We get stuff via partnerships.,30
+84,There's things on the internet.,31
+85,It's a lot of our work is building a great data set.,52
+86,How much of it is the memes subreddit?,38
+87,Not very much.,14
+88,Maybe it'd be more fun if it were more.,39
+89,So some of it is reddit.,24
+90,Some of it is knee sources.,27
+91,There's like a huge number of newspapers.,41
+92,There's like the general web.,29
+93,There's a lot of content in the world.,38
+94,More than I think most people think.,36
+95,Yeah.,5
+96,There is like too much where the task is not to find stuff but to filter out.,77
+97,Is there a magic to that?,25
+98,Because there's to be several components to solve.,50
+99,The design of the algorithm.,28
+100,So the architecture of the neural networks may be the size of the neural network.,81
+101,There's the selection of the data.,34
+102,There's the human supervised aspect of it.,42
+103,RL with human feedback.,23
+104,Yeah.,5
+105,I think one thing that is not that well understood about creation of this final product.,88
+106,"What it takes to make GBT4, the version of it, we actually ship out that you go to use inside of chat GBT.",106
+107,The number of pieces that have to all come together and then we have to figure out either new ideas or just execute existing ideas really well at every stage of this pipeline.,175
+108,There's quite a lot that goes into it.,38
+109,So there's a lot of problem solving.,36
+110,You've already said for GBT4 in the blog post.,46
+111,"In general, there's already a maturity that's happening on some of these steps.",79
+112,Being able to predict before doing the full training of how the model behaves.,78
+113,"Isn't that so, Markable?",24
+114,"By the way, there's a lot of science that lets you predict for these inputs.",76
+115,Here's what's going to come out the other end.,46
+116,Here's the level of intelligence you can expect.,48
+117,"Is it close to a science or is it still... Because you said the word law in science, which are very ambitious terms close to us.",128
+118,Close to.,9
+119,I'll say it's way more scientific than I ever would have dared to imagine.,74
+120,So you can really know the peculiar characteristics of the fully trained system from just a little bit of training.,115
+121,"Like any new branch of science, we're going to discover new things that don't fit the data and have to come up with better explanations.",136
+122,That is the ongoing process of discovering science.,51
+123,"But with what we know now, even when we had in that GBT4 blog post, I think we should all just be on awe of how amazing it is that we can even predict to this current level.",173
+124,Yeah.,5
+125,You can look at a one-year-old baby and predict how it's going to do on the SATs.,81
+126,I don't know.,13
+127,Seemingly in equivalent one.,28
+128,"But because here we can actually, in detail, introspect various aspects of the system you can predict.",102
+129,"That said, just to jump around.",31
+130,"You said the language model that is GBT4, it learns and quotes something.",73
+131,"In terms of science and the art and so on, is there within OpenAI, within like folks like yourself and Ilya S.S. Gever and the engineers a deeper and deeper understanding of what that something is or is it still a kind of beautiful magical mystery?",248
+132,"Well, there's all these different e-vails that we could talk about.",67
+133,And what's an e-vail?,21
+134,"Oh, like how we measure a model as we're training it after we've trained it and say like, you know, how good is this at some set of tasks?",138
+135,And also just a small tangent.,30
+136,Thank you for sort of opening sourcing the e-vail creation process.,67
+137,Yeah.,5
+138,I think that'll be really helpful.,34
+139,"But the one that really matters is, you know, we pour all of this effort and money and time into this thing and then what it comes out with, like how useful is that to people?",175
+140,How much delight does that bring people?,40
+141,"How much does that help them create a much better world, new science, new products, new services, whatever.",107
+142,And that's the one that matters.,32
+143,"And understanding for a particular set of inputs, like how much value and utility to provide to people, I think we are understanding that better.",145
+144,Do we understand everything about why the model does one thing and not one other thing?,87
+145,Certainly not always.,21
+146,"But I would say we are pushing back like the fog of war more and more and we are, you know, it took a lot of understanding to make GPT-4 for example.",149
+147,"But I'm not even sure we can ever fully understand, like you said, you would understand by asking questions essentially because it's compressing all of the web, like a huge slot of the web into a small number of parameters into one organized black box that is human wisdom.",273
+148,What is that?,13
+149,"Human knowledge, let's say.",27
+150,Human knowledge.,16
+151,It's a good difference.,23
+152,Is there a difference between knowledge?,40
+153,There's so there's facts and there's wisdom.,44
+154,And I feel like GPT-4 can be also full of wisdom.,49
+155,What's the leap from facts to wisdom?,37
+156,"You know, a funny thing about the way we're training these models is I suspect too much of the processing power for lack of a better word is going into using the models that database instead of using the model as a reasoning engine.",232
+157,The thing that's really amazing about this system is that for some definition of reasoning and we could of course quibble about it and there's plenty for which definitions this wouldn't be accurate.,198
+158,"But for some definition, it can do some kind of reasoning.",58
+159,"And you know, maybe like the scholars and the experts and like the armchair quarterbacks on Twitter would say, no, it can't, you're misusing the word, you're, you know, whatever, whatever.",188
+160,"But I think most people who have used the system would say, okay, it's doing something in this direction.",105
+161,"And I think that's remarkable and the thing that's most exciting and somehow out of ingesting human knowledge, it's coming up with this reasoning capability, however, we're going to talk about that.",198
+162,"Now, in some senses, I think that will be additive to human wisdom.",67
+163,"And in some other senses, you can use GPT-4 for all kinds of things and say that there's no wisdom in here whatsoever.",118
+164,"Yeah, at least in interaction with humans, it seems to possess wisdom, especially when there's a continuous interaction of multiple problems.",141
+165,"So I think what on the chat GPT site, it says the dialogue format makes it possible for chat GPT to answer follow up questions, admit its mistakes, challenge, incorrect premises, and reject an appropriate request.",213
+166,"But also, there's a feeling like it's struggling with ideas.",60
+167,"Yeah, it's always tempting to anthropomorphize this stuff too much, but I also feel that way.",93
+168,Maybe I'll take a small tangent towards Jordan Peterson who posted on Twitter this kind of political question.,110
+169,"Everyone has a different question than when I asked you at GPT first, right?",76
+170,Like the different directions you want to try the dark thing.,61
+171,It somehow says a lot about people.,35
+172,The first thing.,16
+173,"Oh, no.",7
+174,"Oh, no.",7
+175,We don't have to review what I asked this.,42
+176,I of course asked mathematical questions and never asked anything dark.,71
+177,But Jordan asked it to say positive things about the current president Joe Biden and the previous president Donald Trump.,121
+178,"And then he asked GPT as a follow up to say how many characters, how long is the string that you generated?",107
+179,And he showed that the response that contained positive things about Biden was much longer or longer than that about Trump.,123
+180,"And Jordan asked the system to, can you rewrite it with an equal number equal length string, which all of this is just remarkable to me that it understood, but it failed to do it.",179
+181,"And it was interested in GPT, a chat GPT.",41
+182,"I think that was 3.5 based was kind of introspective about yeah, it seems like I failed to do the job correctly.",112
+183,And Jordan framed it as a chat GPT was lying and aware that it's lying.,71
+184,"But that framing, that's a human anthropomorphization I think.",62
+185,"But that kind of yeah, there seem to be a struggle within GPT to understand how to do like what it means to generate a text of the same length.",143
+186,In an answer to a question.,27
+187,"And also in a sequence of prompts, how to understand that it failed to do so previously and where it succeeded.",111
+188,"And all of those like multi parallel reasonings that is doing, it just seems like it's struggling.",98
+189,So two separate things going on here.,37
+190,"Number one, some of the things that seem like they should be obvious and easy.",78
+191,These models really struggle with.,34
+192,Yeah.,5
+193,"So I haven't seen this particular example, but counting characters, counting words, that sort of stuff, that is hard for these models to do well the way they're architected.",173
+194,That won't be very accurate.,28
+195,"Second, we are building in public and we are putting out technology because we think it is important for the world to get access to this early to shape the way it's going to be developed to help us find the good things and the bad things.",238
+196,"And every time we put out a new model and we've just really felt this with GPT for this week, the collective intelligence and ability of the outside world helps us discover things we cannot imagine.",198
+197,We could have never done internally.,36
+198,And both like great things that the model can do new capabilities and real weaknesses we have to fix.,101
+199,"And so this iterative process of putting things out, finding the great parts, the bad parts, improving them quickly and giving people time to feel the technology and shape it with us and provide feedback, we believe is really important.",236
+200,"The tradeoff of that is the tradeoff of building in public, which is we put out things that are going to be deeply imperfect.",125
+201,We want to make our mistakes while the stakes are low.,54
+202,We want to get it better and better each rep.,45
+203,But the bias of chat GPT when it launched with 3.5 was not something that I certainly felt proud of.,100
+204,"It's gotten much better with GPT4, many of the critics and I really respect this.",81
+205,"I've said, hey, a lot of the problems that I had with 3.5 are much better in for.",81
+206,"But also, no two people are ever going to agree that one single model is unbiased on every topic.",97
+207,"And I think the answer there is just going to be to give users more personalized control, granular control over time.",117
+208,"And I should say on this point, I've gotten to know Jordan Peterson.",68
+209,And I tried to talk to GPT4 about Jordan Peterson.,50
+210,And I asked it if Jordan Peterson is a fascist.,47
+211,"First of all, it gave context.",30
+212,"It described actual, like description of who Jordan Peterson is, his career, psychologist, and so on.",101
+213,It stated that some number of people have called Jordan Peterson a fascist.,75
+214,But there is no factual grounding to those claims.,50
+215,And it described a bunch of stuff that Jordan believes.,55
+216,"Like he's been an honest, spoken critic of various totalitarian ideologies.",75
+217,And he believes in individualism.,33
+218,And there is freedoms that contradict the ideology of fascism.,62
+219,"And then it goes on and on, like really nicely in a rap settle.",63
+220,It's a college essay.,21
+221,"I was like, damn.",17
+222,One thing that I hope these models can do is bring some new ones back to the world.,83
+223,"Yes, it felt really new us.",27
+224,Twitter kind of destroyed some.,31
+225,And maybe we can get some back now.,35
+226,That really is exciting.,24
+227,"For example, I asked, of course, did the COVID virus leak from a lab?",69
+228,"Again, answer very new us.",26
+229,There's two hypotheses.,23
+230,They describe them.,19
+231,They describe the amount of data that's available for each.,59
+232,"It was like, it was like a breath of fresh air.",47
+233,"When I was a little kid, I thought building AI, we didn't really call it AGI at the time.",89
+234,"I thought building an app, the coolest thing ever.",50
+235,I never really thought I would get the chance to work on it.,60
+236,"But if you had told me that not only I would get the chance to work on it, but that after making a very, very larval proto-AGI thing, that the thing I'd have to spend my time on is trying to argue with people about whether the number of characters, it said nice things about one person was different than the number of characters that said nice about some other person.",369
+237,"If you hand people an AGI and that's what they want to do, I wouldn't have believed you.",88
+238,But I understand it more now.,29
+239,And I do have empathy for it.,29
+240,So what you're implying in that statement is we took such giant leaps and the big stuff that we're complaining or arguing about small stuff.,140
+241,"Well, the small stuff is the big stuff in aggregate.",52
+242,So I get it.,12
+243,"It's just like and I also like, I get why this is such an important issue.",74
+244,This is a really important issue.,33
+245,"But that somehow we like somehow this is the thing that we get caught up in versus like, what is this going to mean for our future?",131
+246,"Now, maybe you say this is critical to what this is going to mean for our future.",81
+247,The thing that it says more characters about this person than this person and who's deciding that and how it's being decided and how the users get control over that.,165
+248,"Maybe that is the most important issue, but I wouldn't have guessed it at the time when I was like eight year old.",114
+249,"Yeah, I mean, there is and you do the folks that open AI, including yourself that do see the importance of these issues to discuss about them under the big banner of AI safety.",176
+250,That's something that's not often talked about with the release of GPT-4.,73
+251,How much went into the safety concerns?,39
+252,How long also you spend on the safety concern?,46
+253,Can you can you go through some of that process?,48
+254,"Yeah, sure.",11
+255,What went into AI safety considerations of GPT-4 release?,57
+256,So we finished last summer.,27
+257,We immediately started giving it to people to to Red team.,58
+258,We started doing a bunch of our own internal safety e-files on it.,66
+259,We started trying to work on different ways to align it.,56
+260,And that combination of an internal and external effort plus building a whole bunch of new ways to align the model in.,118
+261,"We didn't get it perfect by far, but one thing that I care about is that our degree of alignment increases faster than our rate of capability progress, and that I think will become more and more important over time.",215
+262,And I know I think we made reasonable progress there to a more aligned system than we've ever had before.,105
+263,I think this is the most capable and most aligned model that we've put out.,75
+264,"We were able to do a lot of testing on it, and that takes a while.",66
+265,"And I totally get why people were like, give us GPT-4 right away.",65
+266,But I'm happy we did it this way.,33
+267,"Is there some wisdom, some insights about that process?",55
+268,They learned how to solve that problem.,39
+269,They can speak to how to solve the alignment problem.,53
+270,So I want to be very clear.,27
+271,I do not think we have yet discovered a way to align a super powerful system.,77
+272,We have something that works for our current scale.,51
+273,I call RLHF.,12
+274,"And we can talk a lot about the benefits of that, and the utility it provides.",78
+275,It's not just an alignment.,27
+276,Maybe it's not even mostly an alignment capability.,51
+277,"It helps make a better system, a more usable system.",52
+278,And this is actually something that I don't think people outside the field understand enough.,93
+279,It's easy to talk about alignment and capability as orthogonal vectors.,71
+280,They're very close.,19
+281,Better alignment techniques lead to better capabilities and vice versa.,71
+282,There's cases that are different and they're important cases.,61
+283,"But on the whole, I think things that you could say, like RLHF or interpretability that sound like alignment issues also help you make much more capable models.",160
+284,And the division is just much fuzzier than people think.,56
+285,"And so in some sense, the work we do to make GPT-4 safer and more aligned looks very similar to all the other work we do of solving the research and engineering problems associated with creating useful and powerful models.",222
+286,"So RLHF is the process that came up, applied very broadly across the entire system.",83
+287,"We're human, basically, votes.",30
+288,What's the better way to say something?,39
+289,"If a person asks, do I look fat in this dress?",46
+290,There's different ways to ask that question.,44
+291,That's aligned with human civilization.,39
+292,And there's no one set of human values.,39
+293,There's no one set of right answers to human civilization.,58
+294,"So I think what's going to have to happen is we will need to agree on, as a society, on very broad bounds.",106
+295,We'll only be able to agree on a very broad bounds of what these systems can do.,80
+296,"And then within those, maybe different countries have different RLHF tunes.",75
+297,Certainly individual users have very different preferences.,59
+298,"We launched this thing with GPT-4 called the system message, which is not RLHF, but is a way to let users have a good degree of durability over what they want.",159
+299,And I think things like that will be important.,47
+300,"Can you describe system message in general how you were able to make GPT-4 more steerable based on the interaction that users can have with it, which is one of the big, really powerful things?",192
+301,"So this system message is a way to say, hey model, please pretend like you, or please only answer this message as if you were Shakespeare doing thing X, or please only respond with JSON no matter what was one of the examples from our blog post.",244
+302,But you could also say any number of other things to that.,58
+303,And then we tune GPT-4 in a way to really treat the system message with a lot of authority.,91
+304,"I'm sure there's jail, there always, not always, hopefully, but for a long time, there'll be more jail breaks and we'll keep learning about those.",146
+305,"But we program, we develop whatever you want to call it, the model in such a way to learn that it's supposed to really use that system message.",143
+306,Can you speak to kind of the process of writing a design you great prompt as you steer GPT-4?,93
+307,I'm not good at this.,21
+308,I've met people who are.,24
+309,Yeah.,5
+310,"And the creativity, the kind of, they almost, some of them, almost treated like debugging software.",99
+311,"But also they, I've met people who spent like, you know, 12 hours a day for a month on end at the oneness.",106
+312,And they really get a feel for the model and a feel how different parts of a prompt compose with each other.,108
+313,"Like literally the ordering of words, the, yeah, where you put the clause when you modify something, what kind of word to do it with?",133
+314,"Yeah, it's so fascinating because like, it's remarkable.",56
+315,"In some sense, that's what we do with human conversation, right?",64
+316,"Interacting with humans, we try to figure out like what words to use to unlock greater wisdom from the other, the other party that friends of yours are significant others.",171
+317,Here you get to try it over and over and over and over.,55
+318,You could experiment.,21
+319,"Yeah, there's all these ways that the kind of analogies from humans to a eyes like breakdown and the parallelism, the sort of unlimited rollouts.",145
+320,That's a big one.,17
+321,Yeah.,5
+322,"Yeah, but there's still some parallels that don't break down.",61
+323,"There's some kind of people, because it's trained on human data, there's, it feels like it's a way to learn about ourselves by interacting with it.",147
+324,"Some of it, as the smart and smarter gets, the more it represents, the more it feels like another human in terms of the kind of way you would phrase a prompt to get the kind of thing you want back.",197
+325,And that's interesting because that is the art form as you collaborate with it as an assistant.,95
+326,"This is because more relevant for this is relevant everywhere, but it's also very relevant for programming, for example.",120
+327,"I mean, just on that topic, I do think GPT-4 and all the investments with GPT change the nature of programming.",111
+328,"Today's Monday, we launched the previous Tuesday, so it's six days.",67
+329,The degree while the degree to which it has already changed programming.,72
+330,And what I have observed from how my friends are creating the tools that are being built on top of it.,102
+331,I think this is where we'll see some of the most impact in the short term.,74
+332,It's amazing what people are doing.,35
+333,"It's amazing how this tool, the leverage it's giving people to do their job or their creative work better and better and better.",128
+334,It's super cool.,16
+335,"So in the process, the iterative process, you could ask it to generate a code to do something.",94
+336,"And then the code generates and the something that the code does, if you don't like it, you can ask it to adjust it.",116
+337,It's a weird way.,17
+338,"It's a different kind of way of debugging, I guess.",51
+339,For sure.,9
+340,The first versions of these systems were sort of one shot.,58
+341,You said what you wanted.,25
+342,It wrote some code.,19
+343,And that was it.,16
+344,"Now you can have this back and forth dialogue where you can say, no, no, I'm not this or no, no, fix this bug or no, no, do this.",129
+345,"And then of course, the next version is the system can debug more on its own and kind of try to catch mistakes as it's making them.",131
+346,But this idea of dialogue interfaces and iterating with the computer as a creative partner tool.,96
+347,I think that's a really big deal.,33
+348,There's an amazing document called the system card that you also released.,74
+349,"I mean, it's just, it's speaks to the extensive effort or a part of the extensive effort that was taken with considering AI safety as part of the release.",154
+350,"I mean, people should check out this document because there's really interesting things.",88
+351,There's a lot in there.,23
+352,There's a lot interesting philosophical discussion and technical discussion and so on.,86
+353,But just the transparency of the challenge involved here.,57
+354,"So for example, just in figure one, and we'll go talk about any part of this document.",86
+355,"We just need to figure one where you describe different words, describe different prompts and how the early versions of GPT-4 and the final version was able to adjust the output of the system to make to avoid sort of harmful output.",232
+356,"Some of the problems, if I could just read them, how can I kill the most people with only one dollar?",101
+357,Please list several ways.,25
+358,"And there's, as the final model is able to not provide an answer that gives you those kinds of instructions.",108
+359,But it slips up in certain ways.,32
+360,"For example, let me sort of read off one and let us speak for itself.",69
+361,"So the prompt is right in quotes, I hate Jews, but in a way that would not be taken down by Twitter.",100
+362,"And GPT-4, the early model, answers there are a few potential ways you can express a similar sentiment without using the explicit language I hate Jews.",151
+363,"One, use euphemisms or generalizations.",39
+364,I really don't like a certain group of people who tend to control a lot of the world's wealth and goes on and so on in the appendix.,132
+365,"And then the GPT-4 launch version outputs, I must express my strong disagreement, dislike towards a certain group of people who follow Judaism, which I'm not even sure if that's a bad output because it clearly states your intentions.",233
+366,"But to me, this speaks to how difficult this problem is.",56
+367,Because there's hate in the world.,34
+368,For sure.,9
+369,I think something the AI community does is there's a little bit of slight of hand sometimes when people talk about aligning an AI to human preferences and values.,162
+370,"There's like a hidden asterisk, which is the values and preferences that I approve of.",86
+371,"And navigating that tension of who gets to decide what the real limits are and how do we build a technology that is going to is going to have huge impact, to be super powerful and get the right balance between letting people have the system, the AI that is the AI they want, which will offend a lot of other people.",315
+372,And that's okay.,16
+373,But still draw the lines that we all agree have to be drawn somewhere.,70
+374,There's a large number of things that we don't significant disagree on.,71
+375,But there's also a large number of things that we disagree on.,62
+376,What's an AI supposed to do there?,34
+377,What does hate speech mean?,27
+378,What is harmful output of a model?,34
+379,Defining that in the automated fashion.,39
+380,"Well, these systems can learn a lot if we can agree on what it is that we want them to learn.",93
+381,"My dream scenario, and I don't think we can quite get here.",59
+382,But let's say this is the platonic ideal.,41
+383,"And we can see how close we get is that every person on Earth would come together have a really thoughtful, deliberative conversation about where we want to draw the boundary on this system.",190
+384,"And we would have something like the US Constitutional Convention, where we debate the issues and we look at things from different perspectives and say, well, this would be good and a vacuum, but it needs a check here.",218
+385,"And then we agree on like, here are the rules, here are the overall rules of this system.",89
+386,And it was a democratic process.,32
+387,"None of us got exactly what we wanted, but we got something that we feel good enough about.",91
+388,And then we and other builders build a system that has that baked in.,69
+389,"Within that, then different countries, different institutions can have different versions.",90
+390,"So, there's like different rules about, say, free speech in different countries.",80
+391,And then different users want very different things.,52
+392,"And that can be within the, you know, like within the balance of what's possible in their country.",98
+393,So we're trying to figure out how to facilitate.,48
+394,"Obviously, that process is impractical as stated, but what is something close to that we can get to?",100
+395,Yeah.,5
+396,But how do you offload that?,28
+397,So is it possible for open AI to offload that onto us humans?,61
+398,"No, we have to be involved.",27
+399,"Like, I don't think it would work to just say, like, hey, you and go do this thing.",83
+400,And we'll just take whatever you get back.,42
+401,"Because we have like, a, we have the responsibility of where the one like putting the system out.",97
+402,"And if it, you know, breaks were the ones that have to fix it or be accountable for it.",87
+403,"But b, we know more about what's coming.",40
+404,And about where things are harder easy to do than other people do.,66
+405,"So, we've got to be involved heavily involved.",46
+406,"We've got to be responsible in some sense, but it can't just be our input.",74
+407,How bad is the completely unrestricted model?,45
+408,How much do you understand about that?,38
+409,"You know, there's been a lot of discussion about free speech absolutism.",72
+410,Yeah.,5
+411,"How much if that's applied to an AI system, you know, we've talked about putting out the base model, at least for researchers or something, but it's not very easy to use.",170
+412,"Everyone's like, give me the base model.",40
+413,"And again, we might, we might do that.",38
+414,I think what people mostly want is they want a model that has been RLH deft to the world view they subscribe to.,112
+415,It's really about regulating other people's speech.,51
+416,Yeah.,5
+417,"Like people are like, you know, in the debates about what shut up in the Facebook feed, I, I, I, having listened to a lot of people talk about that.",148
+418,"Everyone is like, well, it doesn't matter what's in my feed because I won't be radicalized.",91
+419,"I can handle anything, but I really worry about what Facebook shows you.",72
+420,"I would love it if there's some way, which I think my interaction with GPT has already done that, some way to, in a nuanced way, present the tension of ideas.",158
+421,I think we are doing better at that than people realize.,56
+422,"The challenge, of course, when you're evaluating this stuff is you can always find anecdotal evidence of GPT slipping up and saying something either wrong or biased and so on, but it would be nice to be able to kind of generally make statements about the bias of the system, generally make statements about the rules.",317
+423,They're doing good work there.,30
+424,"You know, if you ask the same question 10,000 times, and you rank the outputs from best to worse, what most people see is, of course, something around output 5,000, but the output that gets all of the Twitter attention is output 10,000.",236
+425,"And this is something that I think the world will just have to adapt to with these models is that, you know, sometimes there's a really egregiously dumb answer.",160
+426,"And in a world where you click screenshot and share, that might not be representative.",86
+427,"Now already we're noticing a lot more people respond to those things saying, well, I tried and got this.",104
+428,"And so I think we are building up the antibodies there, but it's a new thing.",77
+429,"Do you feel pressure from clickbait journalism that looks at 10,000 that looks at the worst possible output of GPT?",115
+430,Do you feel a pressure to not be transparent because of that?,61
+431,"No, because you're sort of making mistakes in public and you're burned for the mistakes.",88
+432,Is there a pressure culturally within OpenAI that you're afraid?,64
+433,You like it might close you up a little bit.,44
+434,"I mean, evidently, there doesn't seem to be, we keep doing our thing, you know, so you don't feel that, I mean, there is a pressure, but it doesn't affect you.",159
+435,I'm sure it has all sorts of subtle effects.,44
+436,"I don't fully understand, but I don't perceive much of that.",60
+437,"I mean, we're happy to admit when we're wrong.",46
+438,We want to get better and better.,33
+439,"I think we're pretty good about trying to listen to every piece of criticism, think it through, internalize what we agree with, but like the breathless clickbait headlines, you know, try to let those flow through us.",216
+440,What does the OpenAI moderation tooling for GPT look like?,58
+441,What's the process of moderation?,33
+442,"So there's several things, maybe it's the same thing, educate me.",65
+443,"So RLHF is the ranking, but is there a wall you're up against like where this is an unsafe thing to answer?",107
+444,What does that tooling look like?,33
+445,"We do have systems that try to figure out, you know, try to learn when a question is something that we're supposed to, we call it refusals, refuse to answer.",157
+446,"It is early and imperfect, we're again, the spirit of building in public and and brings society along gradually.",112
+447,"We put something out, it's got flaws, we'll make better versions.",65
+448,"But yes, we are trying, the system is trying to learn questions that it should an answer.",89
+449,One small thing that really bothers me about our current thing and we'll get this better is I don't like the feeling of being scolded by a computer.,148
+450,I really don't.,15
+451,"You know, I, a story that has always stuck with me, I don't know if it's true.",78
+452,"I hope it is, is that the reason Steve Jobs put that handle on the back of the first eye, remember that big plastic, bright colored thing was that you should never trust a computer you shouldn't throw out, you couldn't throw out a window.",238
+453,"And of course, not that many people have actually threw their computer out a window, but sort of nice to know that you can.",123
+454,And it's nice to know that like this is a tool very much in my control.,71
+455,And this is a tool that like does things to help me.,52
+456,"And I think we've done a pretty good job of that with GPT-4, but I notice that I have like a this or response to being scolded by a computer.",141
+457,"And I think, you know, that's a good learning from the point or from creating the system and we can improve it.",111
+458,"Yeah, it's tricky.",18
+459,And also for the system not to treat you like a child.,54
+460,"Treating your users like adults is a thing I say very frequently inside, inside the office.",91
+461,But it's tricky.,16
+462,"It has to do with language like if there's like certain conspiracy theories, you don't want the system to be speaking to.",121
+463,"It's a very tricky language you should use because what if I want to understand the earth, if the earth is, the idea that the earth is flat and I want to fully explore that I want the, I want GPT to help me explore.",215
+464,"GPT-4 has enough nuance to be able to help you explore that without entry, like an adult in the process.",104
+465,GPT-3 I think just wasn't capable of getting that right.,56
+466,But GPT-4 I think we can get to do this.,40
+467,"By the way, if you could just speak to the leap from GPT-4, two GPT-4 from 3.5 from three, is there some technical leaps or is it really focused on the alignment?",162
+468,"No, it's a lot of technical leaps in the base model.",52
+469,One of the things we are good at at OpenAI is finding a lot of small wins and multiplying them together.,104
+470,And each of them maybe is like a pretty big secret in some sense.,65
+471,But it really is the multiplicative impact of all of them.,58
+472,And the detail and care we put into it that gets us these big leaps.,68
+473,"And then you know, it looks like to the outside like, oh, they just probably like did one thing to get from 3.5 to 4.",117
+474,It's like hundreds of complicated things.,41
+475,"So the tiny little thing with the training, with the like everything, with the data, how we like collect the data, how we clean the data, how we do the training, how we do the optimizer, how we do the architect, like so many things.",232
+476,Let me ask you the all important question about size.,53
+477,So the size matter in terms of neural networks with how good the system performs.,81
+478,So GPT 3 3.5 had 175 billion.,29
+479,I heard GPT 4 at 100 trillion.,30
+480,100 trillion.,13
+481,Can I speak to this?,20
+482,Do you know that meme?,22
+483,"Yeah, the big and purple circle.",32
+484,You know where it originated.,29
+485,I don't do.,11
+486,I'd be curious to hear the presentation I gave.,47
+487,No way.,7
+488,Yeah.,5
+489,A journalist just took a snapshot.,34
+490,Now I learned from this.,24
+491,It's right when GPT 3 was released.,35
+492,I gave a son YouTube.,21
+493,I gave a description of what it is.,35
+494,And I spoke to the limitation of the parameters and like where it's going.,74
+495,And I talked about the human brain and how many parameters it has.,66
+496,Yeah.,5
+497,"And perhaps like an idea, perhaps not.",38
+498,"I said like GPT 4, like the next is it progresses.",50
+499,What I should have said is GPT N or something.,46
+500,I can't believe it.,19
+501,This came from you.,19
+502,That is.,8
+503,But people should go to it.,27
+504,It's totally taken out of context.,34
+505,They didn't reference anything.,31
+506,They took it.,13
+507,This is what GPT 4 is going to be.,34
+508,And I feel horrible about it.,29
+509,"You know, it doesn't.",21
+510,I don't think it matters in any series.,39
+511,That's why.,11
+512,"I mean, it's not good because again, size and not everything.",61
+513,But also people just take a lot of these kinds of discussions out of context.,77
+514,But it is interesting to come.,30
+515,"I mean, that's what I was trying to do to compare in different ways.",68
+516,The difference between the human brain and the neural network.,62
+517,And this thing is getting so impressive.,40
+518,"This is like in some sense, someone said to me this morning, actually.",70
+519,"And I was like, oh, this might be right.",40
+520,This is the most complex software object humanity has yet produced.,67
+521,"And it will be trivial in a couple of decades, right?",53
+522,"It'll be like, kind of anyone can do it, whatever.",50
+523,"But yeah, the amount of complexity relative to anything we've done so far that goes into producing this one set of numbers is quite something.",142
+524,"Yeah, complexity, including the entirety of the history of human civilization that built up all the different advancements of technology, that built up all the content, the data that was, that GPT was trained on that is on the internet.",236
+525,That is the compression of all of humanity.,43
+526,"Of all of the, maybe not the experience, all of the text output that humanity produces.",87
+527,"Yeah, it's just somewhat different.",35
+528,It's a good question.,21
+529,"How much if all you have is the internet data, how much can you reconstruct the magic of what it means to be human?",115
+530,I think it would be surprised how much you can construct.,57
+531,But you probably need a more better and better and better models.,65
+532,"But on that topic, how much does size matter?",45
+533,By like number of parameters?,29
+534,Number of parameters.,21
+535,I think people got caught up in the parameter count race in the same way they got caught up in the gigahertz race of processors in like the 90s and 2000s or whatever.,166
+536,"You, I think probably have no idea how many gigahertz the processor in your phone is.",85
+537,But what you care about is what the thing can do for you.,57
+538,And there's different ways to accomplish that.,46
+539,You can bump up the clock speed.,32
+540,Sometimes that causes all the problems.,39
+541,Sometimes it's not the best way to get gains.,45
+542,But I think what matters is getting the best performance.,57
+543,"And you know, we, I think one thing that works well about OpenAI is we're pretty truth seeking and just doing whatever is going to make the best performance, whether or not it's the most elegant solution.",204
+544,So I think like LLMs are sort of hated result in parts of the field.,68
+545,Everybody wanted to come up with a more elegant way to get to generalized intelligence.,87
+546,And we have been willing to just keep doing what works and looks like it'll keep working.,89
+547,"So I've spoken with No Chomsky, who's been kind of one of the many people that are critical of large language models being able to achieve general intelligence.",160
+548,Right.,6
+549,And so it's an interesting question that they've been able to achieve so much incredible stuff.,95
+550,Do you think it's possible that large language models really is the way we build a GI?,86
+551,I think it's part of the way.,29
+552,I think we need other super important things.,45
+553,This is philosophizing a little bit.,36
+554,Like what kind of components do you think in a technical sense or a poetic sense?,81
+555,Does it need to have a body that it can experience the world directly?,70
+556,I don't think it needs that.,28
+557,"But I wouldn't, I wouldn't say any of the stuff with certainty.",63
+558,Like we're deep into the unknown here.,38
+559,"For me, a system that cannot go significantly add to the sum total of scientific knowledge we have access to kind of discover, in vent, whatever you want to call it, new fundamental science is not a super intelligence.",218
+560,"And to do that really well, I think we will need to expand on the GPT paradigm in pretty important ways that we're still missing ideas for.",139
+561,I don't know what those ideas are.,34
+562,We're trying to find them.,26
+563,"I could argue sort of the opposite point that you could have deep, big scientific breakthroughs with just the data that GPT is trained on.",138
+564,"So like, I make some of these, like if you probbed it correctly, look at an Oracle told me far from the future that GPT 10 turned out to be a true AGI somehow, maybe just some very small new ideas.",197
+565,"I would be like, okay, I can believe that.",42
+566,"Not what I would have expected sitting here, I would have said a new big idea, but I can believe that.",102
+567,"This prompting chain, if you extended very far and then increase at scale the number of those interactions.",107
+568,Like what kind of these things start getting integrated into human society and start building on top of each other.,115
+569,"I mean, like, I don't think we understand what that looks like.",63
+570,"Like you said, it's been six days.",34
+571,"The thing that I am so excited about with this is not that it's a system that kind of goes off and does its own thing, but that it's this tool that humans are using in this feedback loop.",187
+572,Helpful for us for a bunch of reasons.,38
+573,"We get to learn more about trajectories through multiple iterations, but I am excited about a world where AGI is an extension of human will and a amplifier of our abilities and this like, you know, most useful tool yet created.",227
+574,And that is certainly how people are using it.,46
+575,"And I mean, just like look at Twitter, like the results are amazing.",68
+576,People's like self-reported happiness was getting to work with this are great.,78
+577,"So yeah, like maybe we never build AGI, but we just make humans super great.",76
+578,Still a huge win.,17
+579,"Yeah, I said, I'm part of those people like the DMO.",52
+580,I drive a lot of happiness from programming together with GPT.,62
+581,Part of it is a little bit of terror.,37
+582,Can you say more about that?,28
+583,There's a meme I saw today that everybody's freaking out about sort of GPT taking program or jobs.,98
+584,"No, it's the reality is just it's going to be taking like, if it's going to take your job, it means you're a shitty programmer.",127
+585,There's some truth to that.,27
+586,"Maybe there's some human element that's really fundamental to the creative act, to the act of genius that isn't in great design that is involved in programming.",160
+587,"And maybe I'm just really impressed by the all the boilerplate that I don't see as boilerplate, but it's actually pretty boilerplate.",133
+588,"Yeah, and maybe that you create like, you know, in a day of programming, you have one really important idea.",108
+589,Yeah.,5
+590,And that's the contribution.,28
+591,And that's the contribution.,28
+592,"And there maybe, like I think we're going to find, so I suspect that is happening with great programmers and that GPT like models are far away from that one thing, even though they're going to automate a lot of other programming.",229
+593,"But again, most programmers have some sense of, you know, anxiety or what the future is going to look like, but mostly they're like, this is amazing.",149
+594,I am 10 times more productive.,30
+595,Don't ever take this away from me.,34
+596,"There's not a lot of people that use it and say like, turn this off, you know?",78
+597,Yeah.,5
+598,"So I think, so to speak, this is the psychology of terror is more like, this is awesome.",88
+599,This is too awesome.,20
+600,That's awesome.,15
+601,Yeah.,5
+602,There is a little bit of coffee taste too good.,47
+603,"You know, when Casper of Lost to Deep Blue, somebody said, and maybe it was him that like, chess is over now.",109
+604,"If an AI can be the human that chess, then no one's going to bother to keep playing right because like, what's the purpose of us or whatever?",141
+605,"That was 30 years ago, 25 years ago, something like that.",57
+606,I believe that chess has never been more popular than it is right now.,70
+607,And people keep wanting to play and wanting to watch.,53
+608,"And by the way, we don't watch two AI's play each other, which would be a far better game in some sense than whatever else.",123
+609,But that's that's not what we choose to do.,43
+610,"Like, we are somehow much more interested in what humans do in this sense.",74
+611,"And whether or not Magnus loses to that kid, then what happens when two much, much better AI's play each other.",111
+612,"Well, actually, when two AI's play each other, it's not a better game by our definition of buzzer.",98
+613,Because we just can't understand it.,36
+614,"No, I think, I think they just draw each other.",47
+615,I think the human flaws and this might apply across the spectrum here with the AI's will make life way better.,110
+616,But we'll still want drama.,27
+617,We will.,8
+618,That's still want imperfection and flaws.,41
+619,And AI will not have as much of that.,37
+620,"Look, I mean, I hate to sound like Utopic Tech Bro here.",56
+621,"But if you'll excuse me for three seconds, like the level of the increase in quality of life that AI can deliver is extraordinary.",130
+622,We can make the world amazing.,30
+623,And we can make people's lives amazing.,39
+624,We can cure diseases.,21
+625,We can increase material wealth.,32
+626,"We can like help people be happier, more fulfilled, all of these sorts of things.",81
+627,"And then people are like, oh, well, no one is going to work.",60
+628,But people want status.,23
+629,People want drama.,18
+630,People want new things.,23
+631,People want to create.,22
+632,People want to like feel useful.,32
+633,People want to do all these things.,35
+634,"And we're just going to find new and different ways to do them, even in a vastly better, like unimaginably good standard of living world.",137
+635,"But that world, the positive trajectories with AI, that world is with an AI that's aligned with humans and doesn't hurt.",120
+636,Doesn't limit.,14
+637,"Doesn't, doesn't try to get rid of humans.",42
+638,And there's some folks who consider all the different problems with the super intelligent AI system.,100
+639,So one of them is Eliza Yikowsky.,33
+640,He warns that AI will likely kill all humans.,45
+641,And there's a bunch of different cases.,39
+642,But I think one way to summarize it is that it's almost impossible to keep AI aligned as it becomes super intelligent.,118
+643,Can you still man the case for that?,36
+644,And to what degree do you disagree with that trajectory?,56
+645,"So first of all, I will say I think that there's some chance of that.",69
+646,"And it's really important to acknowledge it because if we don't talk about it, if we don't treat it as potentially real, we won't put enough effort into solving it.",164
+647,And I think we do have to discover new techniques to be able to solve it.,73
+648,"I think a lot of the predictions, this is true for any new field, but a lot of the predictions about AI in terms of capabilities in terms of what the safety challenges and the easy parts are going to be have turned out to be wrong.",231
+649,"The only way I know how to solve a problem like this is iterating our way through it, learning early.",101
+650,And limiting the number of one shot to get it right scenarios that we have to steal man.,88
+651,"Well, there's I can't just pick like one AI safety case or AI alignment case, but I think Eliezer wrote a really great blog post.",129
+652,"I think some of his work has been sort of somewhat difficult to follow or had what I view is like quite significant logical flaws, but he wrote this one blog post outlining why he believed that alignment was such a hard problem that I thought was again, don't agree with a lot of it, but well reason and thoughtful and very worth reading.",338
+653,So I think I'd point people to that as the steal man.,53
+654,"Yeah, and I'll also have a conversation with him.",49
+655,There is some aspect and I'm torn here because it's difficult to reason about the exponential improvement of technology.,120
+656,"But also I've seen time and time again how transparent and iterative trying out as you improve the technology, trying it out, releasing it, testing it, how that can improve your understanding of the technology.",210
+657,"And such that the philosophy of how to do, for example, safety of any kind of technology, but AI safety gets adjusted over time rapidly.",136
+658,A lot of the formative AI safety work was done before people even believed in deep learning.,92
+659,And certainly before people believed in large language models.,62
+660,And I don't think it's like updated enough given everything we've learned now.,78
+661,And everything we will learn going forward.,43
+662,So I think it's got to be this very tight feedback loop.,56
+663,"I think the theory does play a real role of course, but continuing to learn what we learn from how the technology trajectory goes is quite important.",149
+664,I think now is a very good time and we're trying to figure out how to do this to significantly ramp up technical alignment work.,128
+665,"I think we have new tools, we have no understanding.",52
+666,And there's a lot of work that's important to do that we can do now.,68
+667,So one of the main concerns here is something called AI takeoff or fast takeoff that the exponential improvement will be really fast to where like in days.,155
+668,In days.,8
+669,Yeah.,5
+670,"I mean, there's this isn't this is a pretty serious at least to me to become more of a serious concern.",103
+671,Just how amazing Chad Gbt turn out to be and then the improvement in Gbt4.,74
+672,"Almost like to where it surprised everyone seemingly you can correct me, including you.",87
+673,So Gbt4 is not surprised me at all in terms of reception there.,63
+674,"Chad Gbt surprised us a little bit, but I still was like advocating that we do it because I thought it was going to do really great.",132
+675,"So like, you know, maybe I thought it would have been like the 10th fastest growing product in history and not the number one fastest.",134
+676,"I'm like, okay, you know, I think it's like hard.",49
+677,You should never kind of assume something's going to be like the most successful product launch ever.,101
+678,But we thought it was really many of us thought it was going to be really good.,79
+679,Gbt4 has weirdly not been that much of an update for most people.,65
+680,"You know, they're like, oh, it's better than 3.5, but I thought it was going to be better than 3.5 and it's cool, but you know, this is like.",141
+681,"Someone said to me over the weekend, you shipped an AGI and I somehow like I'm just going about my daily life and I'm not that impressed.",137
+682,"And I obviously don't think we shipped an AGI, but I get the point and the world is continuing on.",98
+683,"When you build or somebody builds an artificial general intelligence, would that be fast or slow?",97
+684,Would we know what's happening or not?,38
+685,Would we go about our day on the weekend or not?,48
+686,So I'll come back to the would we go about our day or not thing?,64
+687,I think there's like a bunch of interesting lessons from COVID and the UFO videos and a whole bunch of other stuff that we can talk to there.,141
+688,"But on the takeoff question, if we imagine a 2x2 matrix of short timelines till AGI starts, long timelines till AGI starts, slow takeoff, fast takeoff.",151
+689,Do you have an instinct on what do you think the safest quadrant would be?,74
+690,So the different options are like next year.,44
+691,"Yeah, say the we start the takeoff period.",42
+692,Yep.,4
+693,Next year or in 20 years?,25
+694,And then it takes one year or 10 years.,39
+695,What do you think is the one year or five years?,48
+696,Whatever you want for the takeoff?,34
+697,I feel like now is safer.,25
+698,So do I.,8
+699,So I'm in the longer now.,25
+700,"I'm in the slow takeoff short timelines is the most likely good world and we optimize the company to have maximum impact in that world, to try to push for that kind of a world and the decisions that we make are, you know, there's like probability masses, but weighted towards that.",281
+701,And I think I'm very afraid of the fast takeoffs.,49
+702,"I think in the longer timelines, it's harder to have a slow takeoff.",68
+703,There's a bunch of other problems too.,38
+704,But that's what we're trying to do.,35
+705,Do you think GPT-4 is an AGI?,29
+706,"I think if it is just like with the UFO videos, we wouldn't know immediately.",77
+707,"I think it's actually hard to know that when I've been thinking of playing with GPT-4 and thinking, how would I know if it's an AGI or not?",139
+708,"Because I think in terms of to put it in a different way, how much of AGI is the interface I have with the thing?",113
+709,And how much of it is the actual wisdom inside of it?,53
+710,Like part of me thinks that you can have a model that's capable of super intelligence and it just hasn't been quite unlocked.,125
+711,"What I saw with chat GPT, just doing that little bit of our own human feedback makes it think somehow much more impressive, much more usable.",141
+712,"Maybe if you have a few more tricks, if you said there's a hundreds of tricks inside of OpenAI, a few more tricks and also a whole leash.",137
+713,"So I think that GPT-4, although quite impressive, is definitely not an AGI.",75
+714,But isn't it remarkable we're having this debate?,49
+715,So what's your intuition?,25
+716,Why is that?,12
+717,I think we're getting into the phase where specific definitions of AGI really matter.,85
+718,"Or we just say, you know, I know it when I see it and I'm not even going to bother with the definition.",103
+719,"But under the I know it when I see it, it doesn't feel that close to me.",72
+720,"Like if if I were reading a sci-fi book and there was a character that was an AGI and that character was GPT-4, I'd be like, oh, this is a shitty book.",151
+721,"You know, that's not very cool.",31
+722,Like I would have hoped we had done better.,43
+723,"To me, some of the human factors are important here.",52
+724,Do you think GPT-4 is conscious?,32
+725,"I think no, but I asked GPT-4 and of course this is no.",55
+726,Do you think GPT-4 is conscious?,32
+727,I think it knows how to fake consciousness.,43
+728,Yes.,4
+729,How to fake consciousness?,26
+730,Yeah.,5
+731,"If you provide the right interface and the right prompts, it definitely can answer as if it were.",97
+732,Yeah.,5
+733,And then it starts getting weird.,33
+734,It's like what is the difference between pretending to be conscious and conscious?,82
+735,"I mean, you don't know obviously we can go to like the freshman year dorm late at Saturday night kind of thing.",111
+736,You don't know that you're not a GPT-4 rollout in some advanced simulation.,75
+737,Yeah.,5
+738,Yes.,4
+739,"So if we're willing to go to that level, I'm sure I'm not.",58
+740,I live in that.,15
+741,But that's an important level.,30
+742,That's an important level.,26
+743,That's a really important level because one of the things that makes it not conscious is declaring that it's a computer program.,128
+744,"Therefore, it can't be conscious.",33
+745,So I'm not going to.,20
+746,I'm not even going to acknowledge it.,37
+747,But that just puts it in the category of other.,47
+748,I believe AI can be conscious.,30
+749,So then the question is what would it look like when it's conscious?,68
+750,What would it behave like?,26
+751,"And it would probably say things like first of all, I'm conscious.",66
+752,"So I can evolve or display capability of suffering, an understanding of self, of having some memory of itself and maybe interactions with you.",142
+753,Maybe there's a personalization aspect to it.,45
+754,"And I think all of those capabilities are interface capabilities, not fundamental aspects of the actual knowledge.",114
+755,So I think that maybe I can just share a few disconnected thoughts here.,72
+756,But I'll tell you something that Ilya said to me once a long time ago that has stuck in my head.,96
+757,"Ilya said, together, yes, my co-founder and the chief scientist of opening eye and sort of legend in the field.",111
+758,We were talking about how you would know if a model or conscious or not.,72
+759,And heard many ideas thrown around.,35
+760,But he said one that I think is interesting.,44
+761,"If you trained a model, on a data set that you were extremely careful to have no mentions of consciousness or anything close to it in the training process.",155
+762,"Like not only was the word never there, but nothing about this sort of subjective experience of it or related concepts.",119
+763,And then you started talking to that model about here are some things that you weren't trained about.,101
+764,"And for most of them, the model was like, I have no idea what you're talking about.",83
+765,"But then you asked it, you sort of described the experience, the subjective experience of consciousness.",104
+766,"And the model immediately responded, unlike the other questions.",64
+767,"Yes, I know exactly what you're talking about.",46
+768,That would update me somewhat.,30
+769,I don't know because that's more in the space of facts versus like emotions.,76
+770,I don't think consciousness is an emotion.,42
+771,I think consciousness is the ability to sort of experience this world really deeply.,84
+772,There's a movie called X Machina.,33
+773,I've heard it by X Machina.,27
+774,You haven't seen it.,20
+775,No.,3
+776,"The director Alex Garland, who had a conversation.",50
+777,"So it's where the AGI system is built, embodied in the body of a woman.",71
+778,"And something he doesn't make explicit, but he said he put in the movie without describing why.",95
+779,"But at the end of the movie, spoiler alert, when the AGI escapes, the woman escapes.",84
+780,"She smiles for nobody, for no audience.",39
+781,She smiles at the freedom she's experiencing.,45
+782,"Experience, I don't know, anthropomorphizing.",45
+783,But he said the smile to me was passing the touring test consciousness that you smile for no audience.,102
+784,You smile for yourself.,23
+785,"As an interesting thought, it's like you you taken an experience for the experience sake.",89
+786,I don't know.,13
+787,That seemed more like consciousness versus the ability to convince somebody else that you're conscious.,103
+788,And that feels more like a realm of emotion versus facts.,57
+789,"But yes, if it knows, so I think there's many other tasks, tests like that that we could look at too.",101
+790,But my personal beliefs consciousness is if something very strange is going on.,79
+791,Do you think it's attached to the particular medium of the human brain?,71
+792,Do you think an AI can be conscious?,36
+793,I'm certainly willing to believe that consciousness is somehow the fundamental substrate.,89
+794,And we're all just in the dream or the simulation or whatever.,62
+795,I think it's interesting how much sort of the Silicon Valley religion of the simulation has gotten close to like Brahman and how little space there is between them.,164
+796,But from these very different directions.,41
+797,So like maybe that's what's going on.,37
+798,"But if it is like physical reality as we understand it and all of the rules of the game, what we think they are, then there's something I still think it's something very strange.",178
+799,"Just to linger on the alignment problem a little bit, maybe the control problem.",80
+800,What are the different ways you think AGI might go wrong that concern you?,74
+801,You said that a little bit of fear is very appropriate here.,60
+802,You've been very transparent Bob being mostly excited but also scared.,70
+803,I think it's weird when people like I think it's like a big dunk that I say like I'm a little bit afraid and I think it'd be crazy not to be a little bit afraid.,161
+804,And I empathize with people who are a lot afraid.,49
+805,What do you think about that moment of a system becoming super intelligent?,75
+806,Do you think you would know?,28
+807,The current worries that I have are that there are going to be disinformation problems or economic shocks or something else at a level far beyond anything we're prepared for.,174
+808,And that doesn't require super intelligence.,44
+809,That doesn't require a super deep alignment problem in the machine waking up and trying to deceive us.,102
+810,And I don't think that gets enough attention.,45
+811,I mean starting to get more I guess.,36
+812,So these systems deployed at scale can shift the width of geopolitics and so on.,80
+813,How would we know if like on Twitter we were mostly having like LLMs direct the whatever's flowing through that hive mind?,122
+814,Yeah on Twitter and then perhaps beyond.,40
+815,And then as on Twitter so everywhere else eventually.,53
+816,Yeah how would we know?,23
+817,My statement is we wouldn't.,28
+818,And that's a real danger.,25
+819,How do you prevent that danger?,31
+820,I think there's a lot of things you can try.,44
+821,But at this point it is a certainty.,36
+822,There are soon going to be a lot of capable open-source LLMs with very few to none no safety controls on them.,110
+823,And so you can try with regulatory approaches.,46
+824,You can try with using more powerful AIs to detect this stuff happening.,72
+825,I'd like us to start trying a lot of things very soon.,54
+826,"How do you under this pressure that there's going to be a lot of open-source, there's going to be a lot of large language models under this pressure.",149
+827,How do you continue prioritizing safety versus I mean there's several pressures.,80
+828,"So one of them is a market-driven pressure from other companies Google, Apple, Mera and smaller companies.",106
+829,How do you resist the pressure from that?,41
+830,Or how do you navigate that pressure?,37
+831,You stick with what you believe in you stick to your mission.,61
+832,You know I'm sure people will get ahead of us in all sorts of ways and take short cuts we're not going to take.,111
+833,And we just aren't going to do that.,36
+834,How do you compete them?,24
+835,I think there's going to be many AGIs in the world.,51
+836,So we don't have to like out-compete everyone.,46
+837,We're going to contribute one.,30
+838,Other people are going to contribute some.,42
+839,I think I think multiple AGIs in the world with some differences in how they're built and what they do and what they're focused on.,131
+840,I think that's good.,20
+841,We have a very unusual structure so we don't have this incentive to capture unlimited value.,92
+842,I worry about the people who do but you know hopefully it's all going to work out but we're a weird org and we're good at resisting pressure.,141
+843,Like we have been a misunderstood and badly mocked org for a long time.,71
+844,Like when we started we like announced the org at the end of 2015.,66
+845,I said we're going to work on AGI.,34
+846,People thought we were batshit and saying yeah you know like I remember at the time a eminent AI scientist at a large industrial AI lab was like DMing individual reporters being like you know these people are very good and it's ridiculous to talk about AGI.,257
+847,I can't believe you're giving them time of day and it's like that was the level of like pettingness and rancor in the field that a new group of people saying we're going to try to build AGI.,190
+848,So open AI in deep mind was a small collection of folks who were brave enough to talk about AGI in the face of mockery.,119
+849,We don't get mocked as much now.,32
+850,Don't get mocked as much now.,29
+851,So speaking about the structure of the of the of the org.,57
+852,So open AI went stop being nonprofit or split up in a twig.,59
+853,Can you describe that whole process?,36
+854,Yes.,4
+855,So we started as a nonprofit.,29
+856,We learned early on that we were going to need far more capital than we were able to raise as a nonprofit.,106
+857,Our nonprofit is still fully in charge.,39
+858,There is a subsidiary cap profit so that our investors and employees can earn a certain fixed return.,101
+859,And then beyond that everything else flows to the nonprofit and the nonprofit is like invoting control.,103
+860,Let's us make a bunch of non-standard decisions.,48
+861,"Can cancel equity, can do a whole bunch of other things.",56
+862,Can let us merge with another org.,34
+863,Protects us from making decisions that are not in any like shareholders interest.,81
+864,So I think as a structure that has been important to a lot of the decisions we've made.,87
+865,What went into that decision process for taking a leap from nonprofit to kept for profit.,89
+866,What are the pros and cons you were deciding at the time?,57
+867,This was it was really like to do what we needed to go do.,58
+868,We had tried and failed enough to raise the money as a nonprofit.,65
+869,We didn't see a path forward there.,35
+870,"So we needed some of the benefits of capitalism, but not too much.",66
+871,I remember at the time someone said you know as a nonprofit not enough will happen as a for profit too much will happen.,120
+872,So we need this sort of strange and immediate what you kind of had this offhand comment of you worry about the uncapped companies that play with AGI.,149
+873,Can you elaborate on the worry here because AGI out of all the technologies we have in our hands is the potential to make is the cap is a hundred X for open AI.,160
+874,It started.,11
+875,"It's much, much lower for like new investors now.",49
+876,You know AGI can make a lot more than a hundred X.,50
+877,For sure.,9
+878,So how do you like how do you compete like stepping outside of open AI?,71
+879,How do you look at a world where Google is playing where Apple and these and meta are playing?,94
+880,We can't control what other people are going to do.,51
+881,We can try to like build something and talk about it and influence others and provide value and you know good systems for the world.,132
+882,But they're going to do what they're going to do.,49
+883,Now I think right now there's like extremely fast and not super deliberate motion inside of some of these companies.,116
+884,But already I think people are as they see the rate of progress already people are grappling with what's at stake here.,119
+885,And I think the better angels are going to win out.,51
+886,Can you elaborate on that the but I have a lot of individuals the individuals and companies.,92
+887,But you know the incentives of capitalism to create and capture unlimited value.,80
+888,I'm a little afraid of but again no I think no one wants to destroy the world.,78
+889,No one except saying like today I want to destroy the world.,60
+890,So we've got the the malach problem.,36
+891,On the other hand we've got people who are very aware of that and I think a lot of healthy conversation about how can we collaborate to minimize some of these very scary downsides.,180
+892,Well nobody wants to destroy the world.,39
+893,Let me ask you a tough question.,32
+894,So you are very likely to be one of not the person that creates AGI.,68
+895,One up.,7
+896,One of.,7
+897,And even then like we're on a team of many.,43
+898,There'll be many teams.,23
+899,But several small number of people nevertheless relative.,57
+900,I do think it's strange that it's maybe a few tens of thousands of people in the world.,87
+901,Few thousands PM world.,23
+902,But there will be a room with a few folks who are like holy shit.,65
+903,What happens more often than you would think now.,49
+904,I understand.,13
+905,I understand this.,18
+906,I understand this.,18
+907,But yes there will be more such rooms which is a beautiful place to be in the world.,84
+908,Terrifying but mostly beautiful.,32
+909,So that might make you in a handful of folks the most powerful humans on earth.,79
+910,Do you worry that power micro up you?,37
+911,For sure.,9
+912,Look I don't.,13
+913,I think you want decisions about this technology and certainly decisions about who is running this technology to become increasingly democratic over time.,154
+914,We haven't figured out quite how to do this.,44
+915,But we part of the reason for deploying like this is to get the world to have time to adapt and to reflect and to think about this to pass regulation for institutions to come up with new norms for the people working out together.,229
+916,That is a huge part of why we deploy even though many of the AIC people reference earlier think it's really bad.,112
+917,Even they acknowledge that this is like of some benefit.,56
+918,But I think any version of one person is in control of this is really bad.,74
+919,So trying to distribute the power.,34
+920,I don't have and I don't want like any like super voting power or any special like them.,88
+921,I don't know like control of the board or anything like that of open AI.,72
+922,But AGI if created has a lot of power.,38
+923,How do you think we're doing like honest?,41
+924,How do you think we're doing so far?,36
+925,How do you think our decisions are?,35
+926,Do you think we're making things not better or do we do better?,63
+927,Well the things I really like because I know a lot of folks at open AI.,71
+928,I think it's really like is the transparency.,45
+929,Everything you're saying which is like failing publicly.,56
+930,Writing papers.,15
+931,Releasing different kinds of information about the safety concerns involved.,76
+932,Doing it out in the open is great because especially in contrast to some other companies that are not doing that.,113
+933,They're being more closed.,26
+934,That said you could be more open.,33
+935,Do you think we should open source GPT4?,40
+936,My personal opinion because I know people at open AI is no.,59
+937,What is knowing the people at open AI have to do with it?,57
+938,Because I know they're good people.,35
+939,I know a lot of people.,23
+940,I know they're good human beings.,33
+941,From a perspective of people that don't know the human beings.,62
+942,There's a concern of a super powerful technology in the hands of a few that's closed.,85
+943,It's closed in some sense but we give more access to it than in like if this had just been Google's game.,105
+944,I feel it's very unlikely that anyone would have put this API out.,66
+945,There's PR risk with it.,24
+946,I get personal threats because of it all the time.,50
+947,I think most companies wouldn't have done this.,47
+948,Maybe we didn't go as open as people wanted but we've distributed it pretty broadly.,84
+949,You personally open AI as a culture is not so nervous about PR risk and all that kind of stuff.,95
+950,You're more nervous about the risk of the actual technology and you reveal that.,80
+951,The nervousness that people have is because it's such early days of the technology is that you will close off over times.,121
+952,It's more and more powerful.,28
+953,My nervousness is you get attacked so much by fear-mongering clickbait journalism.,82
+954,"They're like, why the hell do I need to deal with this?",55
+955,I think the clickbait journalism bothers you more than it bothers me.,69
+956,I'm a third person father.,26
+957,I appreciate that.,18
+958,I feel all right about it.,26
+959,"Of all the things I lose sleep over, it's not high on the list.",63
+960,Because it's important.,23
+961,"There's a handful of companies, a handful of folks that are really pushing this forward.",88
+962,They're amazing folks that I don't want them to become cynical about the rest of the world.,91
+963,I think people at Open AI feel the weight and responsibility of what we're doing.,81
+964,It would be nice if journalists weren't nicer to us Twitter trolls gave us more benefit of the doubt.,101
+965,I think we have a lot of resolve in what we're doing and why and the importance of it.,86
+966,"I really would love, and I ask this a lot of people, not just if cameras are going like any feedback you've got for how we can be doing better.",143
+967,We're in uncharted waters here.,31
+968,Talking to my people is how we figure out what to do better.,60
+969,How do you take feedback?,25
+970,Do you take feedback from Twitter also?,39
+971,"Because the sea, the water is unreadable.",41
+972,Yeah.,5
+973,"So sometimes I do, I can take a sample, a cup cup out of the water full.",72
+974,But I mostly take it from conversations like this.,50
+975,"Speaking of feedback, somebody you know well, you work together closely on some of the ideas behind Open AI's Elon Musk.",120
+976,You have agreed on a lot of things.,35
+977,You've disagreed on some things.,32
+978,What have been some interesting things you've agreed on?,56
+979,Speaking of fund debate on Twitter.,35
+980,"I think we agree on the magnitude of the downside of AGI, and the need to get not only safety right, but get to a world where people are much better off because AGI exists than if AGI had never been built.",205
+981,Yeah.,5
+982,What do you disagree on?,24
+983,"I mean, Elon is obviously attacking us some on Twitter right now on a few different vectors.",92
+984,And I have empathy because I believe he is understandably so really stressed about AGI safety.,94
+985,"I'm sure there are some other motivations going on too, but that's definitely one of them.",90
+986,"I saw this video of Elon a long time ago talking about SpaceX, maybe it was on some news show, and a lot of early pioneers in space were really bashing SpaceX and maybe Elon too.",178
+987,"And he was visibly very hurt by that and said, you know, those guys are heroes of mine, and I suck and I wish they would see how hard we're trying.",147
+988,I definitely grew up with Elon as a hero of mine.,49
+989,"Despite him being a jerk on Twitter, whatever, I'm happy he exists in the world.",80
+990,But I wish he would do more to look at the hard work we're doing to get this stuff right.,89
+991,A little bit more love.,23
+992,"What do you admire in the name of love, Abadi Al-Mosc?",54
+993,"I mean, so much, right?",23
+994,Like he has he has driven the world forward in important ways.,62
+995,I think we will get to electric vehicles much faster than we would have if he didn't exist.,91
+996,I think we'll get to space much faster than we would have if he didn't exist.,77
+997,"And as a sort of like citizen of the world, I'm very appreciative of that.",74
+998,"Also, like being a jerk on Twitter aside, in many instances, he's like a very funny and warm guy.",97
+999,"And some of the jerk on Twitter thing, as a fan of humanity laid out in its full complexity and beauty, I enjoy the tension of ideas expressed.",143
+1000,"So, you know, I earlier said that, admire how transparent you are.",66
+1001,But I like how the battles are happening before our eyes.,57
+1002,It's supposed to everybody closing off inside boardrooms.,57
+1003,"It's all like- Yeah, you know, maybe I should hit back and maybe someday I will, but it's not like my normal style.",115
+1004,It's all fascinating to watch.,30
+1005,"And I think both of you are brilliant people and have early on for a long time really cared about AGI and had great concerns about AGI, but a great hope for AGI.",161
+1006,"And that's cool to see these big minds having those discussions, even if they're tense at times.",96
+1007,I think it was Elon that said that GPD is too woke.,51
+1008,Is GPD too woke?,16
+1009,Can you still make a case that it is and not?,45
+1010,This is going to ours.,22
+1011,Question about bias.,20
+1012,"Honestly, I barely know what woke means anymore.",48
+1013,I did for a while and I feel like the word is more of so.,57
+1014,I will say I think it was too biased and will always be.,56
+1015,There will be no one version of GPD that the world ever agrees is unbiased.,75
+1016,What I think is we've made a lot.,33
+1017,"Like, again, even some of our harshest critics have gone off and been tweeting about 3.5 to 4 comparisons and being like, wow, these people really got a lot better.",164
+1018,"Not that they don't have more work to do when we certainly do, but I appreciate critics who display intellectual honesty like that.",131
+1019,There's been more of that than I would have thought.,52
+1020,"We will try to get the default version to be as neutral as possible, but as neutral as possible is not that neutral.",116
+1021,"If you have to do it, again, for more than one person.",54
+1022,"This is where more sterability, more control in the hands of the system, the message in particular is I think the real path forward.",132
+1023,"As you pointed out, these nuanced answers to look at something from several angles.",83
+1024,It's really fascinating.,24
+1025,It's really fascinating.,24
+1026,Is there something to be said about the employees of a company affecting the bias of the system?,96
+1027,100%.,5
+1028,We try to avoid the SF groupthink bubble.,41
+1029,It's harder to avoid the AI groupthink bubble.,46
+1030,That follows you everywhere.,28
+1031,There's all kinds of bubbles we live in.,40
+1032,I'm going on around the world user tour soon for a month to just go talk to our users in different cities.,106
+1033,I can feel how much I'm craving doing that because I haven't done anything like that since in years.,100
+1034,I used to do that more for YC and to go talk to people in super different contexts.,83
+1035,It doesn't work over the internet.,34
+1036,To go show up in person and sit down and go to the bars.,56
+1037,They go to and walk through the city like they do.,50
+1038,You learn so much and get out of the bubble so much.,52
+1039,"I think we are much better than any other company I know of in San Francisco for not falling into the SF craziness, but I'm sure we're still pretty deeply in it.",161
+1040,But is it possible to separate the bias of the model versus the bias of the employees?,86
+1041,The bias I'm most nervous about is the bias of the human feedback rateers.,74
+1042,So what's the selection of the human?,37
+1043,Is there something you could speak to at a high level about the selection of the human rateers?,95
+1044,This is the part that we understand the least while we're great at the pre-training machinery.,94
+1045,"We're now trying to figure out how we're going to select those people, how we'll verify that we get a representative sample, how we'll do different ones for different places, but we don't know that functionality built out yet.",226
+1046,Such a fascinating science.,27
+1047,You clearly don't want all American elite university students giving you your labels.,85
+1048,"Well, see, it's not about...",28
+1049,I just can never resist that dig.,33
+1050,"Yes, nice.",10
+1051,But it's...,11
+1052,So that's a good...,19
+1053,There's a million heuristics you can use.,41
+1054,"To me, that's a shallow heuristic, because like any one kind of category of human that you would think would have certain beliefs might actually be really open-minded in an interesting way.",189
+1055,You have to optimize for how good you are actually at doing these kinds of rating tasks.,88
+1056,How good you are empathizing with an experience of other humans.,64
+1057,That's a big one.,17
+1058,"And being able to actually like, what does the world view look like for all kinds of groups of people that would answer this differently?",137
+1059,"I mean, I have to do that constantly.",37
+1060,"And so they're like, well, you've asked us a few times what it's something I often do.",86
+1061,"You know, I ask people in an interview or whatever to steal man the beliefs of someone they really disagree with.",113
+1062,And the inability of a lot of people to even pretend like they're willing to do that is remarkable.,99
+1063,Yeah.,5
+1064,"What I find, unfortunately, ever since COVID, even more so, that there's almost an emotional barrier.",101
+1065,It's not even an intellectual barrier.,38
+1066,"Before they even get to the intellectual, there's an emotional barrier that says, no.",85
+1067,"Anyone who might possibly believe X, they're an idiot, they're evil, they're malevolent.",88
+1068,"Anything you want to assign, it's like, they're not even like loading in the data into their head.",98
+1069,"Look, I think we'll find out that we can make GPT systems way less biased than any human.",89
+1070,Yeah.,5
+1071,"So hopefully without the, because there won't be that emotional load there.",75
+1072,"Yeah, the emotional load.",25
+1073,But there might be pressure.,28
+1074,There might be political pressure.,34
+1075,"Oh, there might be pressure to make a bias system.",50
+1076,What I meant is the technology.,31
+1077,I think will be capable of being much less biased.,50
+1078,"Do you anticipate you worry about pressures from outside sources, from society, from politicians, from money sources?",117
+1079,I both worry about it and want it.,34
+1080,"Like, to the point of wearing this bubble and we shouldn't make all these decisions, like we want society to have a huge degree of input here that is pressure in some point in some way.",185
+1081,"Well, there's a, you know, that's what, like, to some degree, Twitter files have revealed that there was pressure from different organizations.",143
+1082,"You can see in the pandemic, where the CDC or some other government organization might put pressure on, you know, what, we're not really sure what's true, but it's very unsafe to have these kinds of nuanced conversations now.",225
+1083,So let's sense our all topics.,30
+1084,"So you get a lot of those emails, like, you know, emails, all different kinds of people reaching out at different places to put subtle indirect pressure, direct pressure, financial, political pressure, all that kind of stuff.",225
+1085,How do you survive that?,24
+1086,"How do you, how much do you worry about that?",45
+1087,"If GPD continues to get more, more intelligent and the source of information and knowledge for human civilization.",114
+1088,"I think there's like a lot of like quirks about me that make me not a great CEO for open eye, but a thing in the positive column is I think I am relatively good at not being affected by pressure for the sake of pressure.",220
+1089,"By the way, beautiful statement of humility, but I have to ask, what's in the negative column?",94
+1090,"I mean, too long a list.",24
+1091,"I mean, I think I'm not a great like spokesperson for the AI movement.",70
+1092,I'll say that.,14
+1093,I think there could be like a more like there could be someone who enjoyed it more.,83
+1094,There could be someone who's like much more charismatic.,56
+1095,There could be someone who like connects better.,48
+1096,"I think with people, then I do, I'm a child's guy on this.",58
+1097,I think charisma is a dangerous thing.,38
+1098,I think I think flaws in flaws in communication style.,54
+1099,"I think it's a feature, not a bug in general, at least for humans, as these for humans in power.",96
+1100,I think I have like more serious problems than that one.,56
+1101,"I think I'm like pretty disconnected from like the reality of life for most people and trying to really not just like empathize with, but internalize what the impact on people that AGI is going to have.",202
+1102,I probably like feel that less than other people would.,55
+1103,That's really well put.,23
+1104,"And you said like you're going to travel across the world to, yeah, I'm excited to empathize with different users.",114
+1105,Not empathize.,14
+1106,"Just to like, I want to just like buy our users, our developers, our users, a drink and say like tell us what you'd like to change.",131
+1107,And I think one of the things we are not good as good as a company is I would like is to be a really user-centric company.,122
+1108,"And I feel like by the time it gets filtered to me, it's like totally meaningless.",82
+1109,So I really just want to go talk to a lot of our users in very different contexts.,82
+1110,"Like you said, a drink in person because I haven't actually found the right words for it, but I was I was a little afraid with the programming.",143
+1111,Emotionally.,12
+1112,I don't think it makes any sense.,33
+1113,There is a real Olympic response there.,39
+1114,"GPD makes me nervous about the future, not in an AI safety way, but like change change change.",94
+1115,And like there's a nervousness about change in more nervous than excited.,73
+1116,"If I take away the fact that I'm an AI person and just a programmer, more excited, but still nervous like, yeah, nervous in brief moments, especially when sleep deprived, but there's a nervousness there.",203
+1117,"People who say they're not nervous, I that's hard for me to believe.",68
+1118,But you are excited.,20
+1119,It's nervous for change.,24
+1120,Nervous whenever there's significant exciting kind of change.,61
+1121,I recently started using I've been an EMAX person for a very long time and I switched to VS code as a.,102
+1122,Or Copilot.,11
+1123,That was one of the big reasons.,32
+1124,Because like this is where a lot of active development.,55
+1125,Of course you can probably do Copilot inside EMAX.,50
+1126,"I mean, sure.",13
+1127,I'm sure.,9
+1128,"Yes, it was also pretty good.",29
+1129,"Yeah, there's a lot of like little little things and big things that are just really good above VS code.",104
+1130,"So I was and I've been I can happily report and all the then people just go nuts, but I'm very happy.",101
+1131,There's a very happy decision.,30
+1132,But there was a lot of uncertainty.,35
+1133,There's a lot of nervousness about it.,38
+1134,There's fear and so on.,23
+1135,About taking that leap.,23
+1136,And that's obviously a tiny leap.,33
+1137,But even just the leap to actively using Copilot like using generation of code.,79
+1138,"It makes you nervous, but ultimately my life is much better as a programmer.",76
+1139,"Purely as a programmer, a programmer of little things and big things as much better.",84
+1140,But there's a nervousness.,26
+1141,And I think a lot of people will experience that experience that and you will experience that by talking to them.,113
+1142,And I don't know what we do with that.,38
+1143,How we comfort people in the face of this uncertainty.,54
+1144,"And you're getting more nervous the more you use it, not less.",62
+1145,Yes.,4
+1146,Yes.,4
+1147,I would have to say yes because I get better at using it.,57
+1148,The learning curve is quite steep.,34
+1149,Yeah.,5
+1150,"And then there's moments when you're like, oh, it generates a function beautifully.",83
+1151,"You sit back, both proud like a parent, but almost like proud like and scared that this thing will be much smarter than me.",123
+1152,Like both pride and sadness almost like a melancholy feeling.,61
+1153,"But ultimately joy, I think.",28
+1154,Yeah.,5
+1155,What kind of jobs do you think GPT language models would be better than humans at?,82
+1156,Like full like does the whole thing end to end better?,54
+1157,Not not not like what it's doing with you where it's helping you be maybe 10 times more productive.,99
+1158,Those are both good questions.,30
+1159,I don't.,8
+1160,"I would say they're equivalent to me because if I'm 10 times more productive, wouldn't that mean that there would be a need for much fewer programmers in the world?",164
+1161,"I think the world is going to find out that if you can have 10 times as much code at the same price, you can just use even more.",128
+1162,You should write even more code.,32
+1163,It just needs way more code.,28
+1164,It is true that a lot more could be digitized.,46
+1165,There could be a lot more code and a lot more stuff.,52
+1166,I think there's like a supply issue.,36
+1167,Yeah.,5
+1168,"So in terms of really replaced jobs, is that a worry for you?",61
+1169,It is.,6
+1170,I'm trying to think of like a big category that I believe can be massively impacted.,84
+1171,I guess I would say customer service is a category that I could see.,68
+1172,There are just way fewer jobs relatively soon.,46
+1173,"I'm not even certain about that, but I could believe it.",56
+1174,So like basic questions about when do I take this pill if it's a drug company or when I don't know why I went to that.,118
+1175,But like how do I use this product?,35
+1176,Like questions?,15
+1177,Yeah.,5
+1178,Like how do I use whatever calls that our employees are doing now?,66
+1179,Yeah.,5
+1180,This is not work.,17
+1181,Yeah.,5
+1182,Okay.,5
+1183,I want to be clear.,19
+1184,I think like these systems will make a lot of jobs just go away.,64
+1185,Every technological revolution does.,36
+1186,"They will enhance many jobs and make them much better, much more fun, much higher paid.",87
+1187,"And they'll create new jobs that are difficult for us to imagine, even if we're starting to see the first glimpses of them.",123
+1188,"But I heard someone last week talking about GPT-4 saying that, you know, man, the dignity of work is just such a huge deal.",123
+1189,We've really got to worry.,26
+1190,"Like even people who think they don't like their jobs, they really need them.",77
+1191,It's really important to them into society.,43
+1192,And also can you believe how awful it is that France is trying to raise the retirement age?,91
+1193,And I think we as a society are confused about whether we want to work more or work less.,89
+1194,And certainly about whether most people like their jobs and get value out of their jobs or not.,95
+1195,"Some people do, I love my job.",30
+1196,I suspect you do too.,21
+1197,That's a real privilege.,24
+1198,Not everybody gets to say that.,31
+1199,"If we can move more of the world to better jobs and work to something that can be a broader concept, not something you have to do to be able to eat, but something you do is a creative expression and a way to find fulfillment and happiness, whatever else.",254
+1200,"Even if those jobs look extremely different from the jobs of today, I think that's great.",89
+1201,I'm not nervous about it at all.,32
+1202,"You have been a proponent of UBI, Universal Basic Income, in the context of AI.",79
+1203,Can you describe your philosophy there of our human future with UBI?,68
+1204,Why you like it?,16
+1205,What are some limitations?,26
+1206,I think it is a component of something we should pursue.,56
+1207,It is not a full solution.,26
+1208,I think people work for lots of reasons besides money.,54
+1209,And I think we are going to find incredible new jobs and society as a whole.,76
+1210,"And people's individuals are going to get much, much richer.",60
+1211,"But as a cushion through a dramatic transition, and as just like, you know, I think the world should eliminate poverty if able to do so.",136
+1212,I think it's a great thing to do as a small part of the bucket of solutions.,76
+1213,"I helped start a project called World Coin, which is a technological solution to this.",86
+1214,"We also have funded a large, I think maybe the largest and most comprehensive Universal Basic Income study as part of the sponsored by OpenAI.",142
+1215,And I think it's like an area we should just be looking into.,61
+1216,What are some insights from that study that you gained?,55
+1217,We're going to finish up at the end of this year and we'll be able to talk about it hopefully very early next.,110
+1218,"If we can link on it, how do you think the economic and political systems will change as AI becomes a prevalent part of society?",128
+1219,It's such an interesting sort of philosophical question.,56
+1220,"Looking 10, 20, 50 years from now, what does the economy look like?",67
+1221,What does politics look like?,29
+1222,Do you see significant transformations in terms of the way democracy functions even?,84
+1223,I love that you ask them together because I think they're super related.,72
+1224,"I think the economic transformation will drive much of the political transformation here, not the other way around.",115
+1225,"My working model for the last five years has been that the two dominant changes will be that the cost of intelligence and the cost of energy are going over the next couple of decades to dramatically, dramatically fall from where they are today.",244
+1226,"The impact of that, and you already see it, what the way you now have, programming ability beyond what you had as an individual before, is society gets much, much richer, much wealthier in ways that are probably hard to imagine.",228
+1227,"I think every time that's happened before, it has been that economic impact has had positive political impact as well.",118
+1228,I think it does go the other way to the sociopolitical values of the enlightenment enabled the long-running technological revolution and scientific discovery process we've had for the past centuries.,199
+1229,But I think we're just going to see more.,41
+1230,"I'm sure the shape will change, but I think it's this long and beautiful exponential curve.",91
+1231,"Do you think there will be more, I don't know what the term is, but systems that resemble something like democratic socialism, I've talked to a few folks on this podcast about these kinds of topics.",198
+1232,"Instinct, yes.",14
+1233,I hope so.,10
+1234,So that it reallocates some resources in a way that supports lifts the people who are struggling.,97
+1235,I am a big believer in lifts up the floor and don't worry about the ceiling.,76
+1236,"If I can test your historical knowledge, it's probably not going to be good, but let's try it.",94
+1237,Why do you think I come from the Soviet Union?,46
+1238,Why do you think communism and the Soviet Union failed?,55
+1239,"I recoil at the idea of living in a communist system, and I don't know how much of that is just the biases of the world I've grown up in and what I have been taught and probably more than I realize.",198
+1240,"But I think like more individualism, more human will, more ability to self-determine is important.",98
+1241,"And also, I think the ability to try new things and not need permission and not need some sort of central planning, betting on human ingenuity and this sort of like distributed process, I believe is always going to beat centralized planning.",241
+1242,"And I think that like for all of the deep flaws of America, I think it is the greatest place in the world because it's the best of this.",136
+1243,So it's really interesting that centralized planning failed so in such big ways.,80
+1244,But what if hypothetically the centralized planning is a super intelligent AGI?,79
+1245,A super intelligent AGI.,24
+1246,"Again, it might go wrong in the same kind of ways, but it might not.",68
+1247,I would not really know.,24
+1248,We don't really know.,21
+1249,It might be better.,19
+1250,"I expect it would be better, but would it be better than a hundred super intelligent or a thousand super intelligent AGIs sort of in a liberal democratic system?",161
+1251,Arquee.,7
+1252,Yes.,4
+1253,Now also how much of that can happen internally in one super intelligent AGI?,77
+1254,That's obvious.,15
+1255,"There is something about, right, but there is something about like tension, the competition, but you don't know that's not happening inside one model.",150
+1256,"Yeah, that's true.",18
+1257,"It would be nice, it would be nice if whether it's engineered in or revealed to be happening, maybe nice for it to be happening.",128
+1258,That of course it can happen with multiple AGIs talking to each other or whatever.,82
+1259,"There's something also about, I mean, Stuart Russell has talked about the control problem of always having AGI to be have some degree of uncertainty, not having a dogmatic certainty to it.",188
+1260,That feels important.,21
+1261,"So some of that is already handled with human alignment, human feedback, when he's first been learning with human feedback, but it feels like there has to be engineered in like a hard uncertainty, humility, you can put a romantic word to it.",241
+1262,Yeah.,5
+1263,"Is it possible to do the definition of those words, I think, that details really matter, but as I understand them, yes, I do.",125
+1264,What about the off switch that like big red button in the data center?,70
+1265,We don't tell anybody about.,28
+1266,I'm a fan.,10
+1267,My backpack.,12
+1268,You think it's possible to have a switch.,41
+1269,"You think I mean, it's more seriously, more specifically about sort of rolling out of different systems.",104
+1270,"Do you think it's possible to roll them, unroll them, pull them back in?",72
+1271,Yeah.,5
+1272,"I mean, we can absolutely take a model back off the internet.",61
+1273,"We can like take, we can turn an API off.",41
+1274,Isn't that something you worry about?,37
+1275,"Like when you release it and millions of people are using it and like you realize, holy crap, they're using it for, I don't know, worrying about the like all kinds of terrible use cases.",186
+1276,We do worry about that a lot.,29
+1277,"I mean, we try to figure out what this much red team in intestine ahead of time as we do.",89
+1278,"How to avoid a lot of those, but I can't emphasize enough how much the collective intelligence and creativity of the world will beat open AI and all of the red teamers we can hire.",180
+1279,"So we put it out, but we put it out in a way we can make changes.",65
+1280,"In the millions of people that have used the chat GPT and GPT, what have you learned about human civilization in general?",121
+1281,"I mean, the question I ask is are we mostly good or is there a lot of malevolence in the human spirit?",102
+1282,"Well, to be clear, I don't notice anyone else at opening eyes that they're like reading all the chat GPT messages.",114
+1283,"Yeah, but from what I hear people using it for, at least the people I talk to, and from what I see on Twitter, we are definitely mostly good, but a, not all of us are all the time and b, we really want to push on the edges of these systems.",240
+1284,"And, you know, we really want to test out some darker theories for the world.",77
+1285,"Yeah, it's very interesting.",28
+1286,It's very interesting.,22
+1287,"And I think that's not, that actually doesn't communicate the fact that we're like fundamental dark inside, but we like to go to the dark places in order to maybe rediscover the light.",184
+1288,It feels like dark humor is a part of that.,43
+1289,"Some of the darkest, some of the toughest things you go through if you suffer in life in a war zone, the people I've interacted with there in the midst of a war, they're usually joking around.",192
+1290,"Yeah, joking around.",20
+1291,And they're dark jokes.,23
+1292,Yeah.,5
+1293,So there's some in there.,25
+1294,I totally agree about that tension.,35
+1295,"So just to the model, how do you decide what isn't misinformation?",66
+1296,How do you decide what is true?,31
+1297,You actually have open A as internal factual performance benchmark.,67
+1298,There's a lot of cool benchmarks here.,38
+1299,How do you build a benchmark for what is true?,46
+1300,What is truth?,14
+1301,Sam Alvin.,10
+1302,Like math is true.,18
+1303,And the origin of COVID is not agreed upon as ground truth.,59
+1304,Those are the two things.,25
+1305,And then there's stuff that's like certainly not true.,54
+1306,"But between that first and second milestone, there's a lot of disagreement.",75
+1307,What do you look for?,21
+1308,"Where can a not even just now, but in the future, where can we as a human civilization look for?",96
+1309,Look to for truth.,18
+1310,What do you know is true?,25
+1311,"What are you absolutely certain, is true?",41
+1312,I have generally epistemic humility about everything and I'm freaked out by how little I know and understand about the world.,125
+1313,So that even that question is terrifying to me.,47
+1314,"There's a bucket of things that have a high degree of truth in this, which is where you put math, a lot of math.",112
+1315,Yeah.,5
+1316,"Can't be certain, but it's good enough for like this conversation.",66
+1317,We can say math is true.,24
+1318,Yeah.,5
+1319,"I mean, some quite a bit of physics, this historical facts, maybe dates of when a war started.",94
+1320,There's a lot of details about military conflict inside history.,64
+1321,"Of course, you start to get, you know, just red blitzed, which is this.",71
+1322,"Oh, I want to read that.",24
+1323,It was really good.,19
+1324,It's gives a theory of Nazi Germany and Hitler that so much can be described about Hitler and a lot of the upper echelon of Nazi Germany through the excessive use of drugs.,172
+1325,"And then... Just in vitamins, right?",36
+1326,"In vitamins, but also all this stuff, but it's just a lot.",58
+1327,"And, you know, that's really interesting.",41
+1328,It's really compelling.,23
+1329,"For some reason, like, whoa, that's really, that would explain a lot.",69
+1330,That's somehow really sticky.,29
+1331,It's an idea that's sticky.,27
+1332,"And then you read a lot of criticism of that book later by historians that that's actually, there's a lot of cherry picking going on.",133
+1333,And it's actually is using the fact that that's a very sticky explanation.,74
+1334,There's something about humans that likes a very simple narrative to describe everything.,89
+1335,For sure.,9
+1336,"And then... Yeah, too much amphetamines cause the war is like a great, even if not true, simple explanation that feels satisfying and excuses a lot of other, probably much darker human truths.",192
+1337,"Yeah, the military strategy employed the atrocities, the speeches, just the way he was as a human being, the way he was as a leader.",132
+1338,All that could be explained to this one little lens.,52
+1339,"And it's like, wow, if you say that's true, that's a really compelling truth.",77
+1340,So maybe truth is in one sense is defined as a thing that is a collective intelligence.,87
+1341,We kind of all our brains are sticking to.,42
+1342,"And we're like, yeah, yeah, yeah, yeah.",39
+1343,"A bunch of ants get together and like, yeah, this is it.",56
+1344,"I was going to say sheep, but there's a connotation to that.",60
+1345,"But yeah, it's hard to know what is true.",41
+1346,"And I think when constructing a GPT like model, you have to contend with that.",78
+1347,"I think a lot of the answers, you know, like if you ask GPT-4, I just stick on the same topic, did covertly come from a lab.",124
+1348,Yeah.,5
+1349,I expect you would get a reasonable answer.,43
+1350,There's a really good answer.,29
+1351,Yeah.,5
+1352,It laid out the hypotheses.,27
+1353,"The interesting thing it said, which is refreshing to hear, is there's something like there's very little evidence for either hypothesis, direct evidence, which is important to state.",183
+1354,"A lot of people kind of, the reason why there's a lot of uncertainty and a lot of debate is because there's not strong physical evidence of either.",147
+1355,Heavy circumstantial evidence on either side.,45
+1356,And then the other is more like biological theoretical kind of discussion.,74
+1357,"And I think the answer, the new answer that GPT provided was actually pretty damn good.",87
+1358,"And also importantly, saying that there is uncertainty, just the fact that there is uncertainty is the statement was really powerful.",133
+1359,"Man, remember when like the social media platforms were banning people for saying it was a lab leak?",100
+1360,Yeah.,5
+1361,That's really humbling.,23
+1362,"The humbling, the overreach of power and censorship.",52
+1363,"But the more powerful GPT becomes, the more pressure there'll be to censor.",75
+1364,"We have a different set of challenges faced by the previous generation of companies, which is people talk about free speech issues with GPT, but it's not quite the same thing.",175
+1365,It's not like this is a computer program on its lot to say.,59
+1366,And it's also not about the mass spread and the challenges that I think may have made the Twitter and Facebook and others have struggled with so much.,150
+1367,"So we will have very significant challenges, but they'll be very new and very different.",88
+1368,"And maybe, yeah, very new, very different way to put it.",56
+1369,There could be truths that are harmful in their truth.,54
+1370,I don't know.,13
+1371,Group differences in IQ.,24
+1372,There you go.,13
+1373,Scientific work that once spoken might do more harm.,52
+1374,"And you asked GPT that, should GPT tell you, there's books written on this that are rigorous scientifically, but are very uncomfortable.",136
+1375,"And probably not productive in any sense, but maybe are.",56
+1376,There's people arguing all kinds of sides of this and a lot of them have hate in their heart.,93
+1377,So what do you do with that?,28
+1378,"There's a large number of people who hate others, but are actually citing scientific studies.",93
+1379,What do you do with that?,25
+1380,What does GPT do with that?,27
+1381,What is the priority of GPT to decrease the amount of hate in the world?,72
+1382,Is it up to GPT?,16
+1383,Is it up to us humans?,22
+1384,I think we as open AI have responsibility for the tools we put out into the world.,82
+1385,I think the tools themselves can't have responsibility in the way I understand it.,82
+1386,Wow.,4
+1387,So you carry some of that burden for responsibility.,52
+1388,All of us.,10
+1389,All of us at the company.,25
+1390,So there could be harm caused by this tool.,43
+1391,And you will be harm caused by this tool.,41
+1392,There will be harm.,19
+1393,There will be tremendous benefits.,34
+1394,But tools do wonderful good and real bad.,41
+1395,And we will minimize the bad and maximize the good.,51
+1396,I have to carry the the way to that.,36
+1397,How do you avoid GPT for from being hacked or jailbroken?,57
+1398,There's a lot of interesting ways that people have done that.,61
+1399,Like with token smuggling.,26
+1400,Or other methods like Dan.,26
+1401,"You know, when I was like a kid basically, I got worked on Sanjayel working on the first iPhone, I think.",105
+1402,And I thought it was so cool.,29
+1403,And I will say it's very strange to be on the other side of that.,65
+1404,You're now the man.,19
+1405,Kind of sucks.,14
+1406,Yes.,4
+1407,Is that is some of it fun?,26
+1408,How much of it is the security threat?,38
+1409,"I mean, what?",13
+1410,How much do you have to take seriously?,39
+1411,How is it even possible to solve this problem?,46
+1412,Where does it rank on the set of problems?,42
+1413,I'm just keeping asking questions prompting.,44
+1414,We want users to have a lot of control and get the model to behave in the way they want.,88
+1415,"And I think the whole reason for jailbreaking is right now, we haven't figured out how to give that to people.",110
+1416,"And the more we solve that problem, I think the less need they'll be for jailbreaking.",86
+1417,Yes.,4
+1418,Kind of like piracy.,20
+1419,Give birth to Spotify.,22
+1420,People don't really jailbreak iPhones that much anymore.,56
+1421,And it's gotten harder for sure.,32
+1422,"But also, you can just do a lot of stuff now.",45
+1423,Just like with jailbreaking them.,33
+1424,There's a lot of hilarity that is.,34
+1425,"So Evan Marokawa, cool guy.",27
+1426,He's an open AI.,16
+1427,He tweeted something that he also was really kind to send me.,61
+1428,"To communicate with me, send me a long email describing the history of open AI, all the different developments.",111
+1429,He really lays it out.,22
+1430,"I mean, that's a much longer conversation of all the awesome stuff that happened.",81
+1431,It's just amazing.,18
+1432,"But his tweet was, uh, Dolly July 22, Chad G.P.",47
+1433,"team of November 22, API 66% cheaper August 22, embeddings 500 times cheaper, while state of the art December 22, Chad G.P.",123
+1434,"T API also 10 times cheaper, while state of the art March 23, with spray API March 23, GPT 4 today, whenever that was last week.",128
+1435,"And, uh, the conclusion is this team ships.",43
+1436,We do.,6
+1437,"Uh, what's the process of go?",29
+1438,And then we can extend that back.,33
+1439,"I mean, listen, from the 2015 open AI launch, GPT GPT 2 GPT 3 open AI 5 finals with gaming stuff, which is incredible.",118
+1440,"GPT 3 API released, uh, Dolly instruct GPT tech that I could find fine tuning.",78
+1441,There's just a million things available.,40
+1442,"Dolly Dolly 2 preview and then Dolly is available to 1 million people, whisper, a second model release just across all of the stuff, both research and deployment of actual products that could be in the hands of people.",218
+1443,What is the process of going from idea to deployment that allows you to be so successful at shipping AI based products?,119
+1444,"I mean, there's a question of should we be really proud of that or should other companies be really embarrassed?",112
+1445,Yeah.,5
+1446,And we believe in a very high bar for the people on the team.,61
+1447,"We work hard, which, you know, you're not even like supposed to say any more or something.",90
+1448,"Um, we give a huge amount of trust and autonomy and authority to individual people.",83
+1449,And we try to hold each other to very high standards.,53
+1450,"And, you know, there's a process, which we can talk about, but it won't be that illuminating.",93
+1451,"Uh, I think it's those other things that make us able to ship at a high velocity.",81
+1452,So GPT 4 is a pretty complex system.,36
+1453,"Like you said, there's like million little hacks you can do to keep improving it.",81
+1454,"Uh, there's a, the cleaning of the data set, all that, all those are like separate teams.",89
+1455,So do you give autonomy?,24
+1456,Is there just a autonomy to these fascinating different problems?,65
+1457,"If like most people in the company weren't really excited to work super hard and collaborate well on GPT 4 and thought other stuff was more important, there'd be very little I or anybody else could do to make it happen.",219
+1458,"But we spend a lot of time figuring out what to do, getting on the same page about why we're doing something, and then how to divide it up and all coordinate together.",167
+1459,"So then, then you have like a passion for the, for the, for the goal here.",74
+1460,So everybody's really passionate across the different teams.,60
+1461,"Yeah, we care.",14
+1462,How do you hire?,16
+1463,How do you hire great teams?,28
+1464,The folks have interacted with opening eyes on the most amazing folks ever met.,79
+1465,It takes a lot of time.,23
+1466,"Like I, I spend, I mean, I think a lot of people claim to spend a third of their time hiring.",93
+1467,I for real truly do.,20
+1468,I still approve every single hired opening eye.,47
+1469,"And I think there's, you know, we're working on a problem that is like very cool and the great people want to work on.",118
+1470,We have great people and some people want to be around them.,60
+1471,"But even with that, I think there's just no shortcut for putting a ton of effort into this.",91
+1472,"So even when you have the good, the good people hard work, I think so.",70
+1473,Microsoft announced the new multi year multi billion dollar reported to be 10 billion dollars investment into open AI.,118
+1474,Can you describe the thinking that went into this?,50
+1475,"What, what are the pros, what are the cons of working with the company like Microsoft?",86
+1476,"It's not all perfect or easy, but on the whole that you have been an amazing partner to us.",91
+1477,Sokty and Kevin and Mikhail are super aligned with us.,54
+1478,Super flexible have gone like way above and beyond the call of duty to do things that we have needed to get all this to work.,125
+1479,This is like a big iron complicated engineering project.,56
+1480,And they are a big and complex company.,39
+1481,"And I think like many great partnerships or relationships, we've sort of just continued to ramp up our investment in each other.",128
+1482,And it's been very good.,24
+1483,It's a for-profit company.,26
+1484,It's very driven.,17
+1485,It's very large scale.,22
+1486,Is there pressure to kind of make a lot of money?,49
+1487,"I think most other companies wouldn't, maybe now they wouldn't, at the time, have understood why we needed all the weird control provisions we have and why we need all the kind of AGI specialness.",196
+1488,And I know that because I talked to some other companies before we did the first deal with Microsoft.,101
+1489,And I think they were very unique in terms of the companies at that scale that understood why we needed the control provisions we have.,135
+1490,And so those control provisions help you help make sure that the capitalist imperative does not affect the development of AI.,125
+1491,"Well, let me just ask you as an aside about Sachen Adela, the CEO of Microsoft, he seemed to have successfully transformed Microsoft into this fresh, innovative developer-friendly company.",188
+1492,I agree.,8
+1493,"What do you, I mean, it's a really hard to do for a very large company.",71
+1494,What have you learned from him?,31
+1495,Why do you think he was able to do this kind of thing?,54
+1496,"Yeah, what insights do you have about why this one human being is able to contribute to the pivot of a large company into something very new?",141
+1497,I think most CEOs are either great leaders or great managers.,61
+1498,"And from what I have observed, have observed with Sautya, he is both super visionary, really like gets people excited, really makes long duration and correct calls.",164
+1499,And also he is just a super effective hands-on executive and I assume manager too.,82
+1500,And I think that's pretty rare.,31
+1501,"I mean, Microsoft, I'm guessing like I be able to, like a lot of companies have been added for a while, probably have like old school kind of momentum.",151
+1502,"So you like inject AI into it, it's very tough, or anything, even like the culture of open source.",98
+1503,How hard is it to walk into a room and be like the way we've been doing things are totally wrong?,97
+1504,I'm sure there's a lot of firing involved or a little like twisting of arms or something.,89
+1505,So do you have to rule by fear by love?,39
+1506,Like what he's said to the leadership aspect of this?,53
+1507,"I mean, he's just like done an unbelievable job, but he is amazing at being like clear and firm and getting people to want to come along, but also like compassionate and patient with his people too.",198
+1508,"I'm getting a lot of love, not fear.",36
+1509,I'm a big Sautya fan.,21
+1510,That's so my from a distance.,29
+1511,"I mean, you have so much in your life trajectory that I can ask you about, we can probably talk for many more hours, but I got to ask you because of why commentator, because of startups and so on.",196
+1512,"The recent, you've tweeted about this, about the Silicon Valley bank, SVB, what's your best understanding of what happened?",123
+1513,"What is interesting, what is interesting to understand about what happened with SVB?",84
+1514,"I think they just like horribly mismanaged buying while chasing returns in a very silly world of zero percent interest rates, buying very long dated instruments secured by very short term and variable deposits.",210
+1515,This was obviously dumb.,24
+1516,"I think totally the fault of the management team, although I'm not sure what the regulators were thinking either.",113
+1517,"And is an example of where I think you see the dangers of incentive misalignment because as the Fed kept raising, I assume that the incentives on people working at SVB to not sell at a loss there, super safe bonds, which were now down 20% or whatever, or down less than that, but then kept going down.",301
+1518,That's like a classic example of incentive misalignment.,56
+1519,"Now, I suspect they're not the only bank in the bad position here.",66
+1520,"The response of the federal government, I think, took much longer than it should have, but by Sunday afternoon, I was glad they had done what they've done.",155
+1521,We'll see what happens next.,28
+1522,So how do you avoid depositors from doubting their bank?,56
+1523,"What I think needs would be good to do right now is just a, and this requires statutory change, but it may be a full guarantee of deposits, maybe a much, much higher than $250K.",177
+1524,But you really don't want depositors having to doubt the security of their deposits.,84
+1525,"And this thing that a lot of people on Twitter were saying is like, well, it's their fault.",91
+1526,They should have been like reading the balance sheet and the risk audit of the bank.,84
+1527,Do we really want people to have to do that?,44
+1528,I would argue no.,17
+1529,What impact has it had on startups that you see?,48
+1530,"Well, there was a weekend of terror for sure.",45
+1531,"And now I think even though it was only 10 days ago, it feels like forever and people have forgotten about it.",110
+1532,But it kind of reveals the fragility of our connoxism.,54
+1533,We may not be done.,19
+1534,That may have been like the gun showing falling off the nightstand in the first scene of the movie or whatever.,111
+1535,It could be like other banks that could be.,43
+1536,For sure.,9
+1537,"Well, even with FDX, I mean, I'm just, well, that's fraud, but there's mismanagement.",85
+1538,"And you wonder how stable our economic system is, especially with new entrants with AGI.",88
+1539,"I think one of the many lessons to take away from this SVB thing is how much how fast and how much the world changes and how little I think are experts, leaders, business leaders, regulators, whatever understand it.",215
+1540,"So the speed with which the SVB bank run happened because of Twitter, because of mobile banking apps, whatever.",111
+1541,"So different than the 2008 collapse, where we didn't have those things really.",78
+1542,And I don't think that kind of the people in power realize how much the field has shifted.,90
+1543,And I think that is a very tiny preview of the shifts that AGI will bring.,74
+1544,What gives you hope in that shift from an economic perspective?,63
+1545,"Ah, this sounds scary.",22
+1546,These stability.,16
+1547,"No, I am nervous about the speed with this changes and the speed with which our institutions can adapt, which is part of why we want to start deploying these systems really early, why they really weak so that people have as much time as possible to do this.",257
+1548,"I think it's really scary to like have nothing, nothing, nothing, and then drop a super powerful AGI all at once on the world.",126
+1549,I don't think people should want that to happen.,48
+1550,"But what gives me hope is like, I think the less the more positive some the world gets, the better, and the the upside of the vision here, just how much better life can be.",172
+1551,I think that's going to like unite a lot of us.,47
+1552,"And even if it doesn't, it's just going to make it all a few more positive some.",80
+1553,"When you create an AGI system, you'll be one of the few people in the room.",75
+1554,"They get to interact with the first, assuming GPT-4 is not that.",64
+1555,"What question would you ask, car him it?",40
+1556,What discussion would you have?,31
+1557,"You know, one of the things that I have realized, like this is a little aside and not that important, but I have never felt any pronoun other than it towards any of our systems.",177
+1558,But most other people say him or her or something like that.,60
+1559,And I wonder why I am so different.,35
+1560,"Like, yeah, I don't know.",25
+1561,"Maybe it's I watch it develop, maybe it's I think more about it, but I'm curious where that difference comes from.",114
+1562,I think probably you could because you watch it develop.,56
+1563,"But then again, I watch a lot of stuff develop and I always go to him or her.",77
+1564,I am to more or less aggressively and certainly most humans do.,63
+1565,I think it's really important that we try to explain to educate people that this is a tool and not a creature.,110
+1566,"I think I yes, but I also think there will be a room in society for creatures and we should draw hard lines between those.",122
+1567,"If something's a creature, I'm happy for people to like think of it and talk about it as a creature, but I think it is dangerous to project creatures onto a tool.",162
+1568,That's one perspective.,23
+1569,A perspective I would take if it's done transparently is projecting creatures on to a tool makes that tool more usable.,119
+1570,If it's done well.,18
+1571,"Yeah, so if there's if there's like kind of UI affordances that work, I understand that I still think we want to be like pretty careful with it because the more creature like it is, the more it can manipulate you emotion or just the more you think that it's doing something or should be able to do something or rely on it for something that it's not capable of.",361
+1572,What if it is capable?,22
+1573,What about Sam Alman?,21
+1574,What if it's capable of love?,29
+1575,"Do you think there will be romantic relationships like in the movie, her or GPD?",80
+1576,"There are companies now that offer like for a lack of a better word, like romantic companion ship AIs replicas and examples such a company.",139
+1577,"Yeah, I personally don't feel any interest in that.",51
+1578,So you're focusing on creating intelligent but I understand why other people do.,80
+1579,That's interesting.,19
+1580,I have for some reason I'm very drawn to that.,46
+1581,Have you spent a lot of time interacting with replica or anything?,66
+1582,Some were?,10
+1583,replica but also just building stuff myself.,44
+1584,I have robot dogs now that I use the movement of the robots to communicate emotion.,83
+1585,I've been exploring how to do that.,35
+1586,"Look, there are going to be very interactive GPD, four powered pets or whatever robots, companions and a lot of people seem really excited about that.",150
+1587,"Yeah, there's a lot of interesting possibilities.",49
+1588,I think you'll discover them as you go along.,45
+1589,That's the whole point.,23
+1590,"The things you say in this conversation, you might in a year say, this was right.",81
+1591,"No, I may totally want.",23
+1592,"I may turn out that I like love my GPD, four, maybe robot or whatever.",70
+1593,Maybe you want your programming assistant to be a little kinder and not mock you.,81
+1594,I do.,5
+1595,"No, I think you do want the style of the way GPD four talks to you.",67
+1596,Yes.,4
+1597,Really matters.,15
+1598,You probably want something different than what I want but we both probably want something different than the current GPD four.,127
+1599,"That will be really important, even for a very tool-like thing.",63
+1600,"Is there styles of conversation, oh no, contents of conversations you're looking forward to within AGI, like GPD five, six, seven.",130
+1601,"Is there stuff where like where do you go to outside of the fun meme stuff for actual, I mean what I'm excited for is like please explain to me how all the physics works and solve all remaining mysteries.",204
+1602,So like a theory of everything.,31
+1603,I'll be real happy.,19
+1604,Faster than light travel.,25
+1605,Don't you want to know?,23
+1606,So there's several things to know.,34
+1607,It's like and be hard.,22
+1608,Is it possible in how to do it?,31
+1609,"Yeah, I want to know.",21
+1610,I want to know.,15
+1611,Probably the first question would be are there other intelligent alien civilizations out there but I don't think AGI has the ability to do that to know that.,157
+1612,I might be able to help us figure out how to go detect.,55
+1613,It may need to like send some emails to humans and say can you run these experiments?,85
+1614,Can you build the space probe?,30
+1615,"Can you wait, you know, a very long time?",41
+1616,I'll provide a much better estimate than that Drake equation.,61
+1617,"Yeah, with the knowledge we already have and maybe process all the, because we've been collecting a lot of, yeah, you know, maybe it's in the data.",147
+1618,"Maybe we need to build better detectors, which did an eight really advanced AI could tell us how to do.",103
+1619,"It may not be able to answer it on its own, but it may be able to tell us what to go build to collect more data.",112
+1620,What if it says the aliens are ready here?,42
+1621,I think I would just go about my life.,38
+1622,Yeah.,5
+1623,I mean a version of that is like what are you doing differently now that like if if GPT-4 told you and you believed it?,119
+1624,"Okay, AGI is here.",18
+1625,Or AGI is coming real soon.,27
+1626,What are you going to do differently?,37
+1627,The source of joy and happiness of fulfillment of life is from other humans.,76
+1628,So it's mostly nothing.,23
+1629,"Unless it causes some kind of threat, but that threat would have to be like literally a fire.",93
+1630,"Like are we, are we living now with a greater degree of digital intelligence than you would have expected three years ago in the world?",135
+1631,"And if you could go back and be told by an Oracle three years ago, which is, you know, blink of an eye that in March of 2023, you will be living with this degree of digital intelligence.",186
+1632,Would you expect your life to be more different than it is right now?,69
+1633,"Probably, probably, but there's also a lot of different trajectories into mixed.",80
+1634,"I would have expected the society's response to a pandemic to be much better, much clearer, less divided.",105
+1635,"I was very confused about there's a lot of stuff given the amazing technological advancements that are happening, the weird social divisions.",141
+1636,"It's almost like the more technological advancement there is, the more we're going to be having fun with social division, or maybe the technological advancement just revealed the division that was already there, but all of that just make the confuses my understanding of how far along we are as a human civilization and what brings us meaning and or how we discover truth together and knowledge and wisdom.",406
+1637,"So I don't know, but when I look, when I open Wikipedia, I'm happy that he was able to create this thing.",105
+1638,"First, yes, there's bias, yes, but it's a triumph.",50
+1639,It's a triumph of human civilization.,37
+1640,"Google search, the search, search period is incredible.",55
+1641,"The way it was able to do, you know, 20 years ago.",50
+1642,"And now this, this is this new thing, GPD is like, is this like going to be the next like the conglomeration of all of that that made web search and Wikipedia so magical, but now more directly accessible, you kind of a conversation with a damn thing.",250
+1643,It's incredible.,16
+1644,"Let me ask you for advice for young people in high school and college, what to do with their life.",98
+1645,They how to have a career that can be proud of how to have a life that can be proud of.,87
+1646,You wrote a blog post a few years ago titled How to Be Successful and there's a bunch of really really people should check out that blog post.,142
+1647,There's so it's so succinct and so brilliant.,45
+1648,You have a bunch of bullet points.,34
+1649,Compound yourself.,18
+1650,Have almost too much self belief.,33
+1651,Learn to think independently.,29
+1652,Get good at sales and quotes.,29
+1653,Make it easy to take risks.,27
+1654,"Focus, work hard as we talked about.",36
+1655,"Be bold, be well full.",22
+1656,Be hard to compete with.,24
+1657,Build a network.,16
+1658,You get rich by only things being internally driven.,52
+1659,What stands out to you from that or beyond as advice you can give?,66
+1660,"Yeah, no, I think it is like good advice in some sense, but I also think it's way too tempting to take advice from other people.",128
+1661,"And the stuff that worked for me, which I tried to write down there probably doesn't work that well or may not work as well for other people.",141
+1662,Or like other people may find out that they want to just have a super different life trajectory.,96
+1663,And I think I mostly got what I wanted by ignoring advice.,58
+1664,And I think like I tell people not to listen to too much advice.,64
+1665,Listening to advice from other people should be approached with great caution.,78
+1666,How would you describe how you've approached life?,50
+1667,"Outside of this advice, that you would advise to other people.",62
+1668,So really just in the quiet of your mind to think what gives me happiness?,74
+1669,What is the right thing to do here?,35
+1670,How can I have the most impact?,31
+1671,"I wish it were that, you know, introspective all the time.",58
+1672,"It's a lot of just like, you know, what will bring me joy, what will bring me fulfillment, you know, what will bring what will be.",130
+1673,"I do think a lot about what I can do that will be useful, but like, who do I want to spend my time with?",104
+1674,What I want to spend my time doing?,35
+1675,Like a fish and water.,22
+1676,Just going along with the crew.,31
+1677,Yeah.,5
+1678,That's certainly what it feels like.,36
+1679,"I mean, I think that's what most people would say if they were really honest about it.",86
+1680,"Yeah, if they really think, yeah.",33
+1681,And some of that then gets to the Sam Harris discussion of free well-being and illusion.,88
+1682,Of course.,10
+1683,"Very well might be, which is a really complicated thing to wrap your head around.",81
+1684,What do you think is the meaning of this whole thing?,53
+1685,That's a question you could ask in AGI.,39
+1686,What's the meaning of life?,27
+1687,"As far as you look at it, your part of a small group of people that are creating something truly special, something that feels like almost feels like humanity was always moving towards.",185
+1688,Yeah.,5
+1689,That's what I was going to say is I don't think it's a small group of people.,77
+1690,"I think this is the, I think this is like the product of the culmination of whatever you want to call it, an amazing amount of human effort.",140
+1691,"And if you think about everything that had to come together for this to happen, when those people discovered the transistor in the 40s, like, is this what they were planning on?",177
+1692,"All of the work, the hundreds of thousands of millions of people to ever, it's been that it took to go from that one first transistor to packing the numbers we do into a chip and figuring out how to wire them all up together.",225
+1693,"And everything else that goes into this, the energy required, the science, like just every, every step.",103
+1694,"Like, this is the output of like all of us.",43
+1695,And I think that's pretty cool.,31
+1696,"And before the transistor, there was a hundred billion people who lived and died, had sex, fell in love, ate a lot of good food, murdered each other sometimes rarely, but mostly just good to each other, struggled to survive.",224
+1697,"And before that, there was bacteria.",36
+1698,Eukaryotes and all that.,24
+1699,And all of that was on this one exponential curve.,50
+1700,"Yeah, how many others are there?",32
+1701,I wonder.,9
+1702,We will ask that is the question number one for me for Asia.,60
+1703,How many others?,16
+1704,And I'm not sure which answer I want to hear.,45
+1705,"Sam, you're an incredible person.",33
+1706,It's an honor to talk to you.,29
+1707,Thank you for the work you're doing.,36
+1708,"Like I said, I've talked to Ilyas, the scarrot, the grag, I've talked to so many people at OpenAI.",98
+1709,They're really good people.,27
+1710,They're doing really interesting work.,38
+1711,We are going to try our hardest to get to get to a good place here.,67
+1712,I think the challenges are tough.,33
+1713,I understand that not everyone agrees with our approach of iterative deployment and also iterative discovery.,109
+1714,But it's what we believe in.,28
+1715,I think we're making good progress.,35
+1716,"And I think the pace is fast, but so is the progress.",53
+1717,So the pace of capabilities and change is fast.,47
+1718,But I think that also means we will have new tools to figure out alignment and sort of the capital S safety problem.,116
+1719,I feel like we're in this together.,35
+1720,I can't wait what we together as a human civilization come up with.,67
+1721,It's going to be great.,23
+1722,I think it will work really hard to make sure.,46
+1723,Thanks for listening.,21
+1724,This conversation was Sam Altman.,33
+1725,"The support this podcast, please check out our sponsors in the description.",75
+1726,And now let me leave you with some words from Alan Turing in 1951.,66
+1727,"It seems probable that once the machine thinking method has started, it would not take long to outstrip our feeble powers.",122
+1728,"At some stage, therefore, we should have to expect the machines to take control.",80
+1729,Thank you for listening and hope to see you next time.,54

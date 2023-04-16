@@ -1,0 +1,910 @@
+index,content,token
+0, Welcome to the Huberman Lab podcast where we discuss science and science-based tools for everyday life.,104
+1,I'm Andrew Huberman and I'm a professor of neurobiology and ophthalmology at Stanford School of Medicine.,105
+2,Today we are going to talk all about attention deficit hyperactivity disorder or ADHD.,86
+3,"We are also going to talk about normal levels of focus, what are normal levels of focus, and how all of us, whether or not we have ADHD or not, can improve our ability to focus, our ability to rule out distraction, turns out those are two separate things, as well as remember information better.",295
+4,"We are also going to talk about how we can learn to relax while focusing, which turns out to be a critical component of learning new information, and for coming up with new creative ideas.",188
+5,"So whether or not you have ADHD or know someone who does, or if you're somebody who feels that they do not have ADHD, but would simply like to improve their ability to focus or to be more creative, this episode is definitely for you as well.",241
+6,"We are going to talk about drug-based tools that are out there, we are going to talk about behavioral tools, we will talk about the role of diet and supplementation, and we will talk about new emerging brain-machine interface devices, things like transcranial magnetic stimulation.",281
+7,"If you don't know what that is, don't worry, I will explain it to you.",70
+8,"These are non-invasive methods for rewiring your brain in order to make focusing more natural for you, and to teach you how to increase your depth of focus.",156
+9,"Now just a quick reminder that anytime we discuss a psychiatric disorder, it's important that we remember that all of us have the temptation to self-diagnose or to diagnose others.",180
+10,"So as I list off some of the symptomology of ADHD, some of that symptomology might resonate with you, you might think, oh, maybe I have ADHD or you might decide that someone you know definitely has ADHD.",203
+11,"However, it is very important that you don't self-diagnose or diagnose somebody else.",85
+12,"The clear and real diagnosis of ADHD really should be carried out by a psychiatrist, a physician, or a very well-trained clinical psychologist.",143
+13,There are clear criteria for what constitutes full-blown ADHD.,62
+14,"However, many of us have constellations of symptoms that make us somewhat like somebody with ADHD.",98
+15,"And if you're struggling with focus nowadays as a lot of people are, because of stress, because of smartphone use, which turns out can induce adult ADHD, we'll talk about that.",176
+16,"Well, then pay attention to the symptomology.",45
+17,You may actually require professional treatment.,48
+18,You might not.,14
+19,"Equally important is to remember that some of the terms that we cover, like impulse control and attention and concentration, are somewhat subjective and they can change over time.",179
+20,Sometimes we have a better level of attention than others.,58
+21,Maybe it depends on how we slept or other events going on in our life or something that we're entirely unaware of.,114
+22,The important thing to remember is that we can all improve our attentional capacity.,84
+23,We can all rewire the circuits that make heightened levels of focus more accessible to us.,90
+24,We can do that through multiple types of interventions and we are going to cover all those interventions today.,111
+25,"Before we march into the material, I'd like to remind that this podcast is separate from my teaching and research roles at Stanford.",132
+26,"It is, however, part of my desire and effort to bring zero cost to consumer information about science and science-related tools to the general public.",150
+27,"In keeping with that theme, I'd like to thank the sponsors of today's podcast.",78
+28,Our first sponsor is Roka.,26
+29,Roka makes eyeglasses and sunglasses that are of the utmost quality.,68
+30,"I've spent a lifetime working on the visual system and I can tell you that there are many features built into our visual system that allows us to see things clearly, whether or not we are in shade or bright sunlight, etc.",221
+31,"A lot of sunglasses have the problem that you have to constantly take them off and put them back on again because of changes in background luminance, as we call it.",164
+32,Roka sunglasses have solved this problem.,41
+33,"It doesn't matter if you're standing in tree shade or a bright light or what have you, you can always see things with perfect clarity.",134
+34,That shows that they really understand the way that the visual system works and their eyeglasses are built accordingly.,119
+35,"I wear readers at night, so I wear eyeglasses to read at night or when I drive at night, and their readers and eyeglasses are terrific as well.",143
+36,"One thing I like so much about their eyeglasses and their sunglasses is that, despite being, quote, unquote, performance glasses, meaning you can wear them on running or swimming or biking, they don't fall off your face, even if you get sweaty, they're very lightweight.",270
+37,"You don't even notice that they're on, is that the aesthetic is really good.",76
+38,"A lot of performance glasses, they look ridiculous, frankly, they make people like cyborgs, but their aesthetics are terrific.",126
+39,They have a lot of different styles you can select from.,56
+40,The company was founded by two all American swimmers from Stanford and everything about their sunglasses and eyeglasses were designed with optical clarity and performance in mind.,179
+41,"If you'd like to try Roka, you can go to roka.com, that's roka.com, and enter the code, Huberman, to save 20% off your first order.",131
+42,Today's episode is also brought to us by Bel Campo.,51
+43,"Bel Campo is a regenerative farm in northern California that raises organic grass fed and finished, certified humane meat.",122
+44,"I tend to eat meat about once a day, so typically I'll fast until about noon or one, and then my lunch consists of a small piece of steak or chicken and some salad, and then I tend to eat my carbohydrates in the evening before I go to sleep.",241
+45,"Sometimes, and especially lately, I'm eating my protein earlier in the day because I'm playing around with some of the findings related to protein intake early in the day.",171
+46,"But regardless, I'm eating meat about once a day.",49
+47,"For me, it's extremely important that any meat that I consume come from humanely raised animals and that the meat be of the very highest quality.",145
+48,"So with Bel Campo meats, the animals graze on open pastures and seasonal grasses, which results in meats that's much higher in nutrients and healthy fats, including omega-3s, which I've talked a lot about on this podcast, the importance of omega-3s for heart health, for brain health, for mood, et cetera.",305
+49,"Personally, I love their ribeye steaks, their New York steaks, their chicken is terrific, and I also like the organic meatballs, although meat is organic and grass fed and grass finished.",187
+50,"If you'd like to try Bel Campo, first time customers can get 20% off by going to Bel Campo.com slash Huberman and using the code Huberman at checkout.",150
+51,Today's episode is also brought to us by Helix Sleep.,53
+52,Helix Sleep makes mattresses and pillows that are absolutely second to none.,76
+53,"I started sleeping on a Helix mattress about eight, nine months ago, and I've never slept better in my life.",108
+54,"If you go to the Helix site, they have a short two-minute quiz, and that quiz asks you questions like, do you sleep on your back, do you sleep on your side, do you sleep on your stomach, do you tend to run hot or cold in the middle of the night?",245
+55,"Maybe you don't know, and they actually have an option to select, I don't know.",79
+56,And Helix will match you to a mattress that's specific to your sleep needs.,75
+57,It turns out to be really important.,36
+58,"Some people have the tendency to run hot and sleep on their stomach, other people lie on their back, and they're waking up cold in the middle of the night.",155
+59,So you really need a mattress that's matched to your sleep needs.,65
+60,"I did that, and I matched to the Dusk mattress, dusk, and it turns out to be perfect for me and my sleep needs.",111
+61,"As well, their pillows are really terrific.",43
+62,"So if you're interested in upgrading your mattress, go to helix sleep.com slash Huberman, take their two-minute sleep quiz, and they'll match you to a customized mattress.",171
+63,"And you'll get up to $200 off any of their mattresses, and you'll get two free pillows with your order.",103
+64,"They have a 10-year warranty, you have to try it out for 100 nights risk-free, it's more than three months.",107
+65,"And if you don't like it, they'll pick it up for you, and they'll take it away, and you get all your money back.",112
+66,"So if you're interested, go to helix sleep.com slash Huberman for up to $200 off your mattress and two free pillows.",116
+67,"So let's talk about ADHD, attention deficit hyperactivity disorder.",67
+68,"Let's also talk about focus and attention and everybody's ability to focus and attend, not just people with ADHD.",113
+69,"We are also going to talk about tools that would allow anyone, whether or not they have ADHD or not, to enhance their level of concentration and focus.",151
+70,"Now, ADHD used to be called ADD, attention deficit disorder.",60
+71,"We have record of ADD in the medical literature, dating back to as early as 1904.",81
+72,"Now, there's nothing special about 1904, that's just the first time that it showed up in the standard medical literature.",121
+73,"We have to believe that ADD, which we now call ADHD, existed before 1904, and probably long before 1904.",104
+74,Why?,4
+75,"Well, because it has a strong genetic component.",48
+76,"If you have a close relative that has ADHD, there's a much higher probability that you will have ADHD.",102
+77,And that probability goes up depending on how closely related to that person you happen to be.,94
+78,"So for instance, if you're an identical twin and your twin has ADHD, there's a very high concordance, as we say, a very high probability that you will have ADHD, up to 75% chance.",179
+79,"If you have a fraternal twin with ADHD, that number goes down a bit in the 50 to 60% range, and so on.",102
+80,"If you have a parent with ADHD, that number ranges anywhere from 10 to 25% likelihood that you will have ADHD.",110
+81,If you have two parents and so on and so on.,44
+82,"Okay, so there's a genetic component.",37
+83,"That genetic component, it turns out, relates directly to how specific neural circuits in the brain wire up, the chemicals they use, and the way they use those chemicals.",170
+84,A topic that we are going to discuss in depth today.,52
+85,"Now, if you have a close relative with ADHD, that does not mean that you are faded to have ADHD.",96
+86,"And if you happen to have ADHD, there are ways to overcome those symptoms of lack of attention in pulsivity and so on.",118
+87,Another important point about ADHD is that it has nothing to do with intelligence.,82
+88,"Whether or not we're talking about intelligence measured by a standard IQ test, or rather controversial issue, as many of you probably know, there are lots of forms of intelligence that a standard IQ test just wouldn't pick up.",227
+89,"Emotional intelligence, musical intelligence, spatial intelligence, all sorts of intelligences.",95
+90,None of them are related to ADHD.,33
+91,Being very high functioning doesn't make you more likely to have ADHD.,70
+92,And being ADHD doesn't necessarily mean that you have a low IQ.,63
+93,"So there are people with ADHD, you have low IQs, people with ADHD with high IQs, people with ADHD with high emotional IQ, or with low IQ in the emotional scale.",160
+94,It's all over the place.,24
+95,"The important point is that your ability to attend and focus does not relate to how smart you are, or your IQ of any type, not just a standard IQ.",146
+96,The renaming of ADD to ADHD took place in the mid to late 1980s.,64
+97,When the psychiatric community and the psychological community started taking better notice of the fact that so-called hyperactive kids also had attentional issues.,164
+98,"This might seem obvious, but there's been extensive and ongoing revision of the criteria for designating a psychiatric disorder.",128
+99,"It's still an ongoing process, even today.",42
+100,"So in the mid-80s, we started hearing about ADHD, and then gradually that term ADD has been dropped away.",105
+101,"However, just the renaming of ADD to ADHD has led to much better diagnosis and detection of ADHD.",97
+102,"So right now, the current estimates are that about one in ten children and probably more have ADHD.",99
+103,The current estimates are anywhere from 10% to as high as 12%.,62
+104,"Now fortunately, about half of those will resolve with proper treatment.",72
+105,But the other half typically don't.,35
+106,The other thing that we are seeing a lot nowadays is increased levels of ADHD in adults.,88
+107,"And there's some question as to whether or not those adults had ADHD that went undetected during their childhood, or whether or not ADHD is now cropping up in adulthood due to the way that we are interacting with the world.",223
+108,"In particular, smart phone use, the combination of email, text, real-world interactions, multiple apps and streams of media and social media all coming in at once, trying to manage life, all of the things that are going on are creating kind of cloud of pulls on our attention.",276
+109,And so there is this question to whether or not we are creating ADHD in adults that never had ADHD prior to being an adult.,123
+110,So let's talk about attention.,30
+111,"And first, let's just define what we mean by attention.",55
+112,"Out there in the scientific literature and discussions about ADHD, we will hear things like attention and focus and concentration and impulse control.",150
+113,"For sake of today's discussion, attention, focus and concentration are essentially the same thing.",98
+114,"Okay, we could split hairs and the scientific literature does split hairs about these.",86
+115,"But if we want to understand the biology and we want to have a straightforward conversation about ADHD, if I say attention or focus, I'm basically referring to the same thing, unless I specify otherwise.",203
+116,"Okay, so people with ADHD have trouble holding their attention.",63
+117,What is attention?,18
+118,"Well, attention is perception.",30
+119,It's how we are perceiving the sensory world.,45
+120,"So just a little bit of neurobiology 101, we are sensing things all the time.",77
+121,There's information coming into our nervous system all the time.,64
+122,"For instance, right now, you are hearing sound waves.",53
+123,You are seeing things.,22
+124,You are sensing things against your skin.,41
+125,But you are only paying attention to some of those.,51
+126,And the ones that you're paying attention to are your perceptions.,66
+127,"So if you hear my voice, you are perceiving my voice.",53
+128,You are not paying attention to your other senses at the moment.,64
+129,"Okay, you might even be outside in a breeze.",44
+130,"And until I said that, you might not be perceiving that breeze, but your body was sensing it all along.",103
+131,So attention and focus are more or less the same thing.,55
+132,But impulse control is something separate.,42
+133,Because impulse control requires pushing out or putting the blinders on to sensory events in our environment.,109
+134,It means lack of perception.,28
+135,Impulse control is about limiting our perception.,49
+136,People with ADHD have poor attention and they have high levels of impulsivity.,78
+137,They are easily distractable.,29
+138,But the way that shows up is very surprising.,45
+139,You might think that people with ADHD just simply can't attend to anything.,75
+140,They really can't focus even if they really want to.,52
+141,But that's simply not the case.,31
+142,"People with ADHD, yes, they are distractable.",45
+143,"Yes, they are impulsive.",24
+144,"Yes, they are easily annoyed by things happening in the room.",61
+145,"They sometimes have a high level of emotionality as well, not always, but often.",80
+146,"However, people with ADHD can have a hyper focus and incredible ability to focus on things that they really enjoy or are intrigued by.",134
+147,Now this is a very important point because typically we think of somebody with ADHD as being really wild and hyperactive or having no ability whatsoever to sit still and attend.,177
+148,"And while that phenotype as we call it, that contour of behavior and cognition can exist, many people, if not all people with ADHD, if you give them something they really love, like the child loves video games or if a child loves to draw, or if an adult loves a particular type of movie or a person very much, they will obtain laser focus without any effort.",358
+149,"So that tells us that people with ADHD have the capacity to attend, but they can't engage that attention for things that they don't really, really want to do.",158
+150,"And as we all know, much of life, whether or not you're a child or an adult, involves doing a lot of things that we don't want to do.",133
+151,"Much of our schooling involves doing things that we would prefer not to do and sort of forcing ourselves to do it, to attend, even though we are not super interested in what we are attending to.",194
+152,There are a couple other things that people with ADHD display quite often.,74
+153,One is challenges with time perception.,39
+154,Time perception is a fascinating aspect of how our brain works.,63
+155,And later we're going to talk about time perception and how you can actually get better at time perception.,107
+156,It's very likely that right now you are doing things that get in the way of optimal time perception.,100
+157,And I will tell you how to adjust your ability to measure time with your brain.,79
+158,People with ADHD often run late.,32
+159,They often procrastinate.,25
+160,"But what's interesting and surprising is that if they are given a deadline, they actually can perceive time very well.",118
+161,And they often can focus very well if the consequences of not completing a task or not attending are severe enough.,115
+162,It's a little bit like the way that people with ADHD can really focus if they like something.,93
+163,"Well, if they're scared enough about the consequences of not attending, often times, not always, but often times they can attend.",129
+164,"If they're not really concerned about a deadline or a consequence, well, then they tend to lose track of time and they tend to underestimate how long things will take.",167
+165,"Now many people do that, not just people with ADHD, but people with ADHD have challenges understanding how to line up the activities of their day in order to meet particular deadlines.",184
+166,Even if it's just a simple thing like finishing one set of tasks before lunch.,78
+167,"Oftentimes they will remember that lunch starts at noon, but somehow they aren't able to fill the intervening time in a way that's productive.",142
+168,"And they can obsess about the upcoming deadline, for instance.",62
+169,We will talk about how to remedy this.,38
+170,"In addition, their spatial organization skills are often subpar, not always, but often you will find that somebody with ADHD uses what's called the pile system in order to organize things.",188
+171,"They will take many belongings, and this could be in the kitchen or in their bedroom or in their office, or in any space, and they will start piling things up according to a categorization system that makes sense to them and only them.",235
+172,It doesn't really have any logical framework.,45
+173,"Now many people use the pile system, and if you use the pile system that doesn't mean that you have ADHD, in fact if you're unpacking a house or you've moved recently, or you've received a lot of presence recently, the pile system makes perfect sense to organize your space.",274
+174,"But people with ADHD tend to organize things according to the pile system all the time, and that pile system doesn't work for them.",131
+175,"That's the key distinction that they use a filing system, and it's not really files.",84
+176,"They're piling things up in a way that makes sense to them, but then it doesn't work for them in terms of what tasks they actually need to perform.",147
+177,"They can't find things, or if anyone moves one thing, then it's very disruptive to their overall plan, because their overall plan doesn't really work in the first place.",169
+178,"That's a common phenotype, as we call it.",41
+179,"A phenotype, by the way, is just an expression of a particular set of underlying genetic or psychological components.",117
+180,We see the phenotype.,21
+181,A phenotype would be brown hair and green eyes.,47
+182,"For me, a phenotype could also be that somebody uses the piling system.",71
+183,The other thing that people with ADHD have real trouble with is so-called working memory.,89
+184,"You might think that people with ADHD would have really poor memories, but in fact that's not the case.",103
+185,People with ADHD often can have a terrific memory for past events that can remember upcoming events quite well.,111
+186,Their memory is clearly working.,32
+187,"However, one aspect of memory in particular that we call working memory is often disrupted.",91
+188,"Working memory is the ability to keep specific information online, to recycle it in your brain over and over again, so that you can use it in the immediate or short term.",170
+189,"A good example of this would be, you meet somebody, they tell you their name, they give you their phone number verbally, and you have to walk back to your phone and enter it into your phone.",190
+190,People without ADHD might have to put some effort into it.,58
+191,"It might feel like a bit of a struggle, but typically they would be able to recite that phone number in their mind over and over, and then put it into their phone.",163
+192,"So with ADHD, tend to lose the ability or lack the ability to remember things that they just need to keep online for anywhere from 10 seconds to a minute or two.",161
+193,"So a string of numbers like 643781, for most people would be pretty easy.",73
+194,"643781, 643781, you could probably remember that a minute from now without writing it down.",91
+195,"But if you add one more number to that 6437813, it gets tougher.",64
+196,So there's a reason why phone numbers typically have seven digits in them.,74
+197,"Of course, there's an area code, but remembering information that strings out longer than seven numbers or a sentence or two, that's challenging for most people.",161
+198,"People with ADHD have severe challenges, even with much smaller batches of information over even much smaller batches of time.",126
+199,"Deficits in working memory are also something that we see in people who have front of temporal dementia, so damage to the frontal lobes, or age-related cognitive decline.",170
+200,"And so it will come as no surprise that later when we discuss treatments, supplements, and other tools for ADHD that many of those treatments, supplements, and tools for ADHD are similar to the ones that work for age-related cognitive decline.",243
+201,"Okay, so we've more or less established the kind of menu of items that people with ADHD tend to have, some have all of them, some have just a subset of them.",157
+202,"Their severity can range from very intense to mild, but in general it's challenges with attention and focus, challenges with impulse control.",141
+203,They get annoyed easily.,24
+204,They have kind of an impulsivity.,33
+205,They can't stay on task.,24
+206,Time perception can be off.,27
+207,They use the piling system or a system that doesn't work well for them in order to organize their things in physical space.,123
+208,And they have a hard time with anything that's mundane that they're not really interested in.,93
+209,"But again, I just want to highlight that people with ADHD are able to obtain heightened levels of focus, even hyper-focus, for things that are exciting to them, and that they really want to engage in.",200
+210,Now you have the contour of what ADHD is.,41
+211,"And if you're somebody who doesn't have ADHD, you should also be asking yourself which aspects of ADHD are similar to things I've experienced before.",149
+212,Because what we know about the healthy brain is that there's also a range of abilities to focus.,96
+213,Some people focus very well on any task.,40
+214,You give them a task.,21
+215,They can just laser in on that task.,36
+216,"Other people, they have to fight an internal battle.",52
+217,They have to convince themselves that it's important or interesting.,68
+218,They have to incentivize themselves internally.,47
+219,Other people doesn't matter.,28
+220,"They could be bored to tears with the information, but they can do it just because they are, quote, unquote, very disciplined people.",133
+221,"We tend to admire those people, but as you'll see a little bit later, it's not clear that that's the best way to run your attentional system.",141
+222,It might be something to this business of having heightened levels of attention for the things that you are most interested or excited by.,138
+223,So let's drill into this issue of why people with ADHD actually can focus very intensely on things that they enjoy and are curious about.,137
+224,Injouement and curiosity are psychological terms.,49
+225,They're not even really psychological terms.,44
+226,"They're just the way that we describe our human experience of liking things, wanting to know more about them.",109
+227,"But from a neurobiological perspective, they have a very clear identity and signature.",86
+228,And that's dopamine.,20
+229,Dopamine is released from neurons.,34
+230,It's what we call a neuromodulator.,35
+231,"And as a neuromodulator, it changes the activity of the circuits in the brain such that certain circuits are more active than others.",133
+232,"And in particular, dopamine creates a heightened state of focus.",64
+233,It tends to contract our visual world and it tends to make us pay attention to things that are outside and beyond the confines of our skin.,139
+234,That's what we call exteroception.,34
+235,Dopamine also tends to put us in a state of motivation and wanting things outside the confines of our skin.,107
+236,"So whether or not we're pursuing something physical in our world or whether or not we're pursuing information in our outside world, dopamine is largely responsible for our ability and our drive to do that.",205
+237,But dopamine as a neuromodulator is also involved in changing the way that we perceive the world.,97
+238,"So as I mentioned earlier, you have all these senses coming in and you can only perceive some of them because you're only paying attention to some of them.",155
+239,Dopamine when it's released in our brain tends to turn on areas of our brain that narrow our visual focus and our auditory focus.,129
+240,So it creates a cone of auditory attention that's very narrow creates a tunnel of visual attention that's very narrow.,118
+241,"Whereas when we have less dopamine, we tend to view the entire world.",69
+242,We tend to see the whole scene that we are in.,46
+243,We tend to hear everything all at once.,39
+244,"So as I describe this, hopefully you're already starting to see and understand how having dopamine release can allow a person, whether or not they have ADHD or not, to direct their attention to particular things in their environment.",233
+245,So now what we're doing is we're moving away from attention as this kind of vague ambiguous term and we're giving it a neurochemical identity dopamine and we are giving it a neural circuit identity.,198
+246,"And just to put a little bit of flavor and detail on which neural circuits those are, I want to discuss two general types of neural circuits that dopamine tends to enhance.",172
+247,"So let's talk neural circuits and for those of you that love hearing neuroscience, nomenclature, you're going to eat this part up.",130
+248,"And for those of you that don't like a lot of names of brain areas, I invite you to tune out or just try and grab the top contour of this.",138
+249,"I will describe it in pretty general terms, but I will give some detail because I know there are some of you out there who really want to dig deeper into what the exact structures and connectivity is are.",204
+250,"Okay, so there are two main types of circuits that we need to think about with respect to ADHD attention and dopamine.",118
+251,The first one is called the default mode network.,49
+252,The default mode network is the network of brain areas in your brain and my brain and everybody's brain that is active when we're not doing anything when we're just sitting there idle at rest.,192
+253,"Now, it's very hard to not think about anything, but when you're not engaged in any type of specific task, so you're not driving, you're not playing a video game, you're not trying to study, you're not trying to listen, you're just sitting there letting your brain kind of go wherever it wants to go.",300
+254,Your default mode network underlies that state of mind.,55
+255,"The other set of circuits that we're going to think about and talk about with respect to ADHD are the task networks, the networks of the brain that make you goal oriented or that are at least trying to make you goal oriented.",225
+256,And those are a completely different set of brain areas.,56
+257,"However, the default mode network and these task networks are communicating with one another and they're doing that in very interesting ways.",141
+258,"So first I want to describe how these two sets of brain areas, the default mode network and the task networks normally interact.",128
+259,"Okay, so little bit of naming here again, feel free to ignore it if you don't want this level of detail, but the default mode network includes an area called the Dorsal Lateral Prefrontal Cortex.",195
+260,"Frontal Cortex, no surprises in the front and you have a Dorsal, the top and side lateral part, Dorsal Lateral Prefrontal Cortex.",129
+261,"You got one on each side of your brain, right?",46
+262,And then you have a brain area called the posterior Singulate Cortex.,69
+263,And then you have an area called the Lateral Parietal Lobe.,59
+264,"Again, you don't need to remember these names, these are three brain areas that normally are synchronized in their activity.",124
+265,"So when one of these areas is active in a typical person, the other areas would be active as well.",98
+266,"So it's a little bit like a symphony or a band, like a three piece band.",72
+267,"It's like drums, guitar and bass.",33
+268,They're playing together.,25
+269,"Okay, that's how it is in a typical person in a person with ADHD or even a person who has subclinical ADHD or in any human being who hasn't slept well, what you find is the default mode network is not synchronized.",214
+270,These brain areas are just not playing well together.,53
+271,"Now, the task networks include a different set of structures.",61
+272,"It still involves the prefrontal cortex, but it's a different part of the prefrontal cortex.",92
+273,"Okay, tends to be the medial prefrontal cortex.",47
+274,"And there are some other brain areas that the medial prefrontal cortex is communicating to all the time, mainly to suppress impulses.",133
+275,It's shutting down the desire to stand up or to scratch the side of your cheek or your nose if you're trying not to do that.,124
+276,"Anytime you're restricting your behavior, these task directed networks are very active.",87
+277,"Okay, now normally in a person without ADHD, the task networks and the default mode networks are going in kind of seesaw fashion.",129
+278,And they are actually what we call anti correlated.,51
+279,So it's not just that they are not correlated.,46
+280,They are actually opposing one another.,39
+281,They are anti correlated.,25
+282,"In a person with ADHD, the default mode networks and the task networks are actually more coordinated.",101
+283,That might come as surprising.,30
+284,"I think that we all have this tendency to kind of jump to conclusion and assume that somebody who doesn't have an easy time paying attention or has ADHD, that their brain must be completely incoherent, that it's not working well and because everything is out of whack.",268
+285,But there's something interesting about people with ADHD whereby the task networks and the default mode networks are actually working together in a way that's correlated.,170
+286,And that is what's abnormal.,28
+287,"So this would be like the guitar, bass and the drums playing together in a way where the bass isn't keeping the backbeat and the drums aren't keeping the backbeat.",163
+288,That they're playing together.,30
+289,They're all playing the melodies and harmonies in a way that just doesn't sound right.,86
+290,That's what's going on in the brain of somebody with ADHD.,58
+291,"And we can now confidently say based on brain imaging studies that when somebody gets better when they're treated for ADHD or when they age out of ADHD, as sometimes is the case, that the default mode networks and the task networks tend to become anti correlated again.",269
+292,"Okay, so that's the underlying neurobiology, but you'll notice that I didn't mention dopamine at all.",101
+293,What dopamine is doing in this context is dopamine is acting like a conductor.,78
+294,"Dopamine is saying, if this circuit should be active, then that circuit should be active.",89
+295,It should be default mode network.,34
+296,"And then when the default mode network is not active, then it should be the task network.",89
+297,"So it's really acting as a conductor saying, you go now, you go now, you go now, you go.",88
+298,"And in ADHD, there's something about the dopamine system that is not allowing it to conduct these networks and make sure that they stay what, you know, the engineers are physicists or mathematicians would say out of phase to be anti correlated.",244
+299,"Okay, out of phase and anti correlate essentially the same thing, at least for purposes of this discussion.",107
+300,So that raises two questions.,29
+301,"Could it be that dopamine is not at sufficiently high levels, or could it be that dopamine is just doing it all wrong?",118
+302,"In other words, is there no conductor or is the conductor playing with like little tiny toothpicks?",99
+303,And so the instruments can't see what they're supposed to do.,61
+304,"They can't get the instruction because it's just not loud enough, so to speak.",78
+305,"Or could it be that the information is getting out, but the information that's getting out is wrong.",100
+306,"The conductor is there, but the conductor isn't very good at conducting.",72
+307,"Now we can gain insight into how this system works and fails and how to treat it by looking at some of the current and previous treatments for ADHD, as well as some of the recreational drugs that people with ADHD tend to pursue and like.",237
+308,Now I'm certainly not a proponent of people with ADHD taking drugs recreationally.,82
+309,That's not what this is about.,30
+310,"But if you look at their drug seeking behavior and you couple that drug seeking behavior to their desire to remedy their attention deficit, you start gaining some really interesting insight into how dopamine is regulating these circuits in normal circumstances and in people with ADHD.",285
+311,So what exactly is going on with the dopamine system in people with ADHD and what's going on with the dopamine system in people that have terrific levels of attention for any task?,180
+312,"Well, in the year 2015, an important paper came out, the first author is Spencer, and it came out in a journal called biological psychiatry.",140
+313,And it formalized the so-called low dopamine hypothesis of ADHD.,64
+314,The idea that dopamine was somehow involved or not at the appropriate levels in people with ADHD had been around for a pretty long time.,136
+315,But a formal proposition of the low dopamine hypothesis led to some really important experiments and understanding of what goes wrong in ADHD.,142
+316,"It turns out that if dopamine levels are too low in particular circuits in the brain, that it leads to unnecessary firing of neurons in the brain that are unrelated to the task that one is trying to do and that is unrelated to the information that one is trying to focus on.",274
+317,"So if you think back before you've got this default mode network and a task related network and they need to be in this kind of concert of anti-correlation and in ADHD, they're firing together.",193
+318,"Well, the problem seems to be that when dopamine is low, certain neurons are firing when they shouldn't be.",107
+319,"This is like a band, right?",27
+320,We'll go back to our band that's a guitar or bass and a person playing the drums.,81
+321,"And it's as if one of those or several of those instruments are playing notes when they shouldn't be playing, right?",116
+322,The pauses in music are just as important as the actual playing of notes.,73
+323,"When dopamine is too low, neurons fire more than they should in these networks that govern attention.",101
+324,This is the so-called low dopamine hypothesis.,46
+325,"And if you start looking anecdotally at what people with ADHD have done for decades, not just recently since the low dopamine hypothesis has been proposed, but what they were doing in the 1950s and then the 1940s and the 1960s, what you find is that they tend to use recreational drugs or they tend to indulge in non-drug stimulants.",333
+326,"So things like drinking six cups of coffee or quadruple espresso or when it was more prominent, smoking a half a pack of cigarettes and drinking four cups of coffee a day.",171
+327,"Or if the person had access to it using cocaine as a recreational drug or amphetamine as a recreational drug, all of those substances that I just described, in particular cocaine and amphetamine, but also coffee and cigarettes, increased levels of multiple neurotransmitters, but all have the quality of increasing levels of dopamine in the brain and in particular in the regions of the brain that regulate attention and these task related and default mode networks.",466
+328,"Now young children, fortunately, don't have access to those kinds of stimulants most of the time and those stimulants all have high potential for abuse in adults.",162
+329,"So we will talk about the potential for abuse in a few minutes, but if you look at children, even very young children with ADHD, they show things like preference for sugary foods, which also act as dopamine inducing stimulants.",227
+330,"Now of course, once they get access to soda pop and coffee and tea, they start to indulge in those more than other people.",122
+331,"For a long time, it was thought that children with ADHD consume too many sugary foods or drank too much soda or adults with ADHD would take recreational drugs like methamphetamine or cocaine or would drink coffee to excess or smoke cigarettes to excess because they had poor levels of attention and because they couldn't make good decisions.",341
+332,They were too impulsive and so forth.,37
+333,"And while that certainly could be the case, knowing what we now know about dopamine and the fact that having enough dopamine is required in order to coordinate these neural circuits that allow for focus and quality decision making.",231
+334,An equally valid idea is that these children and these adults are actually trying to self-medicate by pursuing these compounds.,127
+335,Things like cocaine lead to huge increases in dopamine.,55
+336,"Well, what happens when somebody with ADHD takes that drug?",59
+337,It turns out they actually obtain heightened levels of focus.,61
+338,Their ability to focus on things other than things they absolutely care intensely about goes up.,96
+339,"Likewise, children who consume anything that increases their levels of dopamine.",80
+340,"If those children have ADHD, they tend to be calmer.",52
+341,They tend to be able to focus more.,35
+342,Now this is very different than children who do not have ADHD.,62
+343,"When they consume too much sugar, they tend to become super hyperactive.",72
+344,"When they consume any kind of stimulant, they tend to go wild and run around like crazy.",88
+345,I actually have an anecdote about this just to illustrate it.,61
+346,I have a friend.,16
+347,He has two children that are now in their teens and 20s.,56
+348,"But when they were little, one time I brought them some chocolate just as a gift when I showed up at their house.",113
+349,"And within 30 minutes, the kids were running around like crazy.",63
+350,"I mean, they were pretty high energy kids, but they were going bonkers.",71
+351,"And that's actually when the mother, my friend at the time, unfortunately, still now looked at the chocolate and realized that it was chocolate with espresso beans.",164
+352,It was like dark chocolate espresso beans.,42
+353,So I was really at fault there.,31
+354,You don't want to give kids dark chocolate with espresso beans.,63
+355,"But what you're really seeing that hyperactivity, that is dopamine.",67
+356,"It's the sugar combined with the caffeine in this case, combined with a few other compounds that exist in chocolate that really increase our levels of alertness and our tendency to want to move around a lot.",207
+357,Okay.,5
+358,So dopamine and low levels of dopamine apparently are what's wrong in people with ADHD.,87
+359,"That dopamine hypothesis is what led to the idea that treating people, children and adults included with dopamine, urgent compounds would somehow increase their ability to focus.",178
+360,"And if you look at the major drugs that were developed and now marketed by pharmaceutical companies for the treatment of ADHD, those drugs have names like riddlein nowadays.",173
+361,"It's typically things like aterol, Modaphanil and some of the other derivatives.",80
+362,They all serve to increase levels of dopamine in particular dopamine in the networks that control task directed behavior and that coordinate the default mode network and these task related networks.,198
+363,So many of you have probably heard of riddlein.,47
+364,Riddlein is a prescription stimulant that is prescribed for ADHD as well as for narcolepsy.,91
+365,"Narcolepsy is a condition in which people tend to fall asleep during the daytime, quite a lot excessive daytime sleepiness, not due to lack of sleep at night, but also tend to fall asleep when they get excited.",210
+366,"If they're really emotionally excited or about to eat or any other kind of activity that would normally get somebody really aroused in alert, people with narcolepsy tend to fall asleep or they tend to become what's called catapultic.",233
+367,They tend to just sort of go limp in the muscles.,49
+368,So it's this invasion of sleep into the daytime.,48
+369,It's dysregulated by emotion.,29
+370,"You can imagine why a stimulant, something that would wake you up, make you very alert focused and motivated would be a good treatment for narcolepsy.",150
+371,Adderol also is used to treat ADHD and to treat narcolepsy.,59
+372,Things like Modaphanil also used to treat ADHD and narcolepsy.,62
+373,So you're sensing a theme here.,31
+374,So what are the differences and similarities between these drugs and what can that tell us about ADHD?,102
+375,Well riddlein was one of the first generation drugs that was prescribed for ADHD in order to deal head on with this dopamine hypothesis.,136
+376,This idea that in ADHD dopamine levels are too low.,51
+377,"Nowadays, Adderol is the more typically prescribed drug for ADHD.",65
+378,"That has to do with some of the so-called pharma kinetics, the rate at which those drugs enter the system and how long they last in the system.",143
+379,"So for instance, riddlein was a drug that was packaged into various time release formulas, whereas initially Adderol was only released in a form that had a very short life.",172
+380,So meaning that it wasn't in the bloodstream very long and didn't affect the brain for very long.,97
+381,And so the dosages could be controlled in a more typical way without going into a lot of tangential detail.,107
+382,"As you all know, at different times of day, you tend to be more or less alert.",78
+383,"So a long sustained release drug, while that might sound like a really terrific thing.",86
+384,"If that drug is having an effect of making you more alert and it's released across very many hours of your day, there might be periods of your day when you feel too alert, periods of your day when you feel just right and periods of your day when you wished that you were more alert.",282
+385,"These are some of the pharma-co-kinetics, kinetics, meaning movement of the different compounds within the bloodstream and brain that could... You could imagine in a very real way would impact whether or not someone would feel really good on one of these drugs or whether or not they would feel too anxious or too sleepy and so on.",331
+386,"Let's take a step back for a second and just ask, what are these drugs?",71
+387,"We know they increased dopamine, but what are they really?",58
+388,"Well, Ritalin, also called methylphenidate, is very similar to amphetamine, speed, or what's typically called speed in the street drug nomenclature.",148
+389,"Adderol, which goes by various other names, okay?",49
+390,"So Adderol, Adderol XR, my DAS, my Diasis, things like that.",60
+391,Adderol is basically a combination of amphetamine and dextro-amphetamine.,73
+392,"Now, some of you probably realize this, that Adderol is amphetamine, but I'm guessing that there are a good number of you out there, perhaps even parents and kids that don't realize that these drugs like cocaine and amphetamine, methamphetamine, which are incredibly dangerous and incredibly habit-forming and have high potential for abuse.",340
+393,"Well, the pharmaceutical versions of those are exactly what are used to treat ADHD.",83
+394,"Now, they're not exactly like cocaine or amphetamine, but they are structurally and chemically very similar, and their net effect in the brain and body is essentially the same, which is to increase dopamine, primarily, but also to increase levels of a neuromodulator called epinephrine or nor epinephrine, also called noradrenaline adrenaline, and those names are the same.",373
+395,"And to some extent, to increase levels of serotonin in the brain and blood, but not so much serotonin, that's just kind of a small smidgen of effect.",149
+396,"Okay, so dopamine, wayup, nor epinephrine and adrenaline, wayup, so that's motivation, drive, focus, and energy, and to some extent, a little bit of serotonin, which is really more about feeling calm and relaxed, and you could imagine why that would be a good balancing effect for the drug.",290
+397,For dopamine and nor epinephrine.,33
+398,"So what I'm essentially saying is that the drugs that are used to treat ADHD are stimulants, and they look very much like, in fact, nearly identical to some of the so-called street drug stimulants that we all hear are so terrible.",230
+399,"However, I do want to emphasize that at the appropriate dosages and working with a quality psychiatrist or neurologist or family physician does have to be a board certified MD that prescribes these things.",205
+400,"Many people with ADHD achieve excellent relief with these drugs, not all of them, but many of them do, especially if these treatments are started early in life.",160
+401,"So now knowing what these drugs are, I want to raise the question of why prescribe these drugs.",95
+402,"I mean, everyone has to make a decision for themselves or for their child as to whether or not they're going to take these things or not.",137
+403,"I also want to acknowledge that many people out there, many, many people out there, are taking these drugs, even though they have not been clinically diagnosed with ADHD.",170
+404,"When I say these drugs, I'm specifically referring to riddle in an aderol and modaphanil, but more typically it's aderol.",121
+405,"People using cocaine and anapheidamine for recreational purposes, that's a completely different beast, and it is indeed a beast, and it's something that I strongly discourage.",175
+406,"However, I'm aware that up to 25% of college students and perhaps as many as 35% of all individuals between the ages of 17 and 30 are taking aderol on a regular or semi-regular basis in order to work, in order to study, and in order to function and focus in their daily life, even though they have not been diagnosed with ADHD.",327
+407,"There's a whole black market for this, they're getting it from people with prescriptions.",89
+408,I'm not here to pass judgment.,30
+409,"I just want to emphasize how these drugs work, some of the things that they do to enhance cognition and focus that actually serve the brain well in certain individuals, and how they can be very detrimental in other individuals.",227
+410,"It's sort of blue right past it, but the fact that in upwards of 25% of young people are taking things like aderol despite not having a clinical diagnosis of ADHD, well that's a ridiculously high number.",203
+411,"Years ago, it was estimated that aderol use and riddling use without diagnosis of ADHD was second in incident only to cannabis, but actually now the consumption of aderol without prescription is higher than the consumption of cannabis in that age group.",253
+412,"So what that means is that there's a lot of stimulant use in that age group, and there are a lot of adults also using and abusing stimulants in order to gain focus.",164
+413,"Now we could have a whole discussion about whether or not life is becoming more demanding, whether or not the need for focus is excessive, and that's why people are doing that.",176
+414,"Frankly, it's an interesting discussion, but it's not one that would deliver us to any answers.",95
+415,"Rather, I'd like to focus on the ways that people now and people have always been self-medicating to increase focus.",116
+416,Right?,6
+417,"Caffeine, which I indulge some, I don't think to access, has long been used as a stimulant to increase dopamine, increase norupinephrine, increase focus and energy.",164
+418,"And in addition to that, it works through the so-called cyclic AMP phosphodiesterase pathway.",93
+419,"Remember anytime you see you here in ASE, that's an enzyme, phosphodiesterase is involved in the conversion of things like cyclic AMP into energy for cells and so forth.",169
+420,"And then the cyclic coffee gives you energy, it makes you feel good.",68
+421,And it increases focus because of the circuits that it engages in the brain.,76
+422,People have been taking caffeine and continue to take caffeine for ages.,72
+423,People also used to smoke cigarettes nicotine in order to gain focus.,69
+424,"Nowadays, that's less common because of the concerns, quite valid concerns about lung cancer from smoking, but there's a lot of vaping out there.",145
+425,"There are a lot of people now consuming nicotine, which is the active substance in cigarettes and in most nicotine vapes that stimulates the brain to be more focused and more alert.",181
+426,So the idea of taking stimulants of consuming things or smoking things in order to increase alertness is not a new idea.,120
+427,"It's just that in ADHD, it's surprising that these things would work.",69
+428,"If the problem is attention deficit hyperactivity disorder, what we're really talking about here, or children that are prescribed a drug that ought to be a stimulant, it ought to make them hyperhyperactive.",206
+429,"And rather than doing that, it actually somehow serves to calm them a bit or at least allow them to focus.",106
+430,Here's the reason.,18
+431,"Children have a brain that's very plastic, meaning it can remodel itself in change in response to experience very, very quickly compared to adults.",147
+432,"Taking stimulants as a child, if you are a child diagnosed with ADHD, allows that four brain task related network to come online to be active at the appropriate times.",167
+433,"Because those children are young, it allows those children to learn what focus is and to sort of follow or enter that tunnel of focus.",134
+434,"Now by taking a drug, it's creating focus artificially.",55
+435,It's not creating focus because they're super interested in something.,70
+436,It's chemically inducing a state of focus.,42
+437,"And let's face it, a lot of childhood and school and becoming a functional adult is about learning how to focus even though you don't want to do something.",155
+438,"In fact, when I was in college, I had this little trick that may or may not work for some of you, which is if I couldn't focus on the material I was trying to learn, I would dilute myself into thinking that it was the most interesting thing in the world.",254
+439,"I would just kind of lie to myself and tell myself, okay, this I won't mention the subjects.",92
+440,I absolutely love this.,23
+441,I would just I would tell myself that I loved it.,49
+442,"And I noticed that just that selective or deliberate engagement of that desire to know circuit, whatever that is in my brain, no doubt involves dopamine, allow me to focus and remember the information and somewhat surprisingly, or perhaps not surprisingly, I would often fall in love with the information.",305
+443,I find that that was my favorite class.,39
+444,It was what I wanted to learn the most.,39
+445,"So that's one way you can do it artificially, but kids with ADHD, they can't do that, right?",92
+446,They're told to sit still and they end up getting up 11 times.,62
+447,"They're told that they can't speak out in class or that they have to remain in their seats for 10 minutes and they just despite their best effort, they simply cannot do it.",172
+448,They're highly distractable.,28
+449,"So what are we to make of this whole picture that we need more dopamine, but these kids with ADHD, they're getting their dopamine by way of a drug, which is for all the world and fetamines, right?",196
+450,It's speed.,11
+451,That's really what it is.,25
+452,What are the long term consequences?,36
+453,What are the short term consequences?,37
+454,And what should we make of people taking these drugs without a clinical need?,77
+455,What are the consequences there?,32
+456,"Well, in order to get to some of those answers, I went to one of my colleagues.",79
+457,This is a colleague that I've actually known for a very long time.,66
+458,I was their teaching assistant when they were an undergraduate.,63
+459,"They went on to get an MD, a medical degree, as well as a PhD, and have become a pediatric neurologist that specializes in the treatment of epilepsy and ADHD in kids of all ages from age three to 21.",199
+460,"That's the age range, pretty broad age range, and has extensive knowledge in this.",82
+461,"And what makes them particularly interesting for sake of this discussion is that they have a child, a young boy, who's now showing signs of ADHD, and they are on the threshold of trying to decide whether or not they will prescribe, adderol or something similar.",261
+462,So we had a discussion about this.,34
+463,"And prior to learning that their child may have ADHD, I asked the following questions.",86
+464,"First of all, I asked, what do you think about giving young kids amphetamine?",77
+465,"And their answer was, you know, on the face of it, it seems crazy, but provided that the lowest possible dose is used and that that dosage is modulated as they grow older and develop those powers of attention.",209
+466,Their observation was that they've seen more kids benefit than not benefit from that.,85
+467,"Now, I'm certainly not saying what people should do.",52
+468,"You obviously have to go to a doctor, because as I always say, I'm not a doctor, I don't prescribe anything, I'm a professor, so I profess things.",146
+469,"And here I'm professing that you talk to your doctor if you're considering giving riddle in or adderol or any type of stimulant to your child, of course.",153
+470,What could be more important than the health of your child?,59
+471,"But it was a very interesting answer because typically we hear, yes, Medicaid or don't Medicaid.",96
+472,Rarely do we hear that the medication should be adjusted across the lifespan in any particular kind of way.,107
+473,"Now the fact that this person, this now friend of mine and colleague of mine has so much expertise in the way that the brain works and is considering putting their child on such medication.",189
+474,"I said, you know, why wouldn't you wait until your kid reaches puberty?",71
+475,"I mean, we know that in boys and in girls, there are increases in testosterone and estrogen during puberty that dramatically change the way that the body appears, but also that dramatically changed the way that the brain functions in particular.",245
+476,We know this that puberty triggers the activation of so-called frontotemporal task related executive functioning.,113
+477,"That's just fancy science speak for being able to focus, being able to direct your attention, being able to control your impulses.",130
+478,"Look at a small child or look at a puppy and then look at an older child or look at a dog, very different levels, patterns of spontaneous behavior, young children move around a lot.",181
+479,"They're, I don't want to say shifty because that makes it sound like they're up to something bad, which they might be, but they don't have to be up to something bad.",165
+480,They fidget a lot.,18
+481,"So to puppies, everything's as stimulus as animals and humans get older, they learn how to control their behavior and sit still.",128
+482,Listen and focus even if they don't want to.,44
+483,"So giving a drug that allows a child to access that stillness early on, it's thought will allow them to maintain that ability as time goes on.",142
+484,But I decided to push a little bit further.,43
+485,"I said, well, why would you do it now as opposed to during puberty or after puberty?",84
+486,"And their answer was very specific and I think very important what they said was look, neuroplasticity is greatest in childhood and tapers off after about age 25.",162
+487,But neuroplasticity from age three until age 12 or 13 is exceedingly high.,74
+488,And they're right.,18
+489,"When you sit back and you look at the literature on neuroplasticity, you'd say childhood plasticity and young adult plasticity is much greater than adult plasticity.",165
+490,"But that early childhood plasticity is far in a way, the period in which you can reshape the brain at an accelerated rate.",122
+491,"So this lines up really well with the clinical literature, not surprisingly, they're a clinician that early treatment is key.",125
+492,"If you have the opportunity to work with a quality physician and treat these things early, these drugs can allow these frontal circuits, these task related circuits to achieve their appropriate levels of functioning and for kids to learn how to focus in a variety of different contexts.",286
+493,"Now, is that the only thing that they should be doing?",54
+494,Of course not.,14
+495,"So the next question I asked was, what should we make of all this diet related stuff?",85
+496,Right?,6
+497,I've heard before that the so-called elimination diet or ingesting no sugars or no dairy or no gluten that all of these things have been purported to improve symptoms of ADHD.,175
+498,And people and parents with ADHD go to fanatic lengths to try and find the exact foods that are causing problems and the exact foods that the kids can eat in order to try and get their brain wired up right and correctly and to avoid lifelong ADHD.,247
+499,And their answer was really interesting.,40
+500,"But before I tell you their answer, I want to tell you the studies and the data related to this question of whether or not food and the constellation of foods that want to avoid and willy has anything to do with our levels of attention and in particular whether or not that can be used as a leverage point to treat ADHD.",320
+501,"So you can imagine the challenges of exploring the role of diet and nutrition in any study, but especially in a study on ADHD.",126
+502,Why?,4
+503,"Well, because as I mentioned before, children with ADHD and it turns out adults with ADHD tend to pursue sugary foods or any types of food that increase their levels of dopamine.",178
+504,"They are naturally drawn to those foods, whether or not they realize it or not, presumably as a way to try and treat their lack of focus and impulsivity.",153
+505,"So in this study that I'm about to share with you, there was no drug treatment.",79
+506,"It was just a study manipulating diet and involved 100 children 50 in the so called elimination diet group, the special diet where certain foods were eliminated and 50 in the so called control group.",199
+507,"However, being a well designed randomized controlled trial, the study also included a crossover meaning where the kids would serve as their own control or control group at a certain portion of the studies.",205
+508,"They would be in one group where they eliminated certain foods and then after a period of time in the study, they would swap to the other group.",144
+509,This is a powerful way to design a study for reasons that you can imagine because you start to eliminate changes and effects due to individual differences.,155
+510,"In any case, 100 children total 50 in each group at any one period in time and the effects that they observe were extremely dramatic.",133
+511,"In the world of statistics and analysis of scientific data, we talk about p-values, probability values.",103
+512,What's the likelihood that something could happen according to chance and typically the cutoff would be something like p less than 0.05.,136
+513,That's less than 0.05 chance essentially of the effect being due to chance.,75
+514,"However, in this study, every single one of the effects is p less than 0.001, very, very infinitesimally small probability that the effect observed could be due to chance.",171
+515,So what were these effects?,27
+516,"These effects were enhanced ability to focus, less impulsivity, even less tendency to move when trying to sit still.",116
+517,So everything from mental focus to the ability to control their bodies improved when they were in the elimination diet group.,125
+518,What was eliminated?,20
+519,"Well, the elimination diet in this particular study was a so-called all-ego antigenic diet.",91
+520,"It was a diet in which each kid took a test to determine which foods they had antibodies for, meaning that they were mildly allergic to.",136
+521,"Now, in this study, it was very important that the kids not be extremely allergic to any food, because as I mentioned before, they actually served as a control at one point in the study where they were eating all sorts of foods, including foods that they had mild allergies to.",277
+522,So basically what this study said was that eliminating foods to which children have allergies can dramatically improve their symptoms of ADHD.,142
+523,"And this study, not surprisingly, because it was published in such a high quality journal, Lancet, et cetera, large number of subjects, set the world on fire.",158
+524,"People were extremely excited about these results, because here in the absence of any drug treatment, there was a significant improvement in ADHD symptoms observed.",164
+525,And then came the criticisms.,29
+526,"So many papers were published after this, specifically dealing with reanalysis of these data.",93
+527,"And I want to be fair in saying that the data in the paper look good, but there are criticisms of the overall structural design in the study.",141
+528,"I don't want to go into all the details exactly, because it gets really nuanced about some of the statistics in the way that one examines these types of data.",158
+529,"But there was skepticism and in science skepticism is healthy, especially when making decisions about whether or not to treat or feed children one food or another or give them one drug or another.",196
+530,Now I want to return to the story of my friend who is a pediatric neurologist and treats ADHD and has a child who is on the precipice of perhaps starting to take drugs for the treatment of ADHD.,194
+531,"I asked the simple question, do you see an effective diet, meaning when parents control the diet of their children, does it make a positive or negative or no difference in terms of the way that the kids respond to ADHD drugs like Ritalin and Adderall or whether or not it can help them avoid treating with those drugs entirely.",327
+532,And her response was very straightforward.,42
+533,She said elimination of simple sugars has a dramatic and positive effect.,73
+534,"She's observed that over and over and over again in many dozens, if not hundreds of patients.",93
+535,Now that's not a peer reviewed study.,37
+536,"That's a statement that I'm conveying to you anecdotally, but it's a highly, highly informed one.",97
+537,"I said, what about these elimination diets?",43
+538,"She said, and I found other sources to support this that these only go into genetic diets are controversial.",108
+539,Many people who really believe in identifying all the things that you're allergic to and making sure that you and especially your kids avoid those foods.,153
+540,"However, there's another camp that's starting to emerge in the peer reviewed scientific literature showing that when kids are not exposed to certain foods, in particular nuts and things of that sort, they develop allergies to those foods.",238
+541,"And then when exposed to them later, they cause real problems.",62
+542,So there's a whole galaxy of discussion and controversy and outright fighting about allergies and kids and whether or not the oligo antigenic diet is the appropriate one.,170
+543,"However, out of the four neurologists and psychiatrists that I spoke to about ADHD and preparation for this, every single one said children with ADHD as much as possible should be encouraged to avoid high sugar and simple sugar foods of most kinds.",248
+544,"And if they can find particular foods that exacerbate those symptoms, obviously eliminating those foods is beneficial.",118
+545,And the foods that exacerbate their symptoms change over time.,62
+546,"So I don't like giving a complicated answer, but I also don't like giving an incomplete answer.",95
+547,"What this tells me is that children, especially young children who have ADHD should probably not eat much sugar in particular, simple sugars.",141
+548,"In addition to that, exploring whether or not they have existing allergies to foods they already consume might be a good idea.",126
+549,"At least that's what this paper, the Pelsar et al.",50
+550,Lancet paper seems to speak to.,31
+551,And I should mention that that paper was published in 2011.,59
+552,"Since then, there have been many dozens of studies exploring the same thing as well as meta-analyses of all those data.",119
+553,And it does appear that diet can have a highly significant role in eliminating or at least reducing the symptoms of ADHD.,121
+554,So much so that some of the children are able to not take medication at all or eventually wean themselves off medication as young adults and as adults.,151
+555,One interesting question is whether or not adults should modify their diet in order to increase their levels of focus if they're already having normal levels of focus but would like more or would like to reduce existing adult ADHD.,231
+556,That's an interesting and even more controversial topic.,56
+557,It brings us right into the realm of what are called omega-3 fatty acids.,73
+558,"I've talked many times on this podcast about the known benefits of omega-3 fatty acids in particular getting one gram, 1000 milligrams or more, even as much as 2000 milligrams each day of the so-called EPA component of omega-3 fatty acids known to have antidepressant effects, mood elevating effects known to the body.",318
+559,"And the other thing is that omega-3 fatty acids that are very beneficial, typically that's done through fish oil.",113
+560,Liquid fish oil is going to be the most cost-efficient but they're capsule forms for those of you that don't like fish oil.,123
+561,So other means you can get from certain algae or krill etc.,59
+562,you have to make make it compatible with your particular diet whether or not you're vegan or vegetarian or omnivore etc.,120
+563,Omega-3s have been shown to have all these positive health benefits.,68
+564,Do they have positive effects on focus and attention?,53
+565,And the answer is you can find studies that support that statement and the effects are significant but the effects are modest.,126
+566,You can also find studies that show no effect.,46
+567,"However, much like with omega-3s and antidepressants whereby ingestion of omega-3 fatty acids of a gram or more of EPA per day allows people with major depression to get away with taking lower doses of antidepressant medication, it does seem that ingestion of omega-3 fatty acids in adults.",290
+568,That include EPA's of a thousand milligrams or more can allow adults with ADHD or mild attention deficit issues to function well on lower doses of medication and in rare cases to eliminate medication entirely.,209
+569,So what this says is once again that the omega-3 fatty acids are beneficial.,76
+570,Will they cure or eliminate ADHD?,33
+571,I think it's safe to say no.,28
+572,They are playing a supportive or what we call a modular roll just like good sleep plays a supportive and modular roll for essentially everything your immune system your ability to think your ability regulate your emotion it's modulating that process.,250
+573,This component of modulation is extremely important to highlight and I think I want to spend a moment on it because this is especially important in the context of ADHD and all the information that's out there.,209
+574,There are biological processes that are mediated by particular compounds like dopamine.,87
+575,So for instance the ability to feel motivated to attend to focus is mediated by the circuits in the brain that release dopamine.,128
+576,"However, attention is also modulated by how rested you are if you want to eliminate your ability to think well at all just stay up for two nights and don't sleep at all.",169
+577,If you do that you will have modulated the circuits in your brain that respond to various things and you will be highly distractable you will be highly emotional you will feel like garbage but that doesn't mean that sleep mediates focus and attention it modulates it indirectly.,278
+578,"Likewise, I think these are mega three fatty acids in particular the EPA's which are so beneficial for mood and apparently also for attention they don't directly mediate attention and mood what they do is they modulate those circuits they make dopamine more available they make whatever dopamine is available more likely to bind to the various receptors that are present on neurons and so forth.",395
+579,I think this is very important because likewise diet and any discussion about nutrition has to include this framework of is the diet the elimination diet or whether or not it's some other diet or esoteric diet ketogenic diet is it modulating or mediating a process and most likely in the context of ADHD it's modulating that process.,333
+580,So if the ADHD is mild or if it's caught early enough or if it's in conjunction with pharmacology with a prescription treatment well then it might help guide the child or adult to a better place of being able to focus but it's not going to be the switch that flips everything now that does not mean that consuming the wrong foods sugary foods or foods that you happen to be allergic to is a good idea it will still be detrimental.,430
+581,So I hope that conceptual framework helps because if you go online if you're somebody with ADHD or not you are going to be bombarded with the ADHD diet the only going to genetic diet the elimination this the this supplement that EPA and I think it's very important to understand whether or not you're talking about something mediating a process or modulating a process now drugs like riddle and drugs like a roll they are tapping into the circuitries and the neuro chemistries that mediate attention and focus.,510
+582,They are not the only alternatives or the only choices rather for treatment of these circuits and enhancement of the circuits for focus I'm going to talk about other alternatives and some behavioral alternatives that are not very well known but are very very effective in a few minutes but I really want to make this clear distinction between modulation and mediation because it's vital for anyone that's trying to modulate or mediate anything within their own brain.,467
+583,If any of you are interested in this oligo antigenic diet as it relates to ADHD and you want to explore a more recent study besides that classic 2011 Lancet study that's rather controversial there's a paper that was published in frontiers in psychiatry just last year 2020 the title of the paper is oligo antigenic diet improves children's ADHD rating scale scores reliably in added video rating the added video rating is just that they're using an additional measure of the same.,480
+584,So we've talked about the neural circuits of focus and the chemistry of focus but we haven't talked yet about what would make us better at focusing and what focusing better really is.,183
+585,So let's take a step back and think about how we focus and how to get better at focus and I'm going to share with you a tool for which there are terrific research data that will allow you in a single session to enhance your ability to focus in theory forever.,259
+586,What I'm about to read you is from an excellent book that I recommend if any of you are interested in neuroscience and things like meditation and default mode networks and things of that sort.,192
+587,The book is called altered traits.,34
+588,"Science reveals how meditation changes your mind, brain, and body and no I'm not going to try and convince you to meditate.",123
+589,I'm going to share with you a small passage in the book that relate some research data related to focus that are very important.,128
+590,If you want to meditate that's your choice that's a separate matter.,68
+591,This is a book by Daniel Goldman and Richard Davidson and I should just mention that Goldman is a well known author.,116
+592,He's written books on emotional intelligence and so forth.,58
+593,Richard Davidson is also a PhD.,31
+594,He's a professor of psychology and psychiatry and he's at a University of Wisconsin Madison.,92
+595,It's done terrific work on brain states and modulation of brain states and so forth.,84
+596,What we're about to talk about is when attention works and when attention falters and what we are specifically going to talk about are what are called attentional blinks.,170
+597,Not actual eye blinks.,22
+598,We're going to talk about that in a few minutes.,48
+599,We're going to talk about attentional blinks.,45
+600,I'm paraphrasing here because Goldman and Davidson wrote about this so beautifully.,83
+601,I'd rather paraphrase from them than try and just make up a new way to say it that is less interesting or less good but I want to credit them.,142
+602,Attentional blinks are really easy to understand if you think about a where's Waldo task.,89
+603,This task where's Waldo where there are a bunch of people and objects and things in a picture and somewhere in there is Waldo with the striped hat and the glasses and skinny dude and you have to find Waldo.,206
+604,It's a visual search and it's visual search for an object that has distinct features but is embedded in this ocean of other things that could easily be confused as Waldo.,170
+605,People tend to look look look look look look look look look and then you find Waldo.,84
+606,Kids can do this they enjoy doing this adults may or may not enjoy it but they can do it too.,93
+607,They find Waldo when you find Waldo or when you search for a target in some other visual search task at that moment your nervous system celebrates a little bit and it celebrates through the release of neurochemicals that make you feel good.,240
+608,You found it and you pause.,27
+609,Now the pause is interesting because when you pause what we know from many experiments is that in that moment of pause and mild celebration however mild you are not able to see another Waldo sitting right next to it.,216
+610,So what this means is in attending to something in searching and in identifying a visual target your attention blinked it shut off for a second and there's a more formal and more laboratory type way that we look at this.,220
+611,The more typical way to do this is to give someone a string of letters or a string of numbers and beforehand you tell them be on the lookout for the letters are and Z.,167
+612,You're just going to watch this string of numbers go by and there will be a letter R in there and there will be a letter Z in there and try and spot them both.,159
+613,And what you find is when you present that string of numbers and then they see the R they see the R they register it consciously and they tend to miss the Z just like in the Waldo type example.,193
+614,Now of course the numbers are going by pretty quickly but they can spot the R they could also spot the Z if you told them beforehand just spot the Z and the numbers are moving through at the same rate in both conditions so what that means is that in every case you are capable of seeing the R or the Z it's when you try and see both that seeing the first one prevents you from seeing the second one it's what we call an attentional blink.,438
+615,We do this all the time and people with ADHD tend to have many more attentional blinks than people that don't and this is true for children and for adults.,155
+616,This is an important point so important that I want to emphasize it twice in case you potentially blinked if you see something that you're looking for or you're very interested in something you are definitely missing other information.,235
+617,In part because you're over focusing on something and this leads to a very interesting hypothesis about what might go wrong in ADHD where we've always thought that they cannot focus and yet we know they can focus on things they care very much about well maybe just maybe they are experiencing more attentional blinks than people who do not have ADHD.,350
+618,And indeed there are data now to support the possibility that that's actually what's happening and that should be exciting to anyone that has ADHD it should also be exciting to anyone that cares about increasing their focus and their ability to attend what there's a saying is that these circuits the underlie focus in our ability to attend and our ability to eliminate distraction.,382
+619,They aren't just failing to focus that's just a semantic way of describing the outcome.,87
+620,They are over focusing on certain things and thereby missing other things and so are distractability or the distractability of somebody with ADHD could exist because they are over focusing on certain elements and they are therefore missing other elements that they should be attending to.,288
+621,So what they really need is this property that we call open monitoring now open monitoring is something that's described in the book that I just refer to and that typically is associated with people who have done a lot of meditation so called the possum meditation or spent a lot of time learning how to do what's called open gaze visual analysis and open gaze thinking but there's a simpler version of this that allows us to bypass all that first of all.,455
+622,Your visual system has two modes of processing it can be highly focused a soda straw view so looking for the R in this string of numbers and the example that I just gave or if you're very excited about something you're in that soda straw view of the world and you're missing other things okay that's high levels of attention.,325
+623,"However, there's also a property of your visual system that allows you to dilate your gaze to be in so called panoramic vision panoramic vision is something you can do right now no matter where you are and I can do it right now you won't know that I'm doing it but even though I'm still looking directly at you I'm consciously dilating my gaze so that I can see the ceiling the floor and the walls all around me that panoramic vision is actually mediated by a separate stream or set of neural circuits going from the eye into the brain and it's a stream or set up.",564
+624,So you can see that there's a set of circuits that isn't just wide angle view it also is better at processing things in time it's frame rate is higher so you've seen slow motion video and you've seen standard video slow motion video gives you that slow motion look because it's a higher frame rate your thin slicing time okay.,326
+625,So you can use panoramic vision to access the state that we call open monitoring when people do that they are able to attend to and recognize multiple targets within this string of numbers they can see the R and they can see the Z and they can see additional things.,266
+626,So you can see that there's a set of things that can be trained up and people can practice whether or not they have ADHD or not what involves is learning how to dilate your gaze consciously that's actually quite easy for most people whether or not you wear directive lenses or contacts or not you can consciously go into open gaze and then you can contract your field of view as well.,384
+627,So we've also been studies done where people were taught to think in a particular way for a very short period of time and that forever change their ability to limit or reduce the number of these attentional blinks.,214
+628,There are now published accounts in the literature of a simple practice done for about 15 minutes where subjects were asked to just sit quietly eyes closed and do what is sort of akin to meditation but to not direct their mind into any particular state or place but simply to think about their breathing and to focus on their so called interception focus on how their body feels their mind drifted to bring it back okay so it's basically meditation for about 15 minutes.,470
+629,That might not seem like a significant or unusual practice or that it would have any impact at all but remarkably just doing that once for 17 minutes significantly reduce the number of attentional blinks that people would carry out in other words their focus got better in a near permanent way without any additional training.,326
+630,There's something about that practice of reducing the amount of visual information coming in and learning to pay attention to one's internal state what we call interception that allow them an awareness such that when they needed to look for visual targets when they need to focus on multiple things in sequence they didn't experience the same number of attentional blinks and I should mention not incidentally as people age and their working memory gets worse and their ability to focus gets worse.,498
+631,The number of attentional blinks that they carry out goes up and there are now studies exploring whether or not the simple meditation like practice of 15 to 20 minutes or so of sitting and just quietly resting and paying attention to one's breathing and internal state can also offset some of that age related what is called cognitive decline.,343
+632,So what these data tell me is that regardless of whether or not you're a child or you're an adult whether or not you have ADHD or not whether or not you're experiencing age related cognitive decline or you would simply like to avoid age related cognitive decline.,263
+633,A simple practice of taking 17 minutes sitting and paying attention to your internal state just intercepting registering your breathing registering the contact of your skin with whatever surface you're on can forever rewire your brain to be able to attend better and possibly even offset some of that age related attentional drift.,331
+634,Now I don't expect anyone to start meditating regularly I don't expect anyone to do anything they don't want to do but I think most of us could handle one meditation session of 17 minutes or so and so if ever there was a tool that stood to rewire our attentional circuitry in a powerful way this seems to be it and in addition the ability to engage in panoramic vision to dilate our gaze this so called open monitoring that allows the brain to be able to function in a way that it can detect more information faster that's a powerful tool as well and the beauty of that tool is that it works the first time and it works every time.,631
+635,Now how exactly it works is a little bit unclear is it for instance orchestrating this synchrony or asynchronous between the default mode network and the task related networks we don't know those studies have not yet been carried out nonetheless the effects are significant they are long lasting and they appear to exist after just one session of this quiet 17 minute interception which to me makes it seem like a very worthwhile thing to do for everybody.,456
+636,So we just talked about attentional blinks which are essentially blinks of thinking it's your mind shutting off for a moment and missing information.,149
+637,So let's talk about actual blinks the sort that you do with your eyelids.,73
+638,Now this might come across as somewhat obvious but you can do fast what are called spontaneous blinks and they are always coordinated between the two eyes or you can do long blinks like when you go to sleep at night you do one very long blink and I'm not being facetious.,271
+639,When you go to sleep at night you are shutting your eyelids and you are limiting the amount of information coming in and your perception of time starts to drift as you go into sleep your perception of time changes from very fast at one moment to very slow meaning the frame rate at which you are analyzing information dreaming etc is variable when you are in sleep sometimes it's very fast meaning you experience it.,416
+640,Meaning you experience things in slow motion sometimes it's very fast in waking to your experience of time can sometimes be very fast sometimes be very slow typically the more alert you are the higher the frame rate you're thin slicing your experience you've probably had this happen if you're ever very stressed and you're waiting for something or somebody it seems like it takes forever because your frame rate is higher you're analyzing time more finally conversely if you are.,480
+641,Very relaxed or even sleepy wake up and you have to think about all the things you have to do it will seem like the world is going by very very fast and that you are moving very slow time is going at the same rate but your perception of time is what's changed believe it or not your perception of time is also changed on a rapid basis moment to moment basis by how often you blink.,381
+642,This is a well established literature in the world of neuroscience that unlike the literature and claims about blinking and sociopathy which have no basis the science of blinking as it relates to time perception has some very good data to support it I want to just emphasize one study in particular which is quite appropriately titled time dilates after spontaneous blinking this is a paper that was published in current biology the first author is Tehran Tehran it's a wonderful paper they examine the relationship between fluctuations in timing and blinking and to make a long story short what they found is that right after blinks we reset our perception of time okay so blinks in that sense are a little bit like the curtain coming down on a scene between scenes in a play or takes in a movie you know in the clap the clap thing they started take you know what do they say action and then at the end they do the thing and they click it down and they say it's a take that's one take when you blink it's a take okay now what's interesting and will immediately make sense to you as to why this is important is that the rate of blinking is controlled by dopamine so what this means is that dopamine is controlling attention blinks relate to attention and focus and therefore the dopamine and blinking system is one way that you constantly modulate and update your perception of time and fortunately it's also one that you can control so the basic take away of this study was that blinking controls time perception but also that levels of dopamine can alter your sense of time and stay with me here and that blinking and dopamine are inextricably linked they are working together to control your attention when dopamine levels go up people tend to overestimate how long something lasted why because they are processing time more finally it's slow motion mode when dopamine levels are lower they tend to underestimate time intervals let's remember back to the very beginning of the episode what's going on in people with ADHD they are not good at managing their time they tend to run late or they are disorganized they are not just disorganized in space meaning in the physical space around them they are disorganized in time their dopamine is low we know that as well and so they are underestimating time intervals and so it makes perfect sense that they would be late it makes perfect sense that they would lose track of time or the ability to focus this is really exciting because what it means is that children with ADHD adults with ADHD or people with normal levels of focus that want to improve their ability to focus can do so through a training that involves learning how often to blink and when and how to keep their visual focus on a given target and it turns out this study has actually been done there's a study again I'll link to this study entitled improvement of attention in elementary school students through fixation focus training activity I won't go through all the details but what they found was a short period of focusing on a visual target allowed these school children to greatly enhance their ability to focus on other types of information and a significant component of the effect was due to the way that they were controlling the shutters on their eyes their eyelids and controlling their blinks so what they did in the study is they had these kids focus their visual attention on some object that was relatively close like their hand for a minute or so which actually takes some effort if you try and do that they were allowed to blink however it's known from other work that if people can consciously override the desire to blink at least to the point where they feel like they have to or else their eyes would dry out that actually can increase attention even further and they had conditions where they would look at a point further across the room and even further across the room it only took a few minutes each day to do this 30 seconds in one condition or maybe a minute and then at another station of looking a little bit further out and a little bit further out however there was an important feature of this study that is definitely worth mentioning which is before they did this visual focus task or training they did a series of physical movements with the kids so that the kids could sort of eliminate or move out some of their desire to move and would thereby enhance their ability to sit still now it's long been known that kids need a recess they need time to run around and play and roll around do whatever it is that they do in order to be able to sit still at all adults probably need this too frankly but kids need it more because the circuits in the brain that control reflexive movements and as we say kind of rhythmic and gelating behavior and things like that that's an active suppression and kids have less of that circuitry built up until they hit about age 15 or 16 so they had the kids move around a bit and then do this focus training that brings me to another treatment that's actively use nowadays in schools for kids with ADHD but also starting to be used by many kids and by parents in order to keep their kids focusing and not going crazy in the car or not acting out in general and that's the prevalence of these so called fidget or toys or things that kids can do actively and repetitively in order to move on to them and then get the kids to that school.,5417
+643,So they can move out some of their underlying reverberatory activity in their nervous system.,93
+644,"So what you will find is that some kids with ADHD are now given a rubber band on their desk, literally a rubber band that's attached to their desk and they're able to pull on it even snap it against the desk.",208
+645,"If I had done that when I was a kid, I think my teachers were throwing me out of class but I think it's great that they're allowing them to do this now as a way of moving some of their physical energy out or engage their physical energy rather as opposed to trying to sit.",272
+646,"As opposed to trying to sit, statue still all the time and attend and turns out that does enhance these children's ability to focus mentally when they have some physical activity to attend to and it turns out it also can work for adults.",237
+647,I'll share with you a related anecdote because it illustrates the underlying mechanism.,87
+648,"I've had the great privilege of being able to do a number of surgeries, brain surgeries during my career.",105
+649,So one thing you find when you do brain surgeries is that the brain's pretty small regardless of the species that you're working on and you're in there and you're trying to do something very specific.,200
+650,"And the more you try and hold your hands really steady, the more they want to shake.",84
+651,So it's not natural for any of our limbs to sit perfectly still.,64
+652,"Depending on how much coffee you've had, how well rested you are and your baseline level of autonomic arousal.",110
+653,Some of you may find that you can hold out your hand to absolutely rock solid.,78
+654,Others will shake a little bit more.,36
+655,"Doesn't mean you're nervous if you're shaking, doesn't mean you're calm if you're still.",88
+656,"What it relates to is the amount of what we call pre-motor activity, the number of commands to move that are being sent through the system.",139
+657,And that's what I mean by reverberatory activity.,49
+658,And it does seem that kids with ADHD and adults with ADHD have a lot of reverberatory activity in their nervous system.,119
+659,And so that's that constant desire to move.,43
+660,It's hard for them to sit still.,32
+661,And therefore it's hard for them to attend to harness their attention.,70
+662,"When you do a surgery and you find that your hands are shaking, what you learn from your mentors, which I did, and what works extremely well, whether or not you're doing a surgery or not, is that you simply tap your foot or you bounce your knee a little bit, which you might think would make your handshake even more.",317
+663,"But provided that it's subtle, what it does it is it actually shuttles some of the activity from those pre-motor circuits to elsewhere in the body.",147
+664,And then you're able to sit much more still with your hand.,59
+665,You're able to perform the surgery with much more precision.,60
+666,You are able to write with much better hand writing.,52
+667,"And for those of you who engage in public speaking, if you're ever too nervous, that's why pacing while you public speak helps if you're nervous.",145
+668,That's why bouncing your knee behind the podium works as well.,62
+669,That's why nodding your head and gesticulating can help.,56
+670,It's not a matter of quote unquote moving energy out of the body.,65
+671,That doesn't actually happen.,29
+672,What it is is you're engaging those pre-motor circuits that are sending through commands.,89
+673,It's like trying to stuff a bunch of stuff through a funnel.,60
+674,And it creates this tension.,28
+675,So you're giving it an outlet for the neural circuitry to be able to move something so that you can keep other components of your body and your mental attention engaged and locked on to something.,196
+676,What we call focus.,19
+677,"One thing related to this whole business of blinking and focus and training yourself to focus and not blinking, etc.",116
+678,"is that most all of the drugs, riddle in aterol and recreational drugs that increase dopamine, even coffee and tea and other forms of caffeine, they tend to make us blink less.",176
+679,"And when we get tired, we tend to blink more.",45
+680,"Now, this is sort of a duh, right?",34
+681,"But being wide eyed with excitement or fear or with your eyes barely being able to keep them open, now it should make perfect sense that these shutters on the front of your eyes, they aren't just there for winking and they aren't just there for cosmetic purposes.",263
+682,They are there to regulate the amount of information going into your nervous system.,84
+683,And they're there to regulate how long you are bringing information into your nervous system.,93
+684,"And in what bins, how widely or finally you are beginning time, except by how often you blink, how widely or specifically you are grabbing attention from the visual world is set by whether or not you're viewing things very specifically, like across here, through a soda straw view, like this, or whether or not you are in this panoramic sort of whole environment mode, this kind of fisheye lens or wide angle lens mode.",419
+685,"And in fairness to the pharmacology and the circuitry, while dopamine and heightened levels of alertness and excitement tend to make us blink less and attend more, there's actually a study that's looked at the other neurochemical systems and drugs and how those relate to blinking.",281
+686,And so this will all be obvious by the title of the paper I'm about to share with you.,86
+687,This is a paper entitled Decrease Spontaneous Eye Blink Rates in Chronic Cannabis Users.,88
+688,Evidence for stridocannabinoid dopamine interactions.,53
+689,"Okay, I'm not going to go into all the details here, but one thing that is somewhat surprising is that many people with ADHD use or abuse cannabis.",147
+690,"You might think, well, why would they do that?",46
+691,"Because I thought that a increase in dopamine is actually what's going to lead to heightened levels of attention, and that's what these people and children crave.",162
+692,"Well, it turns out that cannabis also increases dopamine transmission in the brain, but because of the other chemicals it increases, namely serotonin and some components of the cannabinoid and opioid system, it creates that kind of alert but mellow feel.",254
+693,"And again, here I'm not a proponent of this.",44
+694,I personally am not a THC or cannabis user.,43
+695,It's just not my thing.,23
+696,"And obviously it's illegal, some places.",40
+697,And so you have to determine that for yourself.,47
+698,"It does have medical purposes in some places that is illegal, but THC increases dopamine and increases neurochemicals that can also create a state of calm.",155
+699,So it's that sort of middle ground.,35
+700,"And this paper has a beautiful demonstration whereby not just while people are using cannabis, but depending on how long they've been using cannabis across their lifespan, the rates of eye blinking change.",205
+701,"So if you look at the number of years that people have been using cannabis on a regular basis, either daily or up to, excuse me, weekly or up to daily, what you find is that for people that have not been using cannabis at all or have owned the cannabis.",253
+702,"And if you look at the number of years that have not been used at all or have only been using it for about two years, their rates of eye blinks are much higher than people who have been using it chronically for 10 years.",220
+703,"In other words, people who be using cannabis for 10 years don't blink very often at all.",88
+704,"Now cannabis has well known effects in depleting memory, but it does seem to engage the focus and blinking system in a way that increases focus.",144
+705,"marijuana seems to increase people's focus, but then they can't remember what they were focusing on.",100
+706,"Something I'd like to discuss just briefly is the so called interoceptive awareness that's present in people with ADHD, both children and adults.",145
+707,"Interoceptive awareness is one sense of one's own internal state, heartbeat, breathing, contact of skin with a given surface, etc.",130
+708,"For a long time, there was this hypothesis, this idea that people with ADHD were just not in touch with how they felt that somehow they weren't registering all the stuff that was going on inside them, changes in heart rate and so forth.",236
+709,And so they were behaving in a way that was dysregulated or appeared dysregulated.,82
+710,"And that if they could just learn to attend to their internal state better, that somehow they would function better in the world.",129
+711,"Now, before we described a process, literally a 17 minute interoceptive exercise that does seem to lead to improvements in one's ability to focus for a longer period of time.",174
+712,"However, it's very unlikely that that was due to increasing interoceptive awareness per se.",91
+713,It probably wasn't because people gaining much heightened or improved ability to understand what's going on internally.,119
+714,"In fact, you can imagine how that might actually prevent one's ability to pay attention to things in the outside world.",119
+715,"So while there is benefit to just sitting there and being in stillness, as they say, or focusing on one's breathing an internal state for sake of then accessing information in the external world, a really nice study called interoceptive awareness in attention, dep<|tr|> depo-cibiber activity disorder explored whether or not interoceptive awareness was different in people with ADHD or did not have ADHD.",405
+716,"And the findings were essentially that there's no difference that people with ADHD children and adults, they are aware of what's going on inside them just as much as anyone else's and the typical measure of interoceptive awareness is one's ability to count their own heartbeats.",278
+717,This is actually challenging for some individuals and very easy for other individuals regardless of their attentional capacity.,127
+718,Some people just can really feel their heartbeat without taking their pulse.,76
+719,Other people cannot.,20
+720,And these studies are pretty straightforward to do.,51
+721,You ask people to sit there and to count their heartbeats and then you are monitoring their heartbeats and you get to gauge how accurate they are.,146
+722,So it's important to understand that people with ADHD are in touch with how they feel.,86
+723,"It's really a question of whether or not they can take the demands that are placed upon them and enter a cognitive state, a mental state that allows them to access the information they need to access.",200
+724,"In other words, whether or not they can focus.",46
+725,"But it is absolutely wrong to think that the child that's getting up 11 times during a short six, you know, six minute interaction at the table or whether or not a child who somehow has to venture off every moment or a coworker of yours who's an adult who's constantly fidgeting or moving things around that somehow they are unaware that they are oblivious.",357
+726,They are not oblivious to how they feel.,40
+727,Chances are they are very challenged in the situations that they're in and they're doing everything they can to try and regulate their attention.,145
+728,So I think it's an important study to highlight because it really underscores the fact that something else is going on and that something else has everything to do with this ability to coordinate these task directed networks and to coordinate that in the proper way.,266
+729,"With that default mode network and that is a process as you now know that's regulated exquisitely by certain neurochemicals and in particular the neurochemicals dopamine, norepinephrine and serotonin.",200
+730,And a fourth one I'd like to throw into the mix which is acetylcholine which is very vital for cognitive focus.,111
+731,So now I want to switch back to talking about some of the drugs that are typically used to access those systems prescription drugs and I want to talk about some of the new and emerging non prescription approaches to increasing the levels of dopamine acetylcholine and serotonin in the brain using various supplement type compounds because several of them are showing really remarkable efficacy in excellent peer reviewed studies.,429
+732,"So before moving to some of the newer atypical compounds and things sold over the counter, I'd like to just briefly return to the classic drugs that are used to treat ADHD.",172
+733,"These are the ones I mentioned earlier, methylphenidate, also called ridolin, modaphanil, armodaphanil is another one and Adderall.",131
+734,"Again, all of these work by increasing levels of dopamine and norepinephrine.",77
+735,Typically they are taken early in pill form or sometimes in capsule form.,73
+736,The dosages that are appropriate very according to severity of the condition for a given person and the age of the person.,122
+737,This is a complicated landscape for each individual.,52
+738,They have to figure out the pharmacology that's best for them.,62
+739,Some individuals are even layering long or timed release ridolin with Adderall and smaller doses.,97
+740,It can get quite complex or it can be quite straightforward.,60
+741,You are really interested in these drugs and how they work and you'd like to get a glance at a table of all the results from all the studies of which there are now hundreds.,173
+742,"There's an excellent review about these drugs and their use and their comparison to similarly structured drugs in particular MDMA and cocaine and endphetamine, meaning street endphetamine, and really illustrate the similarities of action and some of the problems associated with long term use.",293
+743,I don't expect you to read this article in full.,48
+744,"I'm here so that you don't have to go read these articles, but in case you want a ton of information, the paper is Esposito at all, Frontiers in Biosciences.",157
+745,"It's an excellent, excellent review of the entire literature.",61
+746,It is quite long.,17
+747,I can put a link to that study in our caption.,46
+748,It essentially describes all the studies that have been done peer reviewed and published.,89
+749,It refers to these drugs in an interesting way.,47
+750,It doesn't just refer these drugs as for treatment of ADHD.,59
+751,"It actually refers to them using language that ordinarily I'm not very fond of, but I'll agree to here, which is so-called smart drugs or neutropics.",149
+752,"It also covers caffeine, which again, as I mentioned earlier, increases dopamine, nor epinephrine, and to some extent serotonin.",128
+753,"What I like about this review so much is that in putting these drugs of abuse, methamphetamine and cocaine right alongside these drugs like Ritalin and Adderall and also caffeine, we start to realize that the distinction between drugs of abuse and the distinction between drugs of treatment is actually very fine and sometimes even a blurry line.",346
+754,"In thinking about whether or not one wants to use these prescription, I want to emphasize prescription, not drugs of abuse, but prescription drugs for treatment of one's own, attentional capacity, I think it is important to understand the extent to which they all carry more or less the same side effects.",305
+755,"The one exception being caffeine, caffeine side effects can be anxiety if you ingest too much of it insomnia, if you drink it too late in the day, but typically it will not cause the major side effects of the other drugs, such as hyperpensity for addiction and abuse, amphetamines of any kind as well as cocaine can cause sexual side effects because they're vasoconstrictors, so men have trouble achieving erection, there can often be the intense desire or libido for sex, but an inability to actually perform.",510
+756,"So that's an issue with any kind of stimulant, so these drugs are not without their consequences, in addition, and here I'd lump caffeine back into the mix, in addition they almost all carry cardiac effects, they increase heart rate, but they also have effects on constriction of blood vessels and arteries and veins and so forth in ways that can create cardiovascular problems.",378
+757,"Now caffeine is a bit of a complicated one, I talked about this on a podcast long ago, but I'll just remind you that it turns out that if you are caffeine adapted, in other words if you are used to drinking caffeine, then the ingestion of caffeine most often will cause vasodilation, it will actually allow more blood flow through.",331
+758,"However, if you are not caffeine adapted, it will cause vasoconstriction due to an increased stress response, so if you're familiar with caffeine, caffeine can actually have a little bit more of a relaxation response, other if you drink enough of it, it will make you ampt up.",276
+759,"These other drugs almost always lead to vasoconstriction, increased heart rate, dilation of the pupils, less blinking, heightened levels of attention, which looks very much like stress, and at its extremes looks very much like the effects of street drugs, like cocaine and emphetamine.",285
+760,"Because of the large amounts of dopamine that are released in the brain, people tend to crave that state over and over and yet with each subsequent use are able to get less and less of that euphoric feeling or that really, really focused feeling.",246
+761,"So one thing that's being explored quite extensively now in the treatment of ADHD are drug schedules, whether or not people should take Adderall every day or every other day, whether or not they should take it only every once in a while, whether or not young children can take it just a few times and engage in behavioral training of the sort that I talked about before, where they're doing maybe it's a 17 minute meditation type exercise, but more likely it would be the movement followed by the visual focusing, because that's only done for a few days.",554
+762,So that's the only thing because that's only done for 20 or 30 or 60 seconds.,77
+763,Why would you do that?,22
+764,"Well, in a chemically enhanced state, your brain is more plastic.",65
+765,The circuits are able to modify and learn better.,49
+766,That's the optimal time to engage in focus in a very deliberate way.,68
+767,"So just taking a drug and expecting focus to just work at any point and being able to turn focus on and off at will, that's an unrealistic expectation.",151
+768,"More likely, the best use of things like Adderall, Modaphanil, Armodaphanil and Rillin is going to be to combine those treatments with behavioral exercises that actively engage the very circuits that you're trying to train up and enhance and then perhaps I want to highlight perhaps tapering off those drugs so that then one can use those circuits without any need for chemical intervention.",391
+769,"So despite any controversy that might be out there, I think it's fair to say that the consumption of omega-3 fatty acids can positively modulate the systems for attention and focus.",181
+770,"So then the question becomes how much EPA, how much DHA does that differ for what's helpful for depression, etc.",112
+771,And actually it does differ.,28
+772,"In reviewing the studies for this, it appears that a threshold level of 300 milligrams of DHA turns out to be an important inflection point.",140
+773,"So typically, fish oils or other sources of omega-3s will have DHA and EPA and typically it's the EPA that's harder to get at sufficient levels.",144
+774,So you have to take quite a lot of fish oil in order to get above that 1000 milligram or 2000 milligram threshold to improve mood and other functions.,150
+775,"But for sake of attention, there are 10 studies that have explored this in detail.",82
+776,"And while the EPA component is important, the most convincing studies point to the fact that getting above 300 milligrams per day of DHA is really where you start to see the attentional effects.",194
+777,"So you're getting sufficient EPA for sake of mood and other biological functions, almost without question you're getting 300 milligrams or more of DHA.",151
+778,So that usually checks that box just fine.,42
+779,"What's interesting is that there's another compound, phosphodidal steering, that has been explored for its capacity to improve the symptoms of ADHD.",148
+780,"I don't think this is any direct way, but rather in a modulatory way.",69
+781,"But it appears that phosphodidal steering taken for two months, for 200 milligrams per day, was able to reduce the symptoms of ADHD in children.",144
+782,"It has not been looked at in adults yet, at least as far as I know.",67
+783,But that this effect was greatly enhanced by the consumption of omega-3 fatty acids.,84
+784,So now we're starting to see synergistic effects of omega-3 fatty acids and phosphodidal steering.,98
+785,"Again, that was 200 milligrams per day.",39
+786,"This is something that sold over the counter in capsule form, at least in the US.",81
+787,"There were two studies, both were double blind studies, carried out anywhere from one to six months on both boys and girls.",123
+788,"And it really was boys and girls, not men and women.",52
+789,"This was kids, age one to six or seven to twelve.",49
+790,"And it was a fairly large number of subjects, so 147 subjects in one case and 36 and the other.",95
+791,"The takeaway is that getting sufficient levels of EPA is in particular this 300 milligrams threshold of DHA, plus if you are interested in it and it's right for you, 200 milligrams of phosphodidal steering can be an important augment for improving the symptoms of ADHD.",269
+792,"You'll also find literature out there and many claims about so-called Ginkgo Bilboa, which has been shown to have minor effects in improving the symptoms of ADHD.",162
+793,Not nearly as effective as Ritalin and Adderall.,48
+794,Ginkgo Bilboa is not appropriate for many people.,49
+795,I am one such person.,21
+796,"I don't have ADHD, but when I take in Ginkgo, even at very low doses, I get absolutely splitting headaches.",107
+797,"Some people do not experience those headaches, but it's known to have very potent vasoconstrictive and vasodilating properties that vary depending on when you took the compound.",177
+798,"So for those of you that are exploring Ginkgo Bilboa, and you will see a lot of claims about Ginkgo Bilboa for attention in ADHD, definitely take the vasodilation, vasoconstriction headache issue into consideration.",215
+799,"So I'd like to talk about the drug Modaphanil and the closely related drug, Armodaphanil.",89
+800,That's AR Modaphanil.,21
+801,"Because Modaphanil and Armodaphanil are gaining popularity out there both for treatment of ADHD and narcolepsy, but also for communities of people that are trying to stay away long periods of time.",197
+802,So it's actively used in the military by first responders.,58
+803,It's gaining popularity on college campuses and people are using it more and more as an alternative to Adderall and Riddlein and excessive amounts of coffee.,157
+804,It does increase focus and to a dramatic extent.,48
+805,Modaphanil typically was very expensive.,40
+806,"I don't know if it's still this expensive, but when one has a prescription for it, it could still cost as much as eight or nine hundred dollars.",144
+807,"Even $1,000 a month.",20
+808,Armodaphanil is a far less expensive version that's chemically slightly different than Modaphanil.,98
+809,"Regardless of price, people are taking Modaphanil and Armodaphanil.",67
+810,"When I emphasize that unlike Riddlein and Adderall, Modaphanil and Armodaphanil are weak dopamine reuptake inhibitors, and that's how they lead to increases in dopamine.",169
+811,"So whereas Riddlein and Adderall and Fetamine and Cocaine lead to big increases in dopamine, also through reuptake mechanisms and so forth, Modaphanil is a weaker dopamine reuptake stimulator.",192
+812,"And so what that means is that it leaves more dopamine around to be active at the synapse, the gaps between neurons.",116
+813,"However, it also activates other systems.",41
+814,"It acts on the erection system, which is actually a peptide that we talked about in the episode on hunger, because it regulates hunger and appetite, and it regulates sleepiness and feelings of sleepiness.",204
+815,"In fact, the, excuse me, erection, also called hypocretin system, the erection hypocretin system is what's disrupted in narcolepsy.",131
+816,"That was the important discovery of my colleagues, Emmanuel Minio and Seiji Nishino at Stanford some years ago, they identified the biological basis of narcolepsy and it's a disruption in the so rexin hypocretin system, and Modaphanil is one of the primary treatments for narcolepsy.",283
+817,"It also has these other effects on the dopamine system and on the noripanephrine system, even though it doesn't lead to quite as intense levels of dopamine and arousal and focus, it does have the property of raising levels of attention and focus, and that's why people are using it.",282
+818,"So it's a somewhat milder form of Adderall, Armodaphanil, for some people works as well as Modaphanil, and as I mentioned before, it's much lower cost for other people it doesn't.",179
+819,"I have an experience, meaning I do have an experience that I'll share with you with Armodaphanil.",97
+820,"A few years ago, I was suffering from jet lag really terribly and I was traveling overseas.",91
+821,I went to a meeting to give a talk.,35
+822,"I took half of the prescribed dose of Armodaphanil, it was prescribed to me.",76
+823,"I took that half dose and I gave my lecture and then I stayed around to answer questions and then four hours later, a friend of mine came up to me and said, you know, you've been talking for four and a half hours.",213
+824,And there are only a few people still here.,43
+825,Luckily there were still a few people be a lot weirder if the room was completely empty.,88
+826,So it wasn't being recorded.,28
+827,So I have firsthand knowledge of the sorts of cognitive effects that it can create.,83
+828,"I personally would not want to be in that state for sake of studying or learning or for doing this podcast, for instance.",121
+829,And I can honestly say that today all I've ingested is some coffee and some yerba mate tea and some water.,106
+830,I'm not on any of the compounds that I've described during the course of today's episode.,89
+831,You might ask why I took half the recommended dose of Armodaphanil.,67
+832,And the reason is that I'm somebody who's fairly hypersensitive to medication of any kind.,90
+833,What you find if you look in the literature is that about 5% of people are hyper hypersensitive to medication.,110
+834,They require far lower doses of any medication than other people in order to experience the same effects.,105
+835,"I'm somebody that I think is sort of modest, hyper, if that sort of oxymoronic statement, but a modest hypersensitivity to medication.",134
+836,So I've almost always been able to get by on taking less of whatever was prescribed for me.,91
+837,And feel just fine or in this case to feel like it was still too much.,70
+838,It turned out that the right dose of Armodaphanil for me was 0 milligrams.,74
+839,Now you may notice that I haven't talked much about acetylcholine.,66
+840,"Acetylcholine is a neurotransmitter that at the neuron to muscle connections, this is what's called neuromuscular junctions, is involved in generating muscular contractions of all kinds for all movements.",204
+841,"Acetylcholine is also released from two sites in the brain, so a little bit of nomenclature here again, feel free to ignore the nomenclature.",141
+842,"But there is a collection of neurons in your brain stem that send projections forward, kind of like a sprinkler system that's very diffuse to release acetylcholine.",164
+843,"And those neurons reside in an area or a structure that's called the pedunculopontine nucleus, the PPN.",103
+844,"And then there's a separate collection of neurons in the basal four brain called unimaginatively nucleus basalus, the nucleus at the base.",138
+845,"And they also hose the brain with acetylcholine, but in a much more specific way.",81
+846,"So one is sort of like a sprinkler system, and the other one is more like a fire hose to a particular location.",111
+847,And those two sources of acetylcholine collaborate to activate particular locations in the brain and really bring about a tremendous degree of focus to whatever is happening at those particular synapses.,203
+848,So it could be a focus on visual information or auditory information if you're listening closely to what I'm saying right now.,126
+849,You just heard closely step out from the rest of my sentence.,61
+850,No doubt there was a acetylcholine released at the sites in your brain where the neurons that represent your recognition of the word closely occurred.,150
+851,"So now you have an example and you have an understanding and hopefully a picture in your mind of how all this is working, not surprisingly then drugs that increase colonergic or acetylcholine transmission will increase focus and cognition.",239
+852,"One such compound is so called alpha GPC, which is a form of colon and increases acetylcholine transmission.",108
+853,"Doseages as high as 1200 milligrams per day, which is a very high dosage spread out typically it's 300 or 400 milligrams spread out throughout the day.",151
+854,"Have been shown to offset some of the effects of age related cognitive decline, improve cognitive functioning people that don't have age related cognitive decline.",163
+855,That's a very high dose typically when people are using alpha GPC to study or to enhance learning of any kind they will take somewhere between 300 and 600 milligrams.,166
+856,That's more typical again you have to check with your doctor you have to decide if the safety margins are appropriate for you.,126
+857,"Obviously you'll want to check that out, but alpha GPC is effective in creating more focus by way of this colonergic system.",124
+858,It stimulates acetylcholine release from both of those locations the PPN in the back of the brain and nucleus basales in the front of the brain.,144
+859,There are two other over the counter compounds that are in active use out there for treatment of ADHD and in use for simply trying to improve focus.,148
+860,The first one is eltyrosine.,28
+861,It's an amino acid that acts as a precursor to the neuromodulator dopamine.,75
+862,Now knowing everything you know about dopamine attention and the circuits involved it should come as no surprise as to why people are exploring the use of eltyrosine for that purpose.,183
+863,Eltyrosine does lead to increases in dopamine.,46
+864,They are fairly long lived and eltyrosine can improve one's ability to focus.,77
+865,However the dosaging can be very tricky to dial in.,51
+866,Sometimes it makes people feel too euphoric or too jittery or too alert that they are then unable to focus well.,112
+867,The dosage ranges are huge.,27
+868,You see evidence for 100 milligrams all the way up to 1200 milligrams.,70
+869,"It's something that really should be approached with caution especially for people that have any underlying psychiatric or mood disorder because this regulation of the dopamine system is central to many of the mood disorders such as depression but also especially mania, mania bipolar disorder, schizophrenia, things of that sort.",330
+870,So it's something that really should be approached with caution nonetheless in exploring what's out there and even some studies online that were done either animal studies or human studies.,189
+871,It's clear that eltyrosine is being explored for that purpose as is PEA and phenolethyl amine which is essentially PEA but some related compounds.,146
+872,So there's a whole class of dopamine allergic or dopamine stimulating supplements that people are using to try and get their dopamine levels up and again it's a it's kind of a fine line between too little enough and too much.,225
+873,If you want to get the literature on those two compounds there I will refer you to this great website at examin.com just as it sounds and you can put in eltyrosine or PEA and you can get the details on that but I highly recommend also going to their section.,258
+874,Also going to their section on ADHD to see how those particular comment on relate specifically to ADHD and cognitive focus and last but not least in terms of these different compounds I do want to mention the rassetams.,219
+875,These are somewhat esoteric and probably most of you haven't heard about them but some of you probably know a lot about them and they are becoming more popular.,160
+876,They go by names like New Pep and things of that sort.,54
+877,The rassetams are illegal in certain countries they are gray market in other countries and they are sold over the counter in this country in the US.,148
+878,So they have different margins for safety you definitely need to consult your doctor especially if you have ADHD but New Pep has been shown when taken you know at 10 milligrams twice daily can be more effective than some of them.,229
+879,More effective than some of the other rassetams what is New Pep New Pep taps into the colonergic system the acetylcholine system in ways very similar to alpha GPC but seems to have a slightly higher affinity for some of the receptors involved and can lead to those heightened states of cognitive capacity and there are these studies one in particular comparative studies of New Pep in prasatam and the treatment of patients with mild cognitive disorders and brain disease of vascular and traumatic origin.,505
+880,That's a mouthful what this study basically points to is the fact that people who are experiencing some degree of inability to focus due to prior concussion or some vascular event a stroke or a scheme of any kind because neurons need blood when the blood supply is cut off to neurons or when there's a bleed in the brain subsequent to that often there are challenges in maintaining focus.,388
+881,This is very common for people who have done sports where there's a lot of running into each other with your head like rugby football hockey and so forth but also people experience head blows or often overlooked is the fact that most traumatic head injury is not actually from sports even football it's from things like construction work from high impact work of that kind.,373
+882,So there does seem to be some efficacy of New Pep in prasatam and things like it it's an emerging area and as I mentioned in the US these things are sold over the counter again you have to figure out if it's right for you but they are beginning to show some promise and I'm intrigued by them because of the way that they tap into the colonurgic system which is both directly involved in focus and the ability to focus but is also important for things related to age and the ability to focus.,491
+883,So it's related cognitive decline so a decline in colonurgic transmission or a CEDO colon as we call it in the brain is one of the things associated with cognitive decline and it does seem that increasing colonurgic transmission can offset some of that cognitive decline and perhaps even more so in conditions such as vascular damage or concussion to the brain.,361
+884,If you're interested in a typical treatments for ADHD compounds to improve focus and related themes and you like reading about this stuff there's an excellent review article that I can refer you to it's by on at all a gen it was published in 2016 so it's a little bit behind the times although it's surprisingly comprehensive given that which lines up all the various drugs that I've discussed rasatams and arole and riddle in and various forms of dopaminergic agents and colonurgic agents spells out whether or not they are sold over the counter by prescription and really lines them up in all their effects their drawbacks etc.,629
+885,I'll refer you to that study it's available in its full length form online for free.,84
+886,"It's on at all that the journal is neuroplasticity, neuroplasticity 2016 should be very easy to find if you put those keywords in and while it is a review it is a very comprehensive review and if you're really into this stuff and you're not going to get it.",257
+887,You also want to learn a thing or two about how these things interact with neurofeedback etc.,93
+888,There's some information in there as well.,42
+889,I know I've already covered a lot of information but there is one more category of technology for the treatment of ADHD and for enhancement of focus in anyone that I would like to emphasize and that's transcranial magnetic stimulation.,235
+890,Transcranial magnetic stimulation also called TMS is achieving increasing popularity nowadays for the treatment of all sorts of neurologic conditions and psychiatric conditions.,177
+891,It is a non-invasive tool it involves taking a coil it's a device with a coil that's placed over particular locations in the brain and then sends magnetic stimulation into the brain it can actually pass through the skull without having to drill through the skull.,263
+892,Nowadays can be used to both lower the amount of activity or increase the amount of activity in specific brain areas.,117
+893,It's spatial precision is not remarkable.,41
+894,That doesn't mean it's not of use but it is not a super fine grain tool.,72
+895,It's not a cannon but it's also not a needle.,45
+896,It is somewhere in between it can direct the activity of particular brain regions at particular depths and as I mentioned it can increase or decrease that activity.,164
+897,So for instance I've had a TMS coil placed on my head not for therapeutic purposes even it was I wouldn't tell you but rather just for well I'm a neuroscientist and I worked in a lab with one for entertainment exploratory purposes.,231
+898,I was pleased don't do this at home.,36
+899,It was placed over my motor cortex which generates voluntary action and it was a coil that at that time could only inhibit neurons.,131
+900,And so what I was doing is I was moving objects around on a table just like I am now it was actually a pencil not a pen and I was tapping the pencil and then the TMS coil was turned on and for the life of me I could not move that pencil.,237
+901,Okay because it was inhibiting my upper motor neurons in the portion of my cortex the control is voluntary activity as soon as the coil was turned off I could return to tapping the pencil again.,194
+902,Nowadays it's possible to stimulate motor cortex or any area of the brain with some degree of precision that could create the impulse to move without actually making the decision to move so you can literally engage certain neural circuits and therefore behaviors and certain thought and emotional patterns by which I was.,321
+903,And so I was able to do a lot of emotional patterns by way of transcranial magnetic stimulation this has far reaching and vast implications as you can probably imagine in discussing ADHD with a colleague that uses TMS what they are doing is they are taking the TMS coil to children and adults that have ADHD and they're using it to stimulate the portions of the prefrontal cortex that we talked about earlier that engage tasks directed.,436
+904,So rather than using a drug that generally increases dopamine and some of the other chemicals involved they're using directed TMS stimulation of these circuits and fortunately I was quite relieved to hear this they are combining that with a focused learning task so they're literally teaching the brain to learn in a non invasive way no drug at all and right now there are experiments clinical trials going on comparing TMS of this sort to the drug treatments of the sort that we do.,483
+905,So I think that's one of the things that we've discussed earlier that engage these circuits through pharmacologic mechanism so very exciting times for TMS very exciting times for pharmacology related to ADHD and for enhancing focus in general and when I say very exciting times I mean no drug is perfect but the constellation of drugs that's out there is getting much larger.,375
+906,Because they tap into different aspects of their circuitry I do think that we are well on our way to identifying the ideal combinations of drug treatments technological treatments and behavioral paradigms for increasing focus in both children and adults with ADHD and as a final final point I also want to mention something about technologies that are making it harder for all of us to focus regardless of whether we have pre existing ADHD or not.,447
+907,You can probably guess where this is going everybody nowadays seems to have a smartphone I'm sure there are a few individuals out there that don't have a smartphone nonetheless most people have them most kids want one as soon as they can get them and they are small they grab our attention entirely but within that small box of attention there are millions of attention windows scrolling by right so just because it's one device that we look at the first time we're going to have a smartphone.,493
+908,"It's not mean that we are focused we are focused on our phone but because of the way in which context switches up so fast within the phone it's thought that the brain is struggling now to leave that rapid turnover of context right many many shows many many Instagram pages many many Twitter feeds many many websites basically the whole world at least in virtual format is available within that small box unlike any other technology humans have ever dealt with before even though there are trillions of infinite number of bits of information in the actual physical world your attention window that aperture of constriction and dilating that visual window is the way in which you cope with all that overwhelming information typically well within the phone your visual aperture is set to a given with it's about this big typically the phone seem to be getting bigger but nonetheless it's about that big and within their your attention window is grabbing it near infinite number of bits of information colors movies if a picture is worth a thousand words a movie is worth a billion pictures the brain loves visual motion and so the question is does that sort of interaction on a regular basis lead to deficits in the types of attention that we need in order to perform well in work and school relationships etc and the short answer is yes it does appear so we are inducing a sort of ADHD and while the studies on this are ongoing because prominent use of smartphones really took off right around 2010 and we're only in 2021 long standing studies take time just essentially to say the same thing as long standing there are some studies and one in particular that I'd like to highlight one was actually carried out pretty early in 2014 this is a study that explored smartphone use at the time they called it mobile phone use but smartphone use and in attention difficulties in attending in 7,100 and two adolescents is a huge study a population based cross sectional study and you will be probably surprised and somewhat dismayed to hear that in order to avoid this decrease in attention capacity adolescents needed to use their smartphone for less than 60 minutes per day in order to stay focused and centered on their other tasks otherwise they started to really run into significant issues so 60 minutes is not much I'm I'm feeling that most young people are using their phone more than 60 minutes per day I know I am I think for adults the numbers probably higher meaning if you're an adult I could I'm going to just extrapolate from what I read in this study it seems that probably two hours a day on the phone would be the upper limit beyond which you would probably experience pretty severe attentional deficits I'm a big fan of Cal Newport who wrote the book deep work he's also written the excellent book a world without email I've never met him but I'm a huge admirer of his work and I will paraphrase something that he said far more eloquently than I ever could which is that the brain does not do well with constant context switching meaning it can do it but it diminishes our capacity to do meaningful work of any other kind and so Cal as I understand is very he's a computer science professor at Georgetown by the way is very structured and very disciplined in his avoidance of cell phone use I think we're all striving to do that I'm not here to tell you what to do but I think whether or not you have a deal with HD or not if you're an adolescent limiting your smartphone use to 60 minutes per day or less and if you're an adult to two hours per day or less is going to be among the very best ways to maintain just to maintain your ability to focus at whatever level you can now and as I always say most of the things that we get recognized for in life success in life in every endeavor whether or not it's school relationships sports creative works of any kind are always proportional to the amount of focus that we can bring that activity it is important to rest of course to get proper sleep but I stand behind that statement and I leave you with that study about attention and cell phones and how cell phones are indeed eroding our attentional capacities so I realize I covered a lot of information about ADHD and the biology of focus and how to get better at focusing we talked about the behavioral and psychological phenotypes of ADHD we talked about the underlying neural circuitry we also talked about the neuro chemistry and we talked about the various prescription drug treatments that are aimed at that neurochemistry and aimed at increasing focus in children and adults with ADHD we also talked about over the counter compounds the role of particular types of diets and elimination diets and we talked about interactions between these various features indicating outcomes for ADHD and enhancing focus in general we also talked a little bit about emerging neuro technologies and how certain technologies like the smartphone are no doubt hindering our ability to focus and put us at greater risk of developing ADHD at all ages I do acknowledge the irony and somewhat the contradiction of doing a two hour plus episode on ADHD if indeed people who are watching this have challenges with attention I want to emphasize that this podcast like all of our podcast episodes are timestamped for a specific reason they are designed to be digested in whatever batch one chooses right you don't have to watch or listen to the entire thing all at once however if you've gotten to this point in the podcast I want to thank you I do hope that you can see that I'm going to be able to talk to you I want to thank you I do hope that you've learned a lot about this condition I hope you've also learned a lot about your own capacity to focus and things that you can do to enhance your focus we've even talked about a tool that takes just one 17 minute session to enhance your ability to focus there after presumably forever if you're enjoying this podcast and you're learning from it please subscribe to our YouTube channel that really helps us in addition in the comment section on YouTube you can leave us suggestions for future podcasts guests and suggestions for future podcasts topics that we may have not covered or that you'd like to see covered in the future in addition please subscribe to the podcast on apple and Spotify and on apple you have the opportunity to leave us a comment and up to a five star review in addition please check out the sponsors mentioned at the beginning of the podcast that's a terrific way to support us and for those of you that would like to support research on stress, neurobiology and human performance you can go to huberman lab dot Stanford dot edu and there you can make a tax deductible donation for research on neurobiology in my laboratory in addition we have a patreon it's patreon dot com slash Andrew huberman there you can support the podcast at any level that you like during today's episode we talked a lot about supplement based compounds if you're interested in supplements and you want to see the supplements that I personally take you can go to Thorne that's THORne or any slash the letter you slash huberman and you can see everything that I take and you can get 20% off any of those supplements or if you navigate into the Thorne site through that portal you can get 20% off any of the supplements that Thorne makes supplements aren't for everybody you by no means have to take supplements but if you are going to take supplements it's important that you take supplements from a source that's reputable in which the ingredients are very high quality and in which the amount of the ingredients that listed on the bottle actually matches what's in the bottle that's why we partnered with Thorne because they have the highest levels of stringency in terms of quality and specificity of the ingredients and finally I want to thank you for your time and your attention and as always thank you for your interest in science you",7982
