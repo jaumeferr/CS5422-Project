@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/logo.png" width="80%"><br>
+  <img src="img/podfluence_banner.png" width="100%"><br>
 </div>
 
 # Podfluence
@@ -19,7 +19,3 @@ The below steps assumes that you already have: (1) An OpenAI API Key, and (2) Se
 5. Note the location of your conda environment's python path, it should be in `/home/<USERNAME>/anaconda3/envs/<ENV_NAME>/bin/python`. But if not, check it using `which conda`.
 6. Run the api using `/home/<USERNAME>/anaconda3/envs/<ENV_NAME>/bin/python -m uvicorn api:app --host 0.0.0.0 --reload --port 21212`.
 7. You can access the API from `localhost:21212` and the docs at `localhost:21212/docs`.
-
-## License
-
-This repository is licensed under the [LICENSE NAME](LICENSE).
